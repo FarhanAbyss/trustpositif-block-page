@@ -66,6 +66,9 @@ Simply search for the **`[EDIT]`** tag inside the file to find all customizable 
 | `index.html` | 🇮🇩 Bahasa Indonesia | [View File](https://github.com/FarhanAbyss/trustpositif-block-page/blob/main/index.html) |
 | `indexen.html` | 🇬🇧 English | [View File](https://github.com/FarhanAbyss/trustpositif-block-page/blob/main/indexen.html) |
 
+⚠️ **Note:**
+If using `indexen.html` then want to deploy to a server/Vercel/hosting, **rename the file** from `indexen.html` to `index.html` first so it can be accessed as the main page.
+
 **Sections that have been commented:**
 - 🎨 Theme colors (CSS variables)
 - 🖼️ Header logo + automatic language swap
