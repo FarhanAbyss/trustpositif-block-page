@@ -66,6 +66,9 @@ Cukup cari tag **`[UBAH]`** (ID) atau **`[EDIT]`** (EN) di dalam file untuk mene
 | `index.html` | 🇮🇩 Bahasa Indonesia | [Lihat File](https://github.com/FarhanAbyss/trustpositif-block-page/blob/main/index.html) |
 | `indexen.html` | 🇬🇧 English | [View File](https://github.com/FarhanAbyss/trustpositif-block-page/blob/main/indexen.html) |
 
+⚠️ **Perhatian:**
+Jika menggunakan `indexen.html` lalu ingin mendeploy ke server/Vercel/hosting, **ubah nama file** dari `indexen.html` menjadi `index.html` terlebih dahulu agar bisa diakses sebagai halaman utama.
+
 **Bagian yang sudah ada komentarnya:**
 - 🎨 Warna tema (CSS variables)
 - 🖼️ Logo header + swap bahasa otomatis
