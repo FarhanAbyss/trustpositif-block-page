@@ -119,7 +119,7 @@ This project is **open source** and free to use for personal, educational, or lo
 
 ## 🙏 Credits
 
-- Logos & image assets belong to **Ministry of Communications and Digital of the Republic of Indonesia**
+- Logos & image assets belong to **Ministry of Communications and Digital Affairs Republic of Indonesia**
 - Created by **[FarhanAbyss](https://github.com/FarhanAbyss)**
 
 ---
