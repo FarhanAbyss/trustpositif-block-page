@@ -16,7 +16,7 @@
 
 ## ⚠️ Disclaimer
 
-This is **not** an official KOMDIGI/MCDA or Ministry of Communications and Digital of the Republic of Indonesia page. This project was made independently for educational purposes and can be used as a custom block page on ISP, RT/RW Net, and home/school router networks.
+This is **not** an official Komdigi or Ministry of Communications and Digital Affairs of the Republic of Indonesia page. This project was made independently for educational purposes and can be used as a custom block page on ISP, RT/RW Net, and home/school router networks.
 
 ---
 
@@ -150,7 +150,7 @@ This project is **open source** and free to use for personal, educational, or lo
 
 ## 🙏 Credits
 
-- Logos & image assets belong to **Ministry of Communications and Digital of the Republic of Indonesia**
+- Logos & image assets belong to **Ministry of Communications and Digital Affairs of the Republic of Indonesia**
 - Created by **[FarhanAbyss](https://github.com/FarhanAbyss)**
 
 ---
