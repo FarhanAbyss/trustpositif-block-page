@@ -77,7 +77,7 @@ https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads
 - ✅ Gambar bisa diupdate tanpa mengubah `index.html`
 - ✅ Bisa dipakai ulang di project lain cukup dengan URL-nya
 - ⚠️ Membutuhkan koneksi internet saat pertama kali load
-- ⚠️ Membutuhkan web penyedia CDN dan repo untuk gambar harus berstatus **Public**
+- ⚠️ Membutuhkan web penyedia CDN atau bisa juga memakai repo untuk penyedia gambar tetapi harus berstatus **Public**
 
 ---
 
