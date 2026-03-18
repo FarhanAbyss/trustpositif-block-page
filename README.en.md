@@ -151,7 +151,7 @@ This project is **open source** and free to use for personal, educational, or lo
 ## 🙏 Credits
 
 - Logos & image assets belong to **Ministry of Communications and Digital Affairs of the Republic of Indonesia**
-- All code created by Kimi Ai, Qwen Chat, Claude.ai
+- All code created by Kimi ai, Qwen Chat, Claude ai
 - Prompt writer by **[FarhanAbyss](https://github.com/FarhanAbyss)**
 
 ---
