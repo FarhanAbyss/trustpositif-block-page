@@ -16,7 +16,7 @@
 
 ## ⚠️ Disclaimer
 
-This is **not** an official Komdigi or Ministry of Communications and Digital Affairs of the Republic of Indonesia page. This project was made independently for educational purposes and can be used as a custom block page on ISP, RT/RW Net, and home/school router networks.
+This is **not** an official KOMDIGI/MCDA or Ministry of Communications and Digital Affairs of the Republic of Indonesia page. This project was made independently for educational purposes and can be used as a custom block page on ISP, RT/RW Net, and home/school router networks.
 
 ---
 
