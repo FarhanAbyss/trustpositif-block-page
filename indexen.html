@@ -751,7 +751,7 @@
             cursor: pointer;
         }
 
-        /* Focus states untuk navigasi keyboard (Tab) */
+        /* Focus states for keyboard navigation (Tab) */
         .lang-btn:focus,
         .report-btn:focus,
         .action-btn:focus,
@@ -1048,13 +1048,13 @@
         ⚠️ Do not change the order of these media queries unless you understand CSS cascade!
         ─────────────────────────────────────────────────────────────── */
 
-        /* Ultrawide 21:9 (>1400px) - 3 kolom horizontal */
+        /* Ultrawide 21:9 (>1400px) - 3 columns horizontal */
         @media (min-width: 1400px) {
             .action-buttons { grid-template-columns: repeat(3, 1fr); }
             .action-btn-last { grid-column: auto; max-width: 100%; margin: 0; }
         }
 
-        /* Desktop besar (>900px) - 2 kolom, 1 di tengah bawah */
+        /* Large desktop (>900px) - 2 columns, 1 centered below */
         @media (min-width: 900px) and (max-width: 1399px) {
             .main-content { padding: 2rem 1.5rem 4rem; }
             .header-title { font-size: 1.75rem; }
@@ -1073,7 +1073,7 @@
             .program-images-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
-        /* 4:3 Monitor jadul - 1024x768 */
+        /* 4:3 Old monitor - 1024x768 */
         @media (min-width: 769px) and (max-width: 1024px) and (max-height: 800px) {
             .main-content { padding: 1.25rem 1.5rem 3rem; max-width: 700px; }
             .header-title { font-size: 1.2rem; }
@@ -1086,7 +1086,7 @@
             .pill-btn { font-size: 0.65rem; padding: 0.45rem 1rem; }
         }
 
-        /* 4:3 Monitor jadul kecil - 800x600 */
+        /* 4:3 Small old monitor - 800x600 */
         @media (min-width: 769px) and (max-width: 900px) and (max-height: 650px) {
             .main-content { padding: 1rem 1.25rem 2.5rem; max-width: 580px; }
             .header-section { padding: 1.5rem 1rem; }
@@ -1116,7 +1116,7 @@
             .pill-buttons { flex-direction: row; flex-wrap: wrap; }
         }
 
-        /* HP normal (360px - 480px) */
+        /* Normal mobile (360px - 480px) */
         @media (max-width: 480px) {
             .main-content { padding: 1rem 0.875rem 3rem; }
             .header-section { padding: 2rem 1rem 1.75rem; }
@@ -1136,7 +1136,7 @@
             .contact-section { padding: 1.25rem 1rem; }
         }
 
-        /* HP kecil / jadul (<360px) */
+        /* Small / old mobile (<360px) */
         @media (max-width: 360px) {
             .main-content { padding: 0.75rem 0.75rem 2.5rem; }
             .header-title { font-size: 0.95rem; letter-spacing: 0.5px; }
@@ -1190,7 +1190,7 @@
         - data-lang-en = text when English language is active
         - Text between tags = default text (Indonesian)
         -->
-        <h1 class="header-title animate__animated animate__fadeInUp delay-1" data-lang-id="TRUST+Positif dari KOMDIGI" data-lang-en="TRUST+Positif by MCDA">TRUST+Positif dari KOMDIGI</h1>
+        <h1 class="header-title animate__animated animate__fadeInUp delay-1" data-lang-id="TRUST+Positif dari KOMDIGI" data-lang-en="TRUST+Positif by KOMDIGI/MCDA">TRUST+Positif dari KOMDIGI</h1>
     </header>
 
     <!-- Main Content -->
@@ -1214,7 +1214,7 @@
             </div>
             <h2 class="warning-title" data-lang-id="⚠️ Situs Ini Diblokir" data-lang-en="⚠️ This Site Is Blocked">⚠️ Situs Ini Diblokir</h2>
             <p class="warning-subtitle" data-lang-id="Website yang Anda coba akses terdeteksi mengandung konten negatif dan diblokir oleh Kementerian Komunikasi dan Digital Republik Indonesia." 
-               data-lang-en="The website you are trying to access has been detected as containing negative content and is blocked by the Ministry of Communications and Digital Affairs Republic of Indonesia.">
+               data-lang-en="The website you are trying to access has been detected as containing negative content and is blocked by the Ministry of Communications and Digital Affairs of the Republic of Indonesia.">
                Website yang Anda coba akses terdeteksi mengandung konten negatif dan diblokir oleh Kementerian Komunikasi dan Digital Republik Indonesia.
             </p>
             <!--
