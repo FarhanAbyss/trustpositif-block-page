@@ -151,7 +151,8 @@ Proyek ini bersifat **open source** dan bebas digunakan untuk keperluan pribadi,
 ## 🙏 Credits
 
 - Logo & aset gambar milik **Kementerian Komunikasi dan Digital Republik Indonesia**
-- Dibuat oleh **[FarhanAbyss](https://github.com/FarhanAbyss)**
+- Seluruh kode dibuat oleh Kimi ai, Qwen Chat, Claude ai
+- Penulis prompt oleh **[FarhanAbyss](https://github.com/FarhanAbyss)**
 
 ---
 
