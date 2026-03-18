@@ -1,8 +1,10 @@
+🇮🇩 [Bahasa Indonesia](README.md) | 🇬🇧 English
+
+---
+
 # 🛡️ TRUST+Positif Block Page
 
 > Unofficial demo of the **TRUST+Positif** block page by Komdigi. An unofficial open source project used for educational purposes. Can also be used for ISP, RT/RW Net, Home/School Router, etc.
-
-🇮🇩 [Bahasa Indonesia](README.md) | 🇬🇧 English
 
 ---
 
@@ -14,7 +16,7 @@
 
 ## ⚠️ Disclaimer
 
-This is **not** an official MCDA or Ministry of Communications and Digital Affairs Republic of Indonesia. This project was made independently for educational purposes and can be used as a custom block page on ISP, RT/RW Net, and home/school router networks.
+This is **not** an official Komdigi or Ministry of Communications and Digital of the Republic of Indonesia page. This project was made independently for educational purposes and can be used as a custom block page on ISP, RT/RW Net, and home/school router networks.
 
 ---
 
@@ -35,7 +37,8 @@ This is **not** an official MCDA or Ministry of Communications and Digital Affai
 
 ```
 trustpositif-block-page/
-├── index.html              # Main file (single file, ready to use)
+├── index.html              # Main file — Indonesian comments
+├── indexen.html            # Main file — English comments
 ├── README.md               # Documentation (Bahasa Indonesia)
 ├── README.en.md            # Documentation (English)
 └── (branch: image)         # Image assets
@@ -49,6 +52,31 @@ trustpositif-block-page/
     ├── cyberdrone9.webp    # Cyber Drone 9 program logo
     └── laporaduankonten.webp   # Report Negative Content banner
 ```
+
+---
+
+## 💬 Code Comments
+
+Both HTML files come with **complete code comments** so anyone can understand, customize, and use them easily — even without prior coding experience.
+
+Simply search for the **`[EDIT]`** tag inside the file to find all customizable sections.
+
+| File | Comment Language | Link |
+|------|-----------------|------|
+| `index.html` | 🇮🇩 Bahasa Indonesia | [View File](https://github.com/FarhanAbyss/trustpositif-block-page/blob/main/index.html) |
+| `indexen.html` | 🇬🇧 English | [View File](https://github.com/FarhanAbyss/trustpositif-block-page/blob/main/indexen.html) |
+
+**Sections that have been commented:**
+- 🎨 Theme colors (CSS variables)
+- 🖼️ Header logo + automatic language swap
+- 📝 All bilingual text (ID/EN)
+- 🔗 All links & contact emails
+- 🃏 Internet Positif program cards
+- ⚖️ Legal basis cards & badges
+- 🔘 Action buttons & pill badges
+- ⚡ Animation speed & order (Animate.css + AOS)
+- 📐 Responsive breakpoints for all devices
+- 🔍 SEO meta tags & Open Graph
 
 ---
 
@@ -119,7 +147,7 @@ This project is **open source** and free to use for personal, educational, or lo
 
 ## 🙏 Credits
 
-- Logos & image assets belong to **Ministry of Communications and Digital Affairs Republic of Indonesia**
+- Logos & image assets belong to **Ministry of Communications and Digital of the Republic of Indonesia**
 - Created by **[FarhanAbyss](https://github.com/FarhanAbyss)**
 
 ---
