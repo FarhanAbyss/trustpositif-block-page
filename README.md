@@ -1,8 +1,10 @@
+🇮🇩 Bahasa Indonesia | 🇬🇧 [English](README.en.md)
+
+---
+
 # 🛡️ TRUST+Positif Block Page
 
 > Demo tidak resmi halaman blokir **TRUST+Positif** dari Komdigi. Proyek open source tidak resmi, digunakan untuk tujuan edukasi. Dapat digunakan juga untuk ISP, RT/RW Net, Router Rumah/Sekolah, dll.
-
-🇮🇩 Bahasa Indonesia | 🇬🇧 [English](README.en.md)
 
 ---
 
@@ -35,8 +37,10 @@ Ini **bukan** halaman resmi Komdigi atau Kementerian Komunikasi dan Digital Repu
 
 ```
 trustpositif-block-page/
-├── index.html              # File utama (single file, siap pakai)
-├── README.md               # Dokumentasi
+├── index.html              # File utama — komentar Bahasa Indonesia
+├── indexen.html            # File utama — komentar Bahasa Inggris
+├── README.md               # Dokumentasi (Bahasa Indonesia)
+├── README.en.md            # Dokumentasi (English)
 └── (branch: image)         # Aset gambar
     ├── komdigi.webp        # Logo Komdigi (ditampilkan saat bahasa Indonesia)
     ├── mcda.webp           # Logo MCDA (ditampilkan saat bahasa Inggris)
@@ -48,6 +52,31 @@ trustpositif-block-page/
     ├── cyberdrone9.webp    # Logo program Cyber Drone 9
     └── laporaduankonten.webp   # Banner Laporkan Konten Negatif
 ```
+
+---
+
+## 💬 Komentar Kode (Code Comments)
+
+Kedua file HTML dilengkapi dengan **komentar kode yang lengkap** agar siapapun bisa memahami, mengkustomisasi, dan menggunakannya dengan mudah — bahkan tanpa pengalaman coding sebelumnya.
+
+Cukup cari tag **`[UBAH]`** (ID) atau **`[EDIT]`** (EN) di dalam file untuk menemukan semua bagian yang bisa disesuaikan.
+
+| File | Bahasa Komentar | Link |
+|------|----------------|------|
+| `index.html` | 🇮🇩 Bahasa Indonesia | [Lihat File](https://github.com/FarhanAbyss/trustpositif-block-page/blob/main/index.html) |
+| `indexen.html` | 🇬🇧 English | [View File](https://github.com/FarhanAbyss/trustpositif-block-page/blob/main/indexen.html) |
+
+**Bagian yang sudah ada komentarnya:**
+- 🎨 Warna tema (CSS variables)
+- 🖼️ Logo header + swap bahasa otomatis
+- 📝 Semua teks bilingual (ID/EN)
+- 🔗 Semua link & email kontak
+- 🃏 Kartu program Internet Positif
+- ⚖️ Kartu dasar hukum & badge
+- 🔘 Tombol aksi & pill badges
+- ⚡ Kecepatan & urutan animasi (Animate.css + AOS)
+- 📐 Responsive breakpoints semua perangkat
+- 🔍 SEO meta tags & Open Graph
 
 ---
 
