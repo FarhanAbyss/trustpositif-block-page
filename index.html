@@ -12,43 +12,44 @@
     ║  ⚠️  BUKAN halaman resmi Komdigi. Untuk edukasi & ISP.       ║
     ╚══════════════════════════════════════════════════════════════╝
 
-    📌 PANDUAN KUSTOMISASI — Cari tanda [UBAH] untuk bagian yang bisa diubah.
+    📌 PANDUAN KUSTOMISASI
+    Cari tanda [UBAH] di seluruh berkas untuk menemukan bagian yang dapat disesuaikan.
 
-    Yang paling sering diubah:
-    1.  [UBAH] Judul tab browser        → tag <title>
-    2.  [UBAH] Deskripsi untuk Google   → <meta name="description">
-    3.  [UBAH] URL domain               → og:url
-    4.  [UBAH] Gambar preview WhatsApp  → og:image & twitter:image (ideal: 1200x630px)
-    5.  [UBAH] Logo (ID & EN)           → src di <img id="logo-img">
-    6.  [UBAH] Judul header             → atribut data-lang-id / data-lang-en
-    7.  [UBAH] Email kontak             → href="mailto:..." dan teks emailnya
-    8.  [UBAH] Link tombol aksi         → href di setiap <a class="action-btn">
-    9.  [UBAH] Tautan footer (domain/situs Anda) → href & teks di bagian <footer>
-    10. [UBAH] Warna tema               → variabel CSS di bagian :root
+    Bagian yang paling sering diubah:
+    1.  [UBAH] Judul tab peramban          → tag <title>
+    2.  [UBAH] Deskripsi untuk Google      → <meta name="description">
+    3.  [UBAH] URL domain                  → properti og:url
+    4.  [UBAH] Gambar pratinjau WhatsApp   → og:image & twitter:image (ukuran ideal: 1200×630 piksel)
+    5.  [UBAH] Logo (ID & EN)              → atribut src di <img id="logo-img">
+    6.  [UBAH] Judul header                → atribut data-lang-id dan data-lang-en
+    7.  [UBAH] Alamat surel kontak         → href="mailto:..." beserta teksnya
+    8.  [UBAH] Tautan tombol aksi          → href di setiap <a class="action-btn">
+    9.  [UBAH] Tautan footer               → href & teks di bagian <footer>
+    10. [UBAH] Warna tema                  → variabel CSS di blok :root
     -->
-    <!-- [UBAH] Judul tab browser -->
+    <!-- [UBAH] Judul tab peramban — teks yang muncul di tab peramban dan hasil Google -->
     <title>Demo Halaman Internet Positif</title>
 
-    <!-- ─── SEO: informasi halaman untuk mesin pencari seperti Google ─── -->
-    <!-- [UBAH] Deskripsi singkat halaman untuk Google -->
+    <!-- ─── SEO: metadata halaman untuk mesin pencari (Google, Bing, dll.) ─── -->
+    <!-- [UBAH] Deskripsi halaman — kalimat singkat yang muncul di bawah judul di hasil Google -->
     <meta name="description" content="Demo tidak resmi halaman Trust Positif Komdigi — Simulasi tampilan halaman blokir situs oleh Kementerian Komunikasi dan Digital Republik Indonesia.">
-    <!-- [UBAH] Kata kunci pencarian Google -->
+    <!-- [UBAH] Kata kunci — pisahkan dengan koma; bantu Google menemukan halaman ini -->
     <meta name="keywords" content="Trust Positif, Komdigi, Internet Positif, Situs Diblokir, Demo, Unofficial, Blokir Internet, Konten Negatif, UU ITE">
-    <!-- [UBAH] Nama pembuat / ISP Anda -->
+    <!-- [UBAH] Nama pembuat — isi dengan nama Anda, ISP, atau institusi pemilik halaman -->
     <meta name="author" content="Unofficial Demo">
     <meta name="robots" content="index, follow">
-    <!-- [UBAH] Warna address bar ponsel (sesuaikan warna brand Anda) -->
+    <!-- [UBAH] Warna bilah alamat ponsel — ubah kode warna agar sesuai dengan warna brand Anda -->
     <meta name="theme-color" content="#b91c1c">
 
     <!-- ─── OPEN GRAPH: tampilan pratinjau saat tautan dibagikan ke WhatsApp/media sosial ─── -->
     <meta property="og:type" content="website">
-    <!-- [UBAH] URL domain Anda -->
+    <!-- [UBAH] URL domain — ganti dengan alamat situs web Anda sendiri -->
     <meta property="og:url" content="https://trustpositif-internetpositif.vercel.app/">
-    <!-- [UBAH] Judul pratinjau saat tautan dibagikan -->
+    <!-- [UBAH] Judul pratinjau — teks besar yang muncul saat tautan dibagikan ke WhatsApp/media sosial -->
     <meta property="og:title" content="Demo Halaman Internet Positif — Unofficial">
-    <!-- [UBAH] Deskripsi pratinjau saat tautan dibagikan -->
+    <!-- [UBAH] Deskripsi pratinjau — kalimat pendek di bawah judul pada pratinjau tautan -->
     <meta property="og:description" content="Demo tidak resmi simulasi tampilan halaman blokir Trust Positif Komdigi. Bukan halaman resmi Kementerian Komunikasi dan Digital Republik Indonesia.">
-    <!-- [UBAH] Gambar pratinjau saat tautan dibagikan ke WA/sosmed (ukuran ideal: 1200x630px) -->
+    <!-- [UBAH] Gambar pratinjau — tampil saat tautan dibagikan ke WhatsApp/media sosial (ukuran ideal: 1200×630 piksel) -->
     <meta property="og:image" content="https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/ogimage.webp">
     <meta property="og:locale" content="id_ID">
     <meta property="og:site_name" content="Demo Trust Positif — Unofficial">
@@ -57,41 +58,42 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Demo Halaman Internet Positif — Unofficial">
     <meta name="twitter:description" content="Demo tidak resmi simulasi tampilan halaman blokir Trust Positif Komdigi. Bukan halaman resmi Kementerian Komunikasi dan Digital Republik Indonesia.">
-    <!-- [UBAH] Gambar pratinjau Twitter/X (biasanya sama dengan og:image) -->
+    <!-- [UBAH] Gambar pratinjau Twitter/X — umumnya sama dengan og:image di atas -->
     <meta name="twitter:image" content="https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/ogimage.webp">
 
-    <!-- Font: IBM Plex Mono untuk header & badge, Sora untuk teks isi halaman -->
-    <!-- Preconnect mempercepat pemuatan font dari Google -->
+    <!-- Fon: IBM Plex Mono dipakai di header & badge; Sora dipakai di teks isi halaman -->
+    <!-- Preconnect: memberi tahu peramban untuk menyambung lebih awal ke server Google Fonts, sehingga fon lebih cepat dimuat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <!-- Animate.css: animasi saat halaman pertama kali dibuka -->
+    <!-- Animate.css: pustaka animasi untuk elemen-elemen yang muncul saat halaman pertama kali dibuka -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- AOS: animasi elemen saat halaman digulir ke bawah -->
+    <!-- AOS (Animate On Scroll): pustaka animasi untuk elemen yang muncul saat halaman digulir ke bawah -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
     <style>
         /*
         [UBAH] WARNA TEMA
-        Ubah nilai warna di sini untuk mengganti tampilan seluruh halaman sekaligus.
-        Contoh: ganti #e02020 jadi #1d4ed8 untuk mengubah tema merah ke biru.
+        Semua warna halaman dikendalikan dari sini melalui variabel CSS.
+        Ubah nilai warna di bawah untuk mengubah tampilan seluruh halaman sekaligus.
+        Contoh: ganti #e02020 menjadi #1d4ed8 untuk mengubah tema dari merah ke biru.
         */
         :root {
-            --red: #e02020;           /* [UBAH] Merah utama — dipakai di header, ikon, border */
-            --red-light: #ff3c3c;     /* Merah lebih terang untuk efek cahaya */
-            --red-glow: rgba(224,32,32,0.25); /* Efek cahaya merah (transparan) */
-            --navy: #0a0e1a;          /* Warna latar belakang utama */
-            --navy-2: #0d1323;        /* Latar belakang kartu/section */
-            --navy-3: #111827;        /* Latar belakang alternatif */
-            --glass: rgba(255,255,255,0.045);   /* Efek kaca tipis */
-            --glass-border: rgba(255,255,255,0.08); /* Garis tepi kartu kaca */
-            --glass-strong: rgba(255,255,255,0.07); /* Efek kaca lebih pekat */
-            --blue: #2563eb;          /* Biru untuk badge, tautan, dan kontak */
-            --blue-light: #60a5fa;    /* Biru terang */
-            --green: #10b981;         /* Hijau untuk badge dan tombol */
-            --amber: #f59e0b;         /* Kuning untuk kotak info */
-            --text-primary: #f0f4ff;  /* Warna teks utama */
-            --text-secondary: rgba(240,244,255,0.6); /* Teks sekunder (lebih redup) */
-            --text-muted: rgba(240,244,255,0.55);    /* Teks paling redup */
+            --red: #e02020;           /* [UBAH] Merah utama — muncul di header, ikon, dan garis tepi */
+            --red-light: #ff3c3c;     /* Merah terang — dipakai untuk efek cahaya dan ikon */
+            --red-glow: rgba(224,32,32,0.25); /* Cahaya merah transparan — muncul di belakang ikon peringatan */
+            --navy: #0a0e1a;          /* [UBAH] Warna latar belakang utama seluruh halaman */
+            --navy-2: #0d1323;        /* Latar belakang kartu dan bagian-bagian halaman */
+            --navy-3: #111827;        /* Latar belakang alternatif — dipakai di elemen tertentu */
+            --glass: rgba(255,255,255,0.045);   /* Efek kaca tipis — latar kartu transparan */
+            --glass-border: rgba(255,255,255,0.08); /* Garis tepi kartu berkaca */
+            --glass-strong: rgba(255,255,255,0.07); /* Efek kaca yang sedikit lebih pekat */
+            --blue: #2563eb;          /* Biru — muncul pada lencana (badge), tautan, dan kartu kontak */
+            --blue-light: #60a5fa;    /* Biru terang — dipakai untuk teks tautan dan ikon kontak */
+            --green: #10b981;         /* Hijau — muncul pada lencana dan tombol tertentu */
+            --amber: #f59e0b;         /* Kuning — muncul di kotak informasi Internet Positif */
+            --text-primary: #f0f4ff;  /* [UBAH] Warna teks utama — teks judul dan konten penting */
+            --text-secondary: rgba(240,244,255,0.6); /* Teks sekunder — paragraf penjelasan */
+            --text-muted: rgba(240,244,255,0.55);    /* Teks paling redup — keterangan kecil dan label */
         }
 
         * {
@@ -112,12 +114,16 @@
             overflow-x: hidden;
         }
 
-        /* ─── SCROLLBAR ─── */
+        /* ─── BILAH GULIR (SCROLLBAR) ───
+           Tampilan bilah gulir di sisi kanan halaman.
+           [UBAH] Ganti var(--red) pada ::-webkit-scrollbar-thumb untuk mengubah warnanya. */
         ::-webkit-scrollbar { width: 5px; }
         ::-webkit-scrollbar-track { background: var(--navy-2); }
         ::-webkit-scrollbar-thumb { background: var(--red); border-radius: 10px; }
 
-        /* ─── ANIMATED BACKGROUND ─── */
+        /* ─── LATAR BELAKANG ANIMASI ───
+           Tiga elemen dekoratif di balik konten: pola kotak-kotak, cahaya merah di atas,
+           dan cahaya biru di bawah. Elemen ini tidak dapat diklik. */
         .bg-grid {
             position: fixed;
             inset: 0;
@@ -158,12 +164,14 @@
             50% { opacity: 0.6; transform: translateX(-50%) scale(1.1); }
         }
 
-        /* ─── HEADER ─── */
+        /* ─── BAGIAN HEADER ───
+           Blok merah di bagian atas halaman — berisi tombol bahasa, logo, dan judul.
+           [UBAH] Ganti nilai pada background: linear-gradient(...) untuk mengubah warna header. */
         .header-section {
             position: relative;
             z-index: 10;
             background: linear-gradient(160deg, #b91c1c 0%, #991b1b 40%, #7f1d1d 100%);
-            padding: 2.5rem 1.5rem 2rem;
+            padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1rem, 4vw, 2rem) clamp(1.25rem, 3vw, 2rem);
             text-align: center;
             border-bottom: 1px solid rgba(255,255,255,0.08);
             overflow: hidden;
@@ -187,18 +195,18 @@
         }
 
         .language-switcher {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
             display: flex;
-            gap: 0.375rem;
+            justify-content: center;
+            gap: clamp(0.3rem, 0.8vw, 0.5rem);
+            margin-bottom: clamp(0.75rem, 2vw, 1.25rem);
+            position: relative;
             z-index: 10;
         }
 
         .lang-btn {
-            padding: 0.3rem 0.75rem;
+            padding: clamp(0.25rem, 0.8vw, 0.35rem) clamp(0.6rem, 1.5vw, 0.875rem);
             border-radius: 6px;
-            font-size: 0.7rem;
+            font-size: clamp(0.65rem, 1.8vw, 0.75rem);
             font-weight: 700;
             font-family: 'IBM Plex Mono', monospace;
             border: 1px solid rgba(255,255,255,0.2);
@@ -229,7 +237,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 12px;
+            padding: clamp(8px, 1.5vw, 12px);
             overflow: hidden;
             box-shadow: 0 0 0 4px rgba(255,255,255,0.15), 0 8px 32px rgba(0,0,0,0.4);
             animation: logoFloat 4s ease-in-out infinite;
@@ -239,10 +247,10 @@
 
         /*
         [UBAH] ANIMASI LOGO MELAYANG
-        Logo bergerak naik-turun perlahan secara otomatis.
-        - Ubah 4s → lebih kecil agar lebih cepat, lebih besar agar lebih lambat.
-        - Ubah -5px → lebih besar agar naik lebih tinggi.
-        - Untuk mematikan: hapus baris "animation: logoFloat..." di .logo-container
+        Logo bergerak naik-turun secara perlahan dan terus-menerus.
+        - Ubah 4s menjadi lebih kecil agar bergerak lebih cepat, atau lebih besar agar lebih lambat.
+        - Ubah -5px menjadi nilai lebih besar (misal: -10px) agar logo naik lebih tinggi.
+        - Untuk mematikan animasi: hapus baris "animation: logoFloat..." di .logo-container
         */
         @keyframes logoFloat {
             0%, 100% { transform: translateY(0); }
@@ -259,7 +267,7 @@
         .header-title {
             font-family: 'IBM Plex Mono', monospace;
             color: white;
-            font-size: 1.4rem;
+            font-size: clamp(0.95rem, 3.5vw, 1.4rem);
             font-weight: 800;
             margin-bottom: 0.35rem;
             letter-spacing: 2px;
@@ -272,7 +280,7 @@
         .header-subtitle {
             font-family: 'IBM Plex Mono', monospace;
             color: rgba(255,255,255,0.7);
-            font-size: 0.7rem;
+            font-size: clamp(0.6rem, 1.5vw, 0.7rem);
             font-weight: 400;
             letter-spacing: 5px;
             text-transform: uppercase;
@@ -280,7 +288,9 @@
             z-index: 2;
         }
 
-        /* ─── MAIN ─── */
+        /* ─── AREA KONTEN UTAMA ───
+           Pembungkus seluruh konten di bawah header. Lebar maksimum 680px agar nyaman dibaca.
+           Jarak dan lebar menyesuaikan ukuran layar secara otomatis. */
         .main-content {
             position: relative;
             z-index: 5;
@@ -289,7 +299,9 @@
             padding: 1.5rem 1rem 3rem;
         }
 
-        /* ─── GLASS CARD BASE ─── */
+        /* ─── KARTU BERKACA (GLASS CARD) ───
+           Gaya dasar kartu transparan dengan efek buram. Dipakai di bagian peringatan,
+           kartu regulasi, kartu kontak, dan kartu program. */
         .glass-card {
             background: var(--glass-strong);
             border: 1px solid var(--glass-border);
@@ -298,15 +310,17 @@
             -webkit-backdrop-filter: blur(12px);
         }
 
-        /* Otomatis mematikan efek buram (blur) pada perangkat lambat atau pengaturan aksesibilitas */
+        /* Aksesibilitas: efek buram (blur) otomatis dimatikan pada perangkat lambat atau jika pengguna mengaktifkan pengaturan "kurangi gerakan" di sistem operasinya */
         @media (prefers-reduced-motion: reduce) {
             .glass-card { backdrop-filter: none; -webkit-backdrop-filter: none; }
         }
 
-        /* ─── WARNING SECTION ─── */
+        /* ─── BAGIAN PERINGATAN ───
+           Kartu pertama yang terlihat saat halaman dibuka. Berisi ikon peringatan,
+           judul blokir, deskripsi, dan label-label. */
         .warning-section {
             text-align: center;
-            padding: 2rem 1.5rem;
+            padding: clamp(1.25rem, 4vw, 2rem) clamp(1rem, 3vw, 1.5rem);
             margin-bottom: 1.25rem;
             position: relative;
             overflow: hidden;
@@ -321,8 +335,8 @@
         }
 
         .warning-icon-wrap {
-            width: 70px;
-            height: 70px;
+            width: clamp(50px, 12vw, 70px);
+            height: clamp(50px, 12vw, 70px);
             background: radial-gradient(circle, rgba(224,32,32,0.2) 0%, rgba(224,32,32,0.05) 100%);
             border: 1px solid rgba(224,32,32,0.3);
             border-radius: 50%;
@@ -335,10 +349,10 @@
 
         /*
         [UBAH] ANIMASI DENYUT IKON PERINGATAN
-        Ikon segitiga berdenyut dengan cahaya merah.
-        - Ubah 2.5s → lebih kecil agar berkedip lebih cepat.
-        - Ubah 12px → lebih besar agar cahaya menyebar lebih luas.
-        - Untuk mematikan: hapus baris "animation: warningPulse..." di .warning-icon-wrap
+        Ikon segitiga berdenyut dengan sorotan cahaya merah secara berulang.
+        - Ubah 2.5s → lebih kecil agar berkedip lebih cepat (contoh: 1.5s).
+        - Ubah 12px → lebih besar agar cahaya menyebar lebih luas (contoh: 20px).
+        - Untuk mematikan animasi: hapus baris "animation: warningPulse..." di .warning-icon-wrap
         */
         @keyframes warningPulse {
             0%, 100% { box-shadow: 0 0 0 0 rgba(224,32,32,0.3); }
@@ -346,20 +360,20 @@
         }
 
         .warning-icon-wrap svg {
-            width: 32px;
-            height: 32px;
+            width: clamp(22px, 5vw, 32px);
+            height: clamp(22px, 5vw, 32px);
             color: var(--red-light);
         }
 
         .warning-title {
-            font-size: 1.2rem;
+            font-size: clamp(0.95rem, 3vw, 1.2rem);
             font-weight: 800;
             color: var(--text-primary);
             margin-bottom: 0.4rem;
         }
 
         .warning-subtitle {
-            font-size: 0.8rem;
+            font-size: clamp(0.72rem, 2vw, 0.8rem);
             color: var(--text-secondary);
             margin-bottom: 1.5rem;
             line-height: 1.6;
@@ -373,9 +387,9 @@
         }
 
         .pill-btn {
-            padding: 0.55rem 1.25rem;
+            padding: clamp(0.4rem, 1vw, 0.55rem) clamp(0.75rem, 2vw, 1.25rem);
             border-radius: 9999px;
-            font-size: 0.7rem;
+            font-size: clamp(0.6rem, 1.5vw, 0.7rem);
             font-weight: 700;
             font-family: 'IBM Plex Mono', monospace;
             color: white;
@@ -388,23 +402,26 @@
             transition: all 0.25s ease;
         }
 
-        .pill-btn svg { width: 14px; height: 14px; flex-shrink: 0; }
+        .pill-btn svg { width: clamp(11px, 2vw, 14px); height: clamp(11px, 2vw, 14px); flex-shrink: 0; }
 
-        .pill-red { background: linear-gradient(135deg, #ef4444, #b91c1c); }
+        /* ─── WARNA LABEL PILL ─── [UBAH] Ganti gradient warna jika ingin mengubah tampilan setiap label */
+        .pill-red { background: linear-gradient(135deg, #ef4444, #b91c1c); }   /* Merah — "Konten Diblokir" */
         .pill-red:hover { box-shadow: 0 0 20px rgba(239,68,68,0.4); }
 
-        .pill-green { background: linear-gradient(135deg, #10b981, #047857); }
+        .pill-green { background: linear-gradient(135deg, #10b981, #047857); } /* Hijau — "Internet Positif" */
         .pill-green:hover { box-shadow: 0 0 20px rgba(16,185,129,0.4); }
 
-        .pill-blue { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+        .pill-blue { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }  /* Biru — "Keamanan Digital" */
         .pill-blue:hover { box-shadow: 0 0 20px rgba(59,130,246,0.4); }
 
-        /* ─── INFO BOX ─── */
+        /* ─── KOTAK INFORMASI ───
+           Kotak berwarna kuning berisi penjelasan singkat tentang Internet Positif.
+           [UBAH] Ganti nilai --amber di :root untuk mengubah warna kuningnya. */
         .info-box {
             background: linear-gradient(135deg, rgba(245,158,11,0.12), rgba(245,158,11,0.06));
             border: 1px solid rgba(245,158,11,0.25);
             border-left: 3px solid var(--amber);
-            padding: 1rem 1.25rem;
+            padding: clamp(0.75rem, 2.5vw, 1rem) clamp(0.875rem, 3vw, 1.25rem);
             border-radius: 12px;
             margin-bottom: 1.25rem;
             animation: slideUp 0.6s ease 0.1s both;
@@ -417,20 +434,22 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            font-size: 0.875rem;
+            font-size: clamp(0.78rem, 2vw, 0.875rem);
         }
 
-        .info-box-title svg { width: 16px; height: 16px; flex-shrink: 0; color: #fbbf24; }
+        .info-box-title svg { width: clamp(12px, 2.5vw, 16px); height: clamp(12px, 2.5vw, 16px); flex-shrink: 0; color: #fbbf24; }
 
         .info-box-text {
-            font-size: 0.8rem;
+            font-size: clamp(0.72rem, 1.8vw, 0.8rem);
             color: rgba(251,191,36,0.75);
             line-height: 1.7;
         }
 
-        /* ─── SECTION TITLES ─── */
+        /* ─── JUDUL BAGIAN ───
+           Judul kecil yang muncul di atas setiap bagian halaman (Dasar Hukum, Program, dll.).
+           Disertai ikon merah di sebelah kiri secara otomatis. */
         .section-title {
-            font-size: 1rem;
+            font-size: clamp(0.85rem, 2.2vw, 1rem);
             font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 1rem;
@@ -441,19 +460,21 @@
 
         .section-title svg { width: 18px; height: 18px; color: var(--red-light); flex-shrink: 0; }
 
-        /* ─── DIVIDER ─── */
+        /* ─── GARIS PEMISAH — garis tipis transparan antarbagian halaman */
         .divider {
             height: 1px;
             background: linear-gradient(90deg, transparent, var(--glass-border), transparent);
             margin: 1.5rem 0;
         }
 
-        /* ─── REPORT SECTION ─── */
+        /* ─── BAGIAN LAPORAN KONTEN NEGATIF ───
+           Kotak merah gelap berisi banner, tombol laporan, dan tautan surel.
+           [UBAH] Untuk mengubah warna latar: edit rgba(185,28,28,...) pada background. */
         .report-section {
             background: linear-gradient(135deg, rgba(185,28,28,0.25) 0%, rgba(127,29,29,0.15) 100%);
             border: 1px solid rgba(224,32,32,0.2);
             border-radius: 16px;
-            padding: 1.5rem;
+            padding: clamp(1rem, 3vw, 1.5rem);
             margin-bottom: 1.25rem;
             overflow: hidden;
             position: relative;
@@ -470,7 +491,7 @@
 
         .report-title {
             text-align: center;
-            font-size: 1.1rem;
+            font-size: clamp(0.95rem, 2.5vw, 1.1rem);
             font-weight: 800;
             margin-bottom: 0.4rem;
             color: white;
@@ -478,14 +499,14 @@
 
         .report-subtitle {
             text-align: center;
-            font-size: 0.8rem;
+            font-size: clamp(0.72rem, 1.8vw, 0.8rem);
             color: rgba(255,255,255,0.65);
             margin-bottom: 1.25rem;
         }
 
         .report-image {
             width: 100%;
-            max-width: 340px;
+            max-width: clamp(240px, 70vw, 340px);
             height: auto;
             object-fit: cover;
             border-radius: 10px;
@@ -499,7 +520,7 @@
             display: flex;
             flex-direction: column;
             gap: 0.6rem;
-            max-width: 380px;
+            max-width: clamp(280px, 90vw, 380px);
             margin: 0 auto;
         }
 
@@ -507,10 +528,10 @@
             background: rgba(255,255,255,0.1);
             border: 1px solid rgba(255,255,255,0.15);
             color: white;
-            padding: 0.875rem 1.25rem;
+            padding: clamp(0.7rem, 2vw, 0.875rem) clamp(0.875rem, 2.5vw, 1.25rem);
             border-radius: 10px;
             font-weight: 700;
-            font-size: 0.875rem;
+            font-size: clamp(0.78rem, 2vw, 0.875rem);
             text-align: left;
             text-decoration: none;
             display: flex;
@@ -522,7 +543,8 @@
             -webkit-backdrop-filter: blur(8px);
         }
 
-        .report-btn.primary {
+        /* ─── WARNA TOMBOL LAPORAN ─── [UBAH] Sesuaikan nilai rgba untuk mengubah warna tiap tombol */
+        .report-btn.primary {  /* Merah — AduanKonten.id */
             background: rgba(224,32,32,0.2);
             border-color: rgba(224,32,32,0.4);
             color: #fca5a5;
@@ -540,7 +562,7 @@
         }
 
 
-        .report-btn.blue {
+        .report-btn.blue {    /* Biru — AduanNomor.id */
             background: rgba(37,99,235,0.2);
             border-color: rgba(37,99,235,0.4);
             color: #93c5fd;
@@ -551,7 +573,7 @@
             transform: translateY(-2px);
         }
 
-        .report-btn.green {
+        .report-btn.green {   /* Hijau — CekRekening.id */
             background: rgba(16,185,129,0.2);
             border-color: rgba(16,185,129,0.4);
             color: #6ee7b7;
@@ -562,7 +584,7 @@
             transform: translateY(-2px);
         }
 
-        .report-btn.amber {
+        .report-btn.amber {   /* Kuning — Surel kontak */
             background: rgba(245,158,11,0.18);
             border-color: rgba(245,158,11,0.4);
             color: #fcd34d;
@@ -572,18 +594,20 @@
             box-shadow: 0 4px 20px rgba(245,158,11,0.25);
             transform: translateY(-2px);
         }
-        .report-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+        .report-btn svg { width: clamp(14px, 2.5vw, 18px); height: clamp(14px, 2.5vw, 18px); flex-shrink: 0; }
 
         .report-btn-text {
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            font-size: 0.8rem;
+            font-size: clamp(0.7rem, 1.8vw, 0.8rem);
         }
 
-        /* ─── PROGRAM IMAGES ─── */
+        /* ─── GAMBAR PROGRAM INTERNET POSITIF ───
+           Kisi kartu gambar program-program Komdigi. Kartu terakhir otomatis melebar penuh.
+           [UBAH] Ganti src gambar di HTML untuk memperbarui logo tiap program. */
         .program-images-section {
-            padding: 1.5rem;
+            padding: clamp(1rem, 3vw, 1.5rem);
             margin-bottom: 1.25rem;
             animation: slideUp 0.6s ease 0.3s both;
         }
@@ -615,7 +639,7 @@
 
         .program-image-card img {
             width: 100%;
-            height: 110px;
+            height: clamp(70px, 15vw, 110px);
             object-fit: contain;
             background: #ffffff;
             padding: 0;
@@ -626,14 +650,16 @@
             background: rgba(255,255,255,0.04);
             border-top: 1px solid var(--glass-border);
             color: var(--text-secondary);
-            padding: 0.6rem;
+            padding: clamp(0.4rem, 1.2vw, 0.6rem);
             text-align: center;
-            font-size: 0.75rem;
+            font-size: clamp(0.65rem, 1.5vw, 0.75rem);
             font-weight: 600;
             font-family: 'IBM Plex Mono', monospace;
         }
 
-        /* ─── LEGAL BASIS ─── */
+        /* ─── BAGIAN DASAR HUKUM ───
+           Daftar undang-undang dan peraturan yang mendasari Trust+Positif.
+           Terdiri dari kartu-kartu regulasi yang dikelompokkan dalam tiga kategori. */
         .legal-section {
             animation: slideUp 0.6s ease 0.4s both;
         }
@@ -651,11 +677,11 @@
             font-weight: 700;
             color: #93c5fd;
             margin-bottom: 0.25rem;
-            font-size: 0.875rem;
+            font-size: clamp(0.78rem, 2vw, 0.875rem);
         }
 
         .section-header-text {
-            font-size: 0.75rem;
+            font-size: clamp(0.65rem, 1.7vw, 0.75rem);
             color: rgba(147,197,253,0.65);
             line-height: 1.6;
         }
@@ -681,13 +707,13 @@
             align-items: center;
             justify-content: center;
             font-weight: 700;
-            font-size: 0.8rem;
+            font-size: clamp(0.7rem, 1.8vw, 0.8rem);
             font-family: 'IBM Plex Mono', monospace;
             flex-shrink: 0;
         }
 
         .category-title {
-            font-size: 0.875rem;
+            font-size: clamp(0.78rem, 2vw, 0.875rem);
             font-weight: 700;
             color: var(--text-primary);
         }
@@ -696,7 +722,7 @@
             background: var(--glass);
             border: 1px solid var(--glass-border);
             border-radius: 12px;
-            padding: 1rem 1.125rem;
+            padding: clamp(0.75rem, 2vw, 1rem) clamp(0.875rem, 2.5vw, 1.125rem);
             margin-bottom: 0.625rem;
             transition: all 0.25s ease;
         }
@@ -732,19 +758,19 @@
 
         .regulation-title {
             font-weight: 700;
-            font-size: 0.8rem;
+            font-size: clamp(0.72rem, 1.8vw, 0.8rem);
             color: var(--text-primary);
             line-height: 1.4;
         }
 
         .regulation-subtitle {
-            font-size: 0.7rem;
+            font-size: clamp(0.62rem, 1.5vw, 0.7rem);
             color: var(--text-muted);
             margin-top: 0.125rem;
         }
 
         .regulation-description {
-            font-size: 0.75rem;
+            font-size: clamp(0.67rem, 1.7vw, 0.75rem);
             color: var(--text-secondary);
             line-height: 1.7;
             margin: 0.5rem 0 0.75rem;
@@ -757,22 +783,25 @@
         }
 
         .badge {
-            padding: 0.2rem 0.625rem;
+            padding: clamp(0.15rem, 0.5vw, 0.2rem) clamp(0.4rem, 1vw, 0.625rem);
             border-radius: 9999px;
-            font-size: 0.6rem;
+            font-size: clamp(0.55rem, 1.4vw, 0.6rem);
             font-weight: 700;
             font-family: 'IBM Plex Mono', monospace;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
 
-        .badge-red { background: rgba(224,32,32,0.15); color: #fca5a5; border: 1px solid rgba(224,32,32,0.25); }
-        .badge-blue { background: rgba(37,99,235,0.15); color: #93c5fd; border: 1px solid rgba(37,99,235,0.25); }
-        .badge-green { background: rgba(16,185,129,0.15); color: #6ee7b7; border: 1px solid rgba(16,185,129,0.25); }
+        /* [UBAH] Warna lencana (badge) — ganti class di HTML: badge-red, badge-blue, atau badge-green */
+        .badge-red   { background: rgba(224,32,32,0.15);  color: #fca5a5; border: 1px solid rgba(224,32,32,0.25); }  /* Merah */
+        .badge-blue  { background: rgba(37,99,235,0.15);  color: #93c5fd; border: 1px solid rgba(37,99,235,0.25); }  /* Biru */
+        .badge-green { background: rgba(16,185,129,0.15); color: #6ee7b7; border: 1px solid rgba(16,185,129,0.25); } /* Hijau */
 
-        /* ─── PC/LAPTOP SUPPORT ─── */
+        /* ─── DUKUNGAN PC/LAPTOP ───
+           Pengaturan tambahan untuk pengalaman pengguna di layar lebar:
+           kursor pointer pada semua elemen interaktif, efek hover, dan navigasi papan ketik (Tab). */
 
-        /* Cursor pointer semua elemen interaktif */
+        /* Kursor "tangan" pada semua elemen yang dapat diklik */
         .lang-btn,
         .pill-btn,
         .report-btn,
@@ -785,7 +814,7 @@
             cursor: pointer;
         }
 
-        /* Focus states untuk navigasi keyboard (Tab) */
+        /* Sorotan fokus untuk navigasi papan ketik (tombol Tab) — penting untuk aksesibilitas */
         .lang-btn:focus,
         .report-btn:focus,
         .action-btn:focus,
@@ -795,12 +824,12 @@
             outline-offset: 3px;
         }
 
-        /* Pill buttons - scale on hover */
+        /* Label pill membesar sedikit saat kursor diarahkan */
         .pill-btn:hover {
             transform: scale(1.05);
         }
 
-        /* Report btn primary active state */
+        /* Efek saat tombol laporan utama ditekan */
         .report-btn.primary:active {
             transform: translateY(0);
             box-shadow: none;
@@ -810,12 +839,12 @@
             transform: translateY(0);
         }
 
-        /* Action buttons active */
+        /* Efek saat tombol aksi ditekan */
         .action-btn:active {
             transform: translateY(-1px);
         }
 
-        /* Contact card cursor */
+        /* Kartu kontak tidak menggunakan kursor pointer karena bukan tautan langsung */
         .contact-card:hover {
             cursor: default;
         }
@@ -824,7 +853,7 @@
             text-decoration: underline;
         }
 
-        /* Program image card - subtle scale on hover */
+        /* Gambar program membesar perlahan saat kursor diarahkan */
         .program-image-card:hover img {
             transform: scale(1.03);
             transition: transform 0.3s ease;
@@ -834,21 +863,23 @@
             transition: transform 0.3s ease;
         }
 
-        /* Selection color */
+        /* Warna sorotan teks saat pengguna memilih (seleksi) teks di halaman */
         ::selection {
             background: rgba(224,32,32,0.3);
             color: white;
         }
 
-        /* ─── THANK YOU ─── */
+        /* ─── TEKS TERIMA KASIH — muncul di antara bagian dasar hukum dan tombol aksi */
         .thankyou {
             text-align: center;
-            padding: 1.5rem 0 0.5rem;
+            padding: clamp(1rem, 3vw, 1.5rem) 0 0.5rem;
             color: var(--text-muted);
-            font-size: 0.8rem;
+            font-size: clamp(0.7rem, 1.8vw, 0.8rem);
         }
 
-        /* ─── ACTION BUTTONS ─── */
+        /* ─── TOMBOL AKSI ───
+           Empat tombol navigasi: Cek Trust Positif, Normalisasi, Informasi, dan Stop Judi Online.
+           Susunan otomatis berubah sesuai lebar layar (1 kolom di HP, 2 kolom di tablet, 4 kolom di ultrawide). */
         .action-buttons {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -868,10 +899,10 @@
             background: var(--glass);
             border: 1px solid var(--glass-border);
             border-radius: 14px;
-            padding: 1rem;
+            padding: clamp(0.75rem, 2vw, 1rem);
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: clamp(0.5rem, 1.5vw, 0.75rem);
             text-decoration: none;
             transition: all 0.3s ease;
             position: relative;
@@ -896,27 +927,28 @@
         .action-btn:hover::before { opacity: 1; }
 
         .action-btn-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
+            width: clamp(30px, 6vw, 40px);
+            height: clamp(30px, 6vw, 40px);
+            border-radius: clamp(7px, 1.5vw, 10px);
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
         }
 
-        .action-btn-icon.red { background: rgba(224,32,32,0.15); color: var(--red-light); }
-        .action-btn-icon.green { background: rgba(16,185,129,0.15); color: #34d399; }
-        .action-btn-icon.blue { background: rgba(37,99,235,0.15); color: var(--blue-light); }
-        .action-btn-icon.orange { background: rgba(249,115,22,0.15); color: #fb923c; }
+        /* [UBAH] Warna ikon tombol aksi — ganti class di HTML: red, green, blue, atau orange */
+        .action-btn-icon.red    { background: rgba(224,32,32,0.15);   color: var(--red-light); }   /* Merah */
+        .action-btn-icon.green  { background: rgba(16,185,129,0.15);  color: #34d399; }            /* Hijau */
+        .action-btn-icon.blue   { background: rgba(37,99,235,0.15);   color: var(--blue-light); }  /* Biru */
+        .action-btn-icon.orange { background: rgba(249,115,22,0.15);  color: #fb923c; }            /* Oranye */
 
-        .action-btn-icon svg { width: 20px; height: 20px; }
+        .action-btn-icon svg { width: clamp(15px, 3vw, 20px); height: clamp(15px, 3vw, 20px); }
 
         .action-btn-text { flex: 1; min-width: 0; }
 
         .action-btn-title {
             font-weight: 700;
-            font-size: 0.8rem;
+            font-size: clamp(0.72rem, 1.8vw, 0.8rem);
             color: var(--text-primary);
             margin-bottom: 0.125rem;
             white-space: normal;
@@ -925,16 +957,18 @@
         }
 
         .action-btn-desc {
-            font-size: 0.65rem;
+            font-size: clamp(0.6rem, 1.5vw, 0.65rem);
             color: var(--text-muted);
         }
 
-        /* ─── CONTACT SECTION ─── */
+        /* ─── BAGIAN KONTAK ───
+           Kotak biru berisi kartu-kartu alamat surel resmi Komdigi.
+           [UBAH] Ganti href="mailto:..." dan teks surel di setiap <a class="contact-email">. */
         .contact-section {
             background: linear-gradient(135deg, rgba(37,99,235,0.12), rgba(37,99,235,0.06));
             border: 1px solid rgba(37,99,235,0.18);
             border-radius: 16px;
-            padding: 1.5rem;
+            padding: clamp(1rem, 3vw, 1.5rem);
             margin: 1.25rem 0;
             animation: slideUp 0.6s ease 0.6s both;
         }
@@ -944,7 +978,7 @@
             font-weight: 700;
             color: #93c5fd;
             margin-bottom: 1rem;
-            font-size: 0.8rem;
+            font-size: clamp(0.7rem, 1.8vw, 0.8rem);
         }
 
         .contact-grid {
@@ -957,7 +991,7 @@
             background: var(--glass);
             border: 1px solid var(--glass-border);
             border-radius: 12px;
-            padding: 0.875rem 1rem;
+            padding: clamp(0.65rem, 2vw, 0.875rem) clamp(0.75rem, 2.5vw, 1rem);
             display: flex;
             align-items: center;
             gap: 0.625rem;
@@ -981,11 +1015,11 @@
             color: var(--blue-light);
         }
 
-        .contact-icon svg { width: 16px; height: 16px; }
+        .contact-icon svg { width: clamp(12px, 2.5vw, 16px); height: clamp(12px, 2.5vw, 16px); }
         .contact-info { flex: 1; min-width: 0; }
 
         .contact-label {
-            font-size: 0.6rem;
+            font-size: clamp(0.55rem, 1.4vw, 0.6rem);
             color: var(--text-muted);
             text-transform: uppercase;
             font-weight: 700;
@@ -995,7 +1029,7 @@
         }
 
         .contact-email {
-            font-size: 0.7rem;
+            font-size: clamp(0.62rem, 1.5vw, 0.7rem);
             color: var(--blue-light);
             text-decoration: none;
             font-weight: 600;
@@ -1008,15 +1042,17 @@
 
         .contact-email:hover { color: white; }
 
-        /* ─── FOOTER ─── */
+        /* ─── FOOTER ───
+           Bagian bawah halaman berisi teks sanggahan dan tautan.
+           [UBAH] Ganti href dan teks di <a> dalam <footer> untuk mengarahkan ke situs Anda. */
         .footer {
             position: relative;
             z-index: 5;
             background: rgba(5,8,15,0.8);
             border-top: 1px solid var(--glass-border);
             text-align: center;
-            padding: 1.5rem 1rem;
-            font-size: 0.7rem;
+            padding: clamp(1rem, 3vw, 1.5rem) clamp(0.75rem, 3vw, 1rem);
+            font-size: clamp(0.62rem, 1.5vw, 0.7rem);
             color: var(--text-muted);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
@@ -1033,41 +1069,26 @@
         .footer p { margin-bottom: 0.3rem; }
 
         /*
-        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        [UBAH] KECEPATAN & URUTAN ANIMASI — Animate.css (saat load)
-        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        [UBAH] JEDA ANIMASI SAAT HALAMAN DIBUKA
+        Setiap bagian halaman muncul secara berurutan menggunakan kelas delay-1 hingga delay-7.
+        Elemen dengan delay-1 muncul paling awal, delay-7 paling akhir.
 
-        Kelas .delay-X dipakai di elemen HTML untuk mengatur
-        urutan kemunculan animasi saat halaman pertama dibuka.
-
-        Cara pakai: tambahkan class "delay-1" s/d "delay-7" ke elemen HTML
+        Cara pakai di HTML: tambahkan kelas "delay-X" pada elemen yang diinginkan.
         Contoh: <section class="animate__animated animate__fadeInUp delay-2">
 
-        Nilai dalam detik (s):
-        - Makin kecil = muncul lebih cepat / lebih awal
-        - Makin besar = muncul lebih lambat / lebih belakangan
+        [UBAH] Ubah nilai detik di bawah untuk menyesuaikan kecepatan kemunculan.
+        Semakin kecil selisih antar nilai → semakin cepat elemen muncul bergantian.
+        Contoh cepat : 0.05s, 0.1s, 0.15s | Contoh lambat : 0.2s, 0.4s, 0.6s
 
-        Urutan animasi saat ini:
-        delay-1 → Warning section  (muncul pertama, 0.1s)
-        delay-2 → Info box         (0.2s)
-        delay-3 → Report section   (0.3s)
-        delay-4 → Program images   (0.4s)
-        delay-5 → Legal section    (0.5s)
-        delay-6 → Action buttons   (0.6s)
-        delay-7 → Contact section  (muncul terakhir, 0.7s)
-
-        💡 Tips:
-        - Ubah nilai 0.1s, 0.2s, dst untuk mempercepat/memperlambat
-        - Untuk animasi lebih dramatis, perbesar jarak antar delay
-          contoh: 0.1s, 0.3s, 0.5s, 0.7s (jarak 0.2s)
-        - Untuk animasi lebih cepat & mulus, perkecil jarak antar delay
-          contoh: 0.05s, 0.1s, 0.15s, 0.2s (jarak 0.05s)
-        - Untuk matikan animasi di elemen tertentu, hapus class delay-X
-          dan class animate__animated dari elemen tersebut
+        Urutan kemunculan saat ini:
+        delay-1 → Bagian peringatan  (0.1 detik)
+        delay-2 → Kotak informasi    (0.2 detik)
+        delay-3 → Bagian laporan     (0.3 detik)
+        delay-4 → Gambar program     (0.4 detik)
+        delay-5 → Dasar hukum        (0.5 detik)
+        delay-6 → Tombol aksi        (0.6 detik)
+        delay-7 → Bagian kontak      (0.7 detik — muncul terakhir)
         */
-        /* ─── JEDA ANIMASI SAAT HALAMAN DIBUKA ───
-           Setiap elemen muncul secara berurutan. Delay-1 muncul pertama, delay-7 terakhir.
-           [UBAH] Ubah angka detik untuk mempercepat atau memperlambat urutan munculnya. */
         .delay-1 { animation-delay: 0.1s; }
         .delay-2 { animation-delay: 0.2s; }
         .delay-3 { animation-delay: 0.3s; }
@@ -1076,12 +1097,13 @@
         .delay-6 { animation-delay: 0.6s; }
         .delay-7 { animation-delay: 0.7s; }
 
-        /* ─── UKURAN RESPONSIF ───────────────────────────────────────────
-        Tampilan otomatis menyesuaikan ukuran layar dari HP kecil hingga ultrawide.
-        Menggunakan clamp() agar ukuran font dan jarak berubah mulus tanpa patah-patah.
-        ─────────────────────────────────────────────────────────────── */
+        /* ─── TATA LETAK RESPONSIF ──────────────────────────────────────────
+        Halaman otomatis menyesuaikan tampilan untuk semua ukuran layar,
+        mulai dari HP kecil (<360px) hingga layar ultrawide (>1440px).
+        Fungsi clamp() membuat ukuran teks dan jarak berubah mulus tanpa lompatan kasar.
+        ─────────────────────────────────────────────────────────────────── */
 
-        /* ── Ukuran teks & jarak dasar — berlaku di semua perangkat ── */
+        /* ── Ukuran teks dan jarak dasar — berlaku di semua perangkat, menyesuaikan lebar layar ── */
         .header-title {
             font-size: clamp(0.95rem, 3.5vw, 1.75rem);
         }
@@ -1123,7 +1145,6 @@
         /* ── HP KECIL (<360px) — Galaxy A lama, iPhone SE gen1 ── */
         @media (max-width: 359px) {
             .header-section { padding: 1.5rem 0.75rem 1.25rem; }
-            .lang-btn { padding: 0.25rem 0.5rem; font-size: 0.65rem; }
             .warning-section { padding: 1.25rem 0.875rem; }
             .warning-icon-wrap { width: 55px; height: 55px; }
             .warning-icon-wrap svg { width: 26px; height: 26px; }
@@ -1132,7 +1153,7 @@
             .action-btn-icon { width: 34px; height: 34px; }
             .contact-card { padding: 0.75rem; }
             .regulation-card { padding: 0.875rem; }
-            .category-title { font-size: 0.8rem; }
+
             .report-buttons { max-width: 100%; }
             .action-buttons { grid-template-columns: 1fr; }
             .contact-grid { grid-template-columns: 1fr; }
@@ -1227,7 +1248,7 @@
 
     <!-- Header -->
     <header class="header-section">
-        <!-- Tombol ganti bahasa (🇮🇩 ID / 🇺🇸 EN) — jangan ubah struktur ini -->
+        <!-- Tombol alih bahasa (🇮🇩 ID / 🇺🇸 EN) — jangan ubah struktur HTML ini; perubahan hanya melalui JavaScript di bawah -->
         <div class="language-switcher">
             <button class="lang-btn active" onclick="setLanguage('id')" id="btn-id" aria-label="Bahasa Indonesia">🇮🇩 ID</button>
             <button class="lang-btn" onclick="setLanguage('en')" id="btn-en" aria-label="English">🇺🇸 EN</button>
@@ -1235,9 +1256,10 @@
 
         <!--
         [UBAH] LOGO HEADER
-        Ganti URL src dengan logo Anda. Logo otomatis berganti saat bahasa diubah.
-        - Jangan hapus id="logo-img" karena dipakai oleh JavaScript.
-        - Logo bahasa Inggris diatur di bagian script bawah (cari logo.src).
+        Logo muncul di dalam lingkaran putih di bagian atas halaman.
+        - Ganti URL pada atribut src dengan logo milik Anda (ukuran ideal: 200×200 piksel).
+        - Jangan hapus id="logo-img" — atribut ini dipakai oleh JavaScript untuk mengganti logo saat bahasa diubah.
+        - Logo untuk bahasa Inggris diatur di blok JavaScript bawah (cari baris logo.src).
         -->
         <div class="logo-container animate__animated animate__fadeInDown">
             <img id="logo-img" src="https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/komdigi.webp" alt="Logo Komdigi">
@@ -1245,8 +1267,9 @@
 
         <!--
         [UBAH] JUDUL HEADER
-        - data-lang-id = teks dalam Bahasa Indonesia
-        - data-lang-en = teks dalam Bahasa Inggris
+        Teks besar yang muncul di bawah logo di bagian header.
+        - Ubah nilai data-lang-id untuk mengubah teks versi Bahasa Indonesia.
+        - Ubah nilai data-lang-en untuk mengubah teks versi Bahasa Inggris.
         -->
         <h1 class="header-title animate__animated animate__fadeInUp delay-1" data-lang-id="TRUST+Positif dari KOMDIGI" data-lang-en="TRUST+Positif by KOMDIGI/MCDA">TRUST+Positif dari KOMDIGI</h1>
     </header>
@@ -1257,10 +1280,11 @@
         <!-- Warning Section -->
         <!--
         [UBAH] BAGIAN PERINGATAN UTAMA
-        Blok pertama yang terlihat saat halaman dibuka. Berisi ikon, judul, dan label.
-        - Ubah teks: cari atribut data-lang-id (Indonesia) atau data-lang-en (Inggris)
-        - Ubah warna ikon: edit nilai --red di bagian :root CSS
-        - Matikan animasi denyut: hapus "animation: warningPulse" di CSS
+        Kartu pertama yang terlihat saat halaman dibuka. Berisi ikon, judul blokir, keterangan, dan label.
+        - Ubah teks judul: edit nilai atribut data-lang-id (Indonesia) dan data-lang-en (Inggris) di tag <h2>.
+        - Ubah teks keterangan: edit atribut data-lang-id dan data-lang-en di tag <p class="warning-subtitle">.
+        - Ubah warna ikon: ganti nilai --red di blok :root pada CSS.
+        - Matikan animasi denyut: hapus baris "animation: warningPulse..." di .warning-icon-wrap pada CSS.
         -->
         <section class="glass-card warning-section">            <div class="warning-icon-wrap">
                 <svg fill="currentColor" viewBox="0 0 20 20">
@@ -1273,10 +1297,11 @@
                Situs web yang Anda coba akses terdeteksi memuat konten negatif dan telah diblokir oleh Kementerian Komunikasi dan Digital Republik Indonesia.
             </p>
             <!--
-            [UBAH] LABEL PILL (badge kecil di bawah teks peringatan)
-            - pill-red = merah, pill-green = hijau, pill-blue = biru
-            - Tambah badge: salin satu blok <span class="pill-btn ..."> dan tempel di bawahnya
-            - Hapus badge: hapus seluruh blok <span class="pill-btn ..."> yang tidak dipakai
+            [UBAH] LABEL PILL (lencana kecil di bawah keterangan peringatan)
+            Setiap lencana memiliki warna: pill-red (merah), pill-green (hijau), pill-blue (biru).
+            - Ubah teks lencana: edit atribut data-lang-id dan data-lang-en di dalam <span>.
+            - Tambah lencana: salin satu blok <span class="pill-btn ..."> dan tempel di bawahnya.
+            - Hapus lencana: hapus seluruh blok <span class="pill-btn ..."> yang tidak diinginkan.
             -->
             <div class="pill-buttons">
                 <span class="pill-btn pill-red">
@@ -1297,10 +1322,10 @@
         <!-- Info Box -->
         <!--
         [UBAH] KOTAK INFORMASI (warna kuning)
-        Kotak penjelasan singkat tentang Internet Positif.
-        - Ubah teks: edit atribut data-lang-id dan data-lang-en
-        - Ubah warna: edit nilai --amber di bagian :root CSS
-        - Sembunyikan: tambahkan style="display:none" pada tag <div class="info-box">
+        Kotak penjelasan singkat tentang program Internet Positif dan dasar hukumnya.
+        - Ubah teks: edit atribut data-lang-id (Indonesia) dan data-lang-en (Inggris) pada tag <p>.
+        - Ubah warna: ganti nilai --amber di blok :root pada CSS.
+        - Sembunyikan kotak ini: tambahkan atribut style="display:none" pada tag <div class="info-box">.
         -->
         <div class="info-box animate__animated animate__fadeInUp delay-2">
             <div class="info-box-title">
@@ -1317,11 +1342,12 @@
         <!-- Report Section -->
         <!--
         [UBAH] BAGIAN LAPORAN KONTEN NEGATIF
-        Blok merah gelap berisi tombol-tombol untuk melapor konten.
-        - Judul & teks: ubah atribut data-lang-id / data-lang-en
-        - Gambar banner: ubah src="..." di tag <img class="report-image">
-        - Link tombol: ubah href="..." di setiap <a class="report-btn">
-        - Sembunyikan: tambahkan style="display:none" pada tag <section>
+        Kotak merah gelap berisi banner dan empat tombol laporan dengan warna berbeda.
+        - Ubah judul dan keterangan: edit atribut data-lang-id dan data-lang-en di <h3> dan <p>.
+        - Ubah gambar banner: ganti nilai src="..." pada <img class="report-image">.
+        - Ubah tautan tombol: ganti href="..." pada setiap <a class="report-btn">.
+        - Ubah teks tombol: edit atribut data-lang-id dan data-lang-en di dalam <span class="report-btn-text">.
+        - Sembunyikan seluruh bagian ini: tambahkan style="display:none" pada tag <section>.
         -->
         <section class="report-section animate__animated animate__fadeInUp delay-3">
             <h3 class="report-title" data-lang-id="🚫 Laporkan Konten Negatif" data-lang-en="🚫 Report Negative Content">🚫 Laporkan Konten Negatif</h3>
@@ -1356,12 +1382,13 @@
 
         <!-- Program Images Section -->
         <!--
-        [UBAH] GAMBAR PROGRAM INTERNET POSITIF
-        Kartu gambar program-program Komdigi. Gambar diambil dari GitHub.
-        - Tambah kartu: salin satu blok <div class="program-image-card"> dan tempel di bawahnya
-        - Hapus kartu: hapus seluruh blok <div class="program-image-card"> yang tidak dipakai
-        - Ganti gambar: ubah src="..." dengan URL gambar baru
-        - ⚠️ Kartu terakhir otomatis melebar penuh (full width)
+        [UBAH] KARTU GAMBAR PROGRAM INTERNET POSITIF
+        Susunan kartu yang menampilkan logo-logo program Komdigi. Gambar diambil dari GitHub.
+        - Tambah kartu: salin satu blok <div class="program-image-card"> dan tempel di bawahnya.
+        - Hapus kartu: hapus seluruh blok <div class="program-image-card"> yang tidak diinginkan.
+        - Ganti gambar: ubah nilai src="..." dengan URL gambar baru.
+        - Ganti label: ubah teks di dalam <div class="program-image-label">.
+        - ⚠️ Kartu paling akhir selalu otomatis melebar penuh (lebar 2 kolom).
         -->
         <section class="glass-card program-images-section animate__animated animate__fadeInUp delay-4">
             <h3 class="section-title">
@@ -1402,11 +1429,11 @@
         <!-- Legal Basis Section -->
         <!--
         [UBAH] BAGIAN DASAR HUKUM
-        Daftar undang-undang dan peraturan yang mendasari Trust+Positif.
-        Dibagi 3 kategori: Undang-Undang Utama, Peraturan Menteri, dan Peraturan Pemerintah.
+        Daftar undang-undang dan peraturan yang mendasari Trust+Positif, dibagi dalam tiga kategori:
+        Undang-Undang Utama, Peraturan Menteri, dan Peraturan Pemerintah.
 
-        Cara ubah isi kartu:
-        - Judul     → atribut data-lang-id di .regulation-title
+        Cara mengubah isi setiap kartu regulasi:
+        - Judul regulasi     → atribut data-lang-id di <div class="regulation-title">
         - Subjudul  → data-lang-id di .regulation-subtitle
         - Deskripsi → data-lang-id di .regulation-description
         - Badge     → data-lang-id di <span class="badge">
@@ -1536,7 +1563,8 @@
         Untuk ubah warna ikon tombol: ganti class "red/green/blue" di .action-btn-icon
         Untuk ubah teks: ganti data-lang-id dan data-lang-en
         Untuk ubah jumlah tombol: salin/hapus blok <a class="action-btn">
-        ⚠️ Jika hanya ada 3 tombol, tambahkan class "action-btn-last" pada tombol terakhir agar otomatis ke tengah.
+        ⚠️ Jika jumlah tombol ganjil (misal: 3 tombol), tambahkan class "action-btn-last" pada tombol terakhir
+           agar tombol tersebut otomatis berada di tengah baris bawah.
         -->
         <div class="section-title animate__animated animate__fadeInUp delay-5" style="margin-top:0.25rem;">
             <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/></svg>
@@ -1583,13 +1611,13 @@
 
         <!-- Contact Section -->
         <!--
-        [UBAH] KARTU KONTAK EMAIL
-        Blok biru berisi kartu-kartu alamat email resmi Komdigi.
-        - Ubah label: edit atribut data-lang-id di .contact-label
-        - Ubah email: edit href="mailto:..." dan teks emailnya
-        - Tambah kartu: salin satu blok <div class="contact-card"> dan tempel di bawahnya
-        - Hapus kartu: hapus seluruh blok <div class="contact-card"> yang tidak dipakai
-        - Sembunyikan: tambahkan style="display:none" pada <div class="contact-section">
+        [UBAH] KARTU KONTAK SUREL
+        Kotak biru berisi kartu-kartu alamat surel resmi Komdigi.
+        - Ubah label kartu: edit atribut data-lang-id di <div class="contact-label">.
+        - Ubah alamat surel: ganti href="mailto:..." beserta teks surelnya.
+        - Tambah kartu: salin satu blok <div class="contact-card"> dan tempel di bawahnya.
+        - Hapus kartu: hapus seluruh blok <div class="contact-card"> yang tidak diinginkan.
+        - Sembunyikan seluruh bagian: tambahkan style="display:none" pada <div class="contact-section">.
         -->
         <div class="contact-section animate__animated animate__fadeInUp delay-7">
             <div class="contact-title" data-lang-id="📧 Untuk informasi lebih lanjut, silakan menghubungi:" data-lang-en="📧 For further information, please contact:">
@@ -1621,9 +1649,10 @@
     <!-- Footer -->
     <!--
     [UBAH] FOOTER
-    - Ganti href="..." dengan tautan domain atau situs milik Anda (bisa website, media sosial, portal ISP, dll).
-    - Ganti juga teks tautan dan ikon ⭐ sesuai kebutuhan.
-    - Teks peringatan di atasnya juga bisa disesuaikan.
+    Bagian paling bawah halaman berisi teks sanggahan dan tautan.
+    - Ganti href="..." dengan tautan situs Anda (situs web, media sosial, portal ISP, dan lain-lain).
+    - Ganti teks tautan dan ikon ⭐ sesuai kebutuhan.
+    - Ubah teks sanggahan di atas tautan melalui atribut data-lang-id dan data-lang-en pada tag <p>.
     -->
     <footer class="footer">
         <p data-lang-id="⚠️ Ini bukan halaman resmi Komdigi. Proyek sumber terbuka tidak resmi, digunakan untuk tujuan pendidikan. Dapat digunakan juga untuk ISP, RT/RW Net, Router Rumah/Sekolah, dan lain-lain." 
@@ -1633,13 +1662,16 @@
         <a href="https://github.com/FarhanAbyss/trustpositif-block-page" target="_blank">⭐ GitHub — FarhanAbyss/trustpositif-block-page</a>
     </footer>
 
-    <!-- Library AOS (animasi scroll) — harus dimuat sebelum script utama di bawah -->
+    <!-- Pustaka AOS harus dimuat di sini, SEBELUM blok <script> utama di bawah, agar animasi gulir berfungsi -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         /*
         JAVASCRIPT — Sebaiknya tidak diubah kecuali Anda memahami JavaScript.
-        Fungsi setLanguage() mengganti seluruh teks halaman ke bahasa yang dipilih.
-        [UBAH] Ganti URL logo di bagian logo.src jika ingin pakai logo sendiri.
+
+        setLanguage(lang) — Fungsi yang mengganti seluruh teks halaman ke bahasa yang dipilih ('id' atau 'en').
+        Fungsi ini juga mengaktifkan/menonaktifkan tombol bahasa yang sesuai dan mengganti logo.
+
+        [UBAH] Ganti URL pada baris logo.src di bawah jika ingin menggunakan logo sendiri.
         */
         let currentLanguage = 'id';
 
@@ -1651,32 +1683,34 @@
             document.getElementById('btn-id').classList.toggle('active', lang === 'id');
             document.getElementById('btn-en').classList.toggle('active', lang === 'en');
 
-            // [UBAH] Logo berganti saat bahasa diubah — ganti URL di bawah dengan logo Anda
+            // [UBAH] Logo berganti otomatis saat bahasa diubah — ganti kedua URL di bawah dengan logo milik Anda
             const logo = document.getElementById('logo-img');
             if (lang === 'en') {
-                logo.src = 'https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/mcda.webp'; // [UBAH] URL logo bahasa Inggris
+                logo.src = 'https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/mcda.webp'; // [UBAH] Ganti dengan URL logo versi Bahasa Inggris
                 logo.alt = 'MCDA Logo';
             } else {
-                logo.src = 'https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/komdigi.webp'; // [UBAH] URL logo bahasa Indonesia
+                logo.src = 'https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/komdigi.webp'; // [UBAH] Ganti dengan URL logo versi Bahasa Indonesia
                 logo.alt = 'Logo Komdigi';
             }
         }
 
         /*
-        [UBAH] PENGATURAN ANIMASI SCROLL (AOS)
-        Elemen yang memiliki atribut data-aos="..." akan muncul dengan animasi saat digulir.
+        [UBAH] PENGATURAN ANIMASI GULIR (AOS)
+        Setiap elemen HTML yang memiliki atribut data-aos="..." akan muncul dengan animasi saat digulir ke sana.
 
-        duration → Kecepatan animasi dalam milidetik. Lebih kecil = lebih cepat.
-                   Contoh: 300 (cepat), 600 (normal ← saat ini), 1000 (lambat)
+        duration → Durasi animasi dalam milidetik. Semakin kecil, semakin cepat.
+                   Contoh: 300 (cepat), 600 (normal — nilai saat ini), 1000 (lambat)
 
-        easing   → Gaya gerakan. Pilihan: 'ease-out-cubic' (default), 'ease', 'linear'
+        easing   → Gaya gerakan animasi.
+                   Pilihan: 'ease-out-cubic' (halus & modern — default), 'ease' (standar), 'linear' (konstan)
 
-        once     → true = animasi hanya sekali (default). false = berulang setiap kali terlihat.
+        once     → Apakah animasi hanya diputar sekali.
+                   true = muncul sekali saja (default) | false = berulang setiap kali elemen masuk layar
 
-        offset   → Jarak piksel dari tepi bawah layar sebelum animasi mulai.
-                   Contoh: 0 (langsung), 60 (sedikit lebih awal ← default), 120 (lebih awal)
+        offset   → Jarak dalam piksel dari tepi bawah layar sebelum animasi dimulai.
+                   Contoh: 0 (langsung saat terlihat), 60 (sedikit lebih awal — default), 120 (lebih awal lagi)
 
-        Jenis animasi yang tersedia untuk data-aos="...":
+        Jenis animasi yang tersedia untuk atribut data-aos="...":
         fade-up, fade-down, fade-left, fade-right,
         flip-left, flip-right, zoom-in, zoom-out, slide-up, slide-down
         */
@@ -1687,7 +1721,7 @@
             offset: 60
         });
 
-        // Tampilkan halaman dalam Bahasa Indonesia saat pertama kali dibuka
+        // Pastikan halaman ditampilkan dalam Bahasa Indonesia saat pertama kali dibuka
         document.addEventListener('DOMContentLoaded', function() {
             setLanguage('id');
         });
