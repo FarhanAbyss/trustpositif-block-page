@@ -4,7 +4,7 @@
 
 # 🛡️ TRUST+Positif Block Page
 
-> Demo tidak resmi halaman blokir **TRUST+Positif** dari Komdigi. Proyek sumber terbuka tidak resmi, digunakan untuk tujuan pendidikan. Dapat digunakan juga untuk ISP, RT/RW Net, Router Rumah/Sekolah, dan lain-lain.
+> Demo tidak resmi halaman blokir **TRUST+Positif** dari Komdigi. Proyek sumber terbuka tidak resmi, digunakan untuk tujuan pendidikan. Dapat digunakan untuk ISP, RT/RW Net, Router Rumah/Sekolah, dan lain-lain.
 
 ---
 
@@ -22,34 +22,36 @@ Ini **bukan** halaman resmi Komdigi atau Kementerian Komunikasi dan Digital Repu
 
 ## ✨ Fitur
 
-- 🌙 **Mode Gelap** — Tema gelap dengan efek glassmorphism
-- 🌐 **Dwibahasa** — Mendukung Bahasa Indonesia & English (American)
-- 🇮🇩🇺🇸 **Logo Dinamis** — Logo otomatis berganti saat ganti bahasa (Komdigi ↔ MCDA)
-- 📱 **Sepenuhnya Responsif** — Mendukung semua perangkat (HP kecil hingga Ultrawide) dengan `clamp()` untuk scaling mulus
-- 🎨 **Animasi** — Menggunakan Animate.css + AOS (Animate On Scroll)
+- 🌙 **Mode Gelap** — Tema gelap dengan efek glassmorphism di seluruh elemen
+- 🌐 **Dwibahasa** — Mendukung Bahasa Indonesia & English (American) dengan sakelar bahasa
+- 🖼️ **Logo Dinamis** — Logo otomatis berganti saat ganti bahasa (Komdigi ↔ MCDA)
+- 📱 **Sepenuhnya Responsif** — Mendukung semua perangkat dari HP kecil (<360px) hingga ultrawide (>1440px) menggunakan `clamp()` untuk perubahan ukuran yang mulus
+- 🎨 **Sepenuhnya Dinamis** — Semua teks, gambar, ikon, tombol, dan jarak menyesuaikan layar secara otomatis menggunakan `clamp()`
+- ✨ **Animasi** — Menggunakan Animate.css untuk animasi saat halaman dibuka + AOS untuk animasi saat halaman digulir
 - ⚖️ **Dasar Hukum Diperbarui** — Merujuk UU No. 1 Tahun 2024 (Perubahan Kedua UU ITE), Pasal 40 ayat (2a) & (2b)
-- 🚨 **4 Tombol Laporan** — AduanKonten.id, AduanNomor.id, CekRekening.id, dan email resmi
+- 🚨 **4 Tombol Laporan** — AduanKonten.id, AduanNomor.id, CekRekening.id, dan surel resmi — masing-masing dengan warna berbeda
 - 🛑 **Stop Judi Online** — Tombol informasi pemberantasan judi daring #BersamaStopJudiOnline
-- 🖱️ **Dukungan PC/Laptop** — Cursor pointer, hover, focus & navigasi keyboard
-- 🍎 **Dukungan Safari** — Prefix `-webkit-` untuk glassmorphism
-- ♿ **Aksesibel** — `aria-label` pada tombol bahasa, blur otomatis dimatikan via `prefers-reduced-motion`
-- 🔍 **Siap SEO** — Meta tag lengkap + Open Graph untuk pratinjau sosial media & WhatsApp
-- ⚡ **Performa** — Preconnect Google Fonts, tanpa duplikasi skrip
+- 🖱️ **Dukungan PC/Laptop** — Kursor pointer, efek hover, sorotan fokus, dan navigasi papan ketik (Tab)
+- 🍎 **Dukungan Safari** — Awalan `-webkit-` untuk glassmorphism agar berfungsi di Safari (iOS & macOS)
+- ♿ **Aksesibel** — `aria-label` pada tombol bahasa; efek buram otomatis dimatikan melalui `prefers-reduced-motion`
+- 🔍 **Siap SEO** — Meta tag lengkap + Open Graph untuk pratinjau WhatsApp dan media sosial
+- ⚡ **Performa** — Preconnect Google Fonts, tanpa duplikasi skrip, tautan surel berupa teks biasa
+- 💬 **Komentar Kode Lengkap** — Setiap bagian memiliki komentar baku yang mudah dipahami bahkan oleh pemula
 
 ---
 
-## 🗂️ Struktur File
+## 🗂️ Struktur Berkas
 
-```
+```plaintext
 trustpositif-block-page/
-├── index.html              # File utama — komentar Bahasa Indonesia
-├── indexen.html            # File utama — komentar Bahasa Inggris
+├── index.html              # Berkas utama — komentar Bahasa Indonesia
+├── indexen.html            # Berkas utama — komentar Bahasa Inggris
 ├── README.md               # Dokumentasi (Bahasa Indonesia)
 ├── README.en.md            # Dokumentasi (English)
-└── (branch: image)         # Aset gambar
-    ├── komdigi.webp            # Logo Komdigi (ditampilkan saat bahasa Indonesia)
-    ├── mcda.webp               # Logo MCDA (ditampilkan saat bahasa Inggris)
-    ├── ogimage.webp            # Gambar pratinjau saat tautan dibagikan ke sosmed/WA
+└── (branch: image)         # Aset gambar — dimuat via CDN dari GitHub
+    ├── komdigi.webp            # Logo Komdigi (ditampilkan saat bahasa Indonesia aktif)
+    ├── mcda.webp               # Logo MCDA (ditampilkan saat bahasa Inggris aktif)
+    ├── ogimage.webp            # Gambar pratinjau saat tautan dibagikan ke sosial media/WhatsApp
     ├── trustpositif.webp       # Logo program TRUST+Positif
     ├── internetpositif.webp    # Logo program Internet Positif
     ├── internetsehataman.webp  # Logo program Internet Sehat dan Aman
@@ -62,29 +64,29 @@ trustpositif-block-page/
 
 ## 💬 Komentar Kode
 
-Kedua file HTML dilengkapi dengan **komentar kode yang lengkap dan mudah dipahami** — bahkan tanpa pengalaman pemrograman sebelumnya.
+Kedua berkas HTML dilengkapi dengan komentar kode yang lengkap dan mudah dipahami — bahkan tanpa pengalaman pemrograman sebelumnya.
 
-Cukup cari tag **`[UBAH]`** (ID) atau **`[EDIT]`** (EN) di dalam file untuk menemukan semua bagian yang dapat disesuaikan.
+Cari tanda **`[UBAH]`** (ID) atau **`[EDIT]`** (EN) di dalam berkas untuk menemukan semua bagian yang dapat disesuaikan.
 
-| File | Bahasa Komentar | Tautan |
-|------|----------------|--------|
-| `index.html` | 🇮🇩 Bahasa Indonesia | [Lihat File](https://github.com/FarhanAbyss/trustpositif-block-page/blob/main/index.html) |
+| Berkas | Bahasa Komentar | Tautan |
+|--------|----------------|--------|
+| `index.html` | 🇮🇩 Bahasa Indonesia | [Lihat Berkas](https://github.com/FarhanAbyss/trustpositif-block-page/blob/main/index.html) |
 | `indexen.html` | 🇺🇸 American English | [View File](https://github.com/FarhanAbyss/trustpositif-block-page/blob/main/indexen.html) |
 
-> ⚠️ **Perhatian:** Jika menggunakan `indexen.html` dan ingin mendeploy ke server/Vercel/hosting, **ubah nama file** menjadi `index.html` terlebih dahulu agar dapat diakses sebagai halaman utama.
+> ⚠️ **Perhatian:** Jika menggunakan `indexen.html` dan ingin menerapkan ke server/Vercel/hosting, ubah nama berkas menjadi `index.html` terlebih dahulu agar dapat diakses sebagai halaman utama.
 
-**Bagian yang sudah ada komentarnya:**
+**Bagian yang sudah memiliki komentar:**
 
-- 🎨 Warna tema (CSS variables)
-- 🖼️ Logo header + swap bahasa otomatis
+- 🎨 Warna tema (variabel CSS)
+- 🖼️ Logo header + pergantian bahasa otomatis
 - 📝 Semua teks dwibahasa (ID/EN)
-- 🔗 Semua tautan & email kontak
-- 🃏 Kartu program Internet Positif
-- ⚖️ Kartu dasar hukum & badge
-- 🔘 Tombol aksi (4 tombol) & label pill
-- 🚨 Tombol laporan (4 tombol)
+- 🔗 Semua tautan & alamat surel kontak
+- 🃏 Kartu gambar program Internet Positif
+- ⚖️ Kartu dasar hukum & lencana
+- 🔘 4 Tombol aksi & label pill
+- 🚨 4 Tombol laporan dengan warna berbeda
 - ⚡ Kecepatan & urutan animasi (Animate.css + AOS)
-- 📐 Breakpoint responsif semua perangkat
+- 📐 Titik putus responsif semua perangkat
 - 🔍 Meta tag SEO & Open Graph
 
 ---
@@ -94,26 +96,27 @@ Cukup cari tag **`[UBAH]`** (ID) atau **`[EDIT]`** (EN) di dalam file untuk mene
 | Teknologi | Kegunaan |
 |-----------|----------|
 | HTML5 | Struktur halaman |
-| CSS3 + `clamp()` | Styling, glassmorphism & typography responsif |
+| CSS3 + `clamp()` | Penataan, glassmorphism & tipografi responsif sepenuhnya |
 | [Animate.css](https://animate.style/) `v4.1.1` | Animasi saat halaman pertama dibuka |
 | [AOS](https://michalsnik.github.io/aos/) `v2.3.4` | Animasi saat halaman digulir |
-| [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono) | Font header & badge |
-| [Sora](https://fonts.google.com/specimen/Sora) | Font teks isi halaman |
+| [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono) | Fon header & lencana |
+| [Sora](https://fonts.google.com/specimen/Sora) | Fon teks isi halaman |
 
-> Semua pustaka & font dimuat via **CDN (Content Delivery Network)** — tidak perlu memasang apapun, cukup koneksi internet.
+> Semua pustaka dan fon dimuat via **CDN** — tidak perlu memasang apapun, cukup koneksi internet.
 
 ---
 
 ## 🖼️ Tentang Gambar
 
-Semua gambar menggunakan metode **Embedded via CDN** — gambar **tidak disimpan secara lokal** di dalam file HTML, melainkan dimuat langsung dari URL raw GitHub di branch `image`.
+Semua gambar menggunakan metode **Embedded via CDN** — gambar tidak disimpan secara lokal di dalam berkas HTML, melainkan dimuat langsung dari URL raw GitHub di branch `image`.
 
-```
+```plaintext
 https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/namafile.webp
 ```
 
 **Keuntungan metode ini:**
-- ✅ File `index.html` tetap ringan
+
+- ✅ Berkas `index.html` tetap ringan
 - ✅ Gambar dapat diperbarui tanpa mengubah `index.html`
 - ✅ Dapat dipakai ulang di proyek lain cukup dengan URL-nya
 - ⚠️ Membutuhkan koneksi internet saat pertama kali dimuat
@@ -136,19 +139,19 @@ https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads
 
 ## 📐 Breakpoint Responsif
 
-| Perangkat | Resolusi | Layout |
-|-----------|----------|--------|
-| HP kecil/jadul | < 360px | 1 kolom, font diperkecil |
+| Perangkat | Resolusi | Tata Letak |
+|-----------|----------|------------|
+| HP kecil/jadul | < 360px | 1 kolom, semua elemen diperkecil |
 | HP normal | 360px – 480px | 1 kolom vertikal |
 | HP besar | 481px – 600px | 2 kolom |
 | Tablet portrait | 601px – 768px | 2 kolom |
 | Tablet landscape | 769px – 1024px | 2 kolom |
 | Monitor 4:3 jadul | 769px – 1024px, tinggi < 800px | 2 kolom, disesuaikan |
 | Laptop / Desktop | 1025px – 1440px | 2 kolom |
-| Ultrawide | > 1440px | 4 kolom tombol aksi |
-| HP landscape | tinggi < 500px, lebar > 600px | Header kompak |
+| Ultrawide | > 1440px | 4 kolom tombol aksi, 3 kolom gambar program |
+| HP landscape | tinggi < 500px, lebar > 600px | Header kompak, 2 kolom |
 
-> Semua ukuran font dan jarak menggunakan `clamp()` agar berubah mulus tanpa lompatan kasar antar perangkat.
+> Semua ukuran teks, jarak, gambar, ikon, dan tombol menggunakan `clamp()` untuk perubahan yang mulus dan berkelanjutan di antara setiap titik putus — tanpa lompatan kasar.
 
 ---
 
@@ -158,9 +161,9 @@ Halaman ini merujuk pada peraturan perundang-undangan berikut:
 
 | Peraturan | Keterangan |
 |-----------|------------|
-| UU No. 1 Tahun 2024 | Perubahan Kedua atas UU No. 11 Tahun 2008 tentang ITE (mencabut UU No. 19 Tahun 2016) |
-| Pasal 40 ayat (2a) & (2b) | Pemerintah wajib mencegah penyebarluasan konten melanggar hukum & berwenang memutus akses |
-| Peraturan Menteri Kominfo No. 19 Tahun 2014 | Penanganan Situs Internet Bermuatan Negatif — landasan teknis Trust+Positif |
+| UU No. 1 Tahun 2024 | Perubahan Kedua atas UU No. 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik — mencabut UU No. 19 Tahun 2016 |
+| Pasal 40 ayat (2a) & (2b) | Pemerintah wajib mencegah penyebarluasan konten melanggar hukum & berwenang melakukan pemutusan akses (pemblokiran situs) |
+| Peraturan Menteri Kominfo No. 19 Tahun 2014 | Penanganan Situs Internet Bermuatan Negatif — landasan teknis Trust+Positif; mewajibkan Penyedia Layanan Internet (PLI) untuk memblokir konten negatif |
 | PP No. 71 Tahun 2019 (PP PSTE) | Penyelenggaraan Sistem dan Transaksi Elektronik |
 
 ---
