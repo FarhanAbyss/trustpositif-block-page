@@ -12,87 +12,86 @@
     ║  ⚠️  NOT an official Komdigi page. For education & ISP use.  ║
     ╚══════════════════════════════════════════════════════════════╝
 
-    📌 CUSTOMIZATION GUIDE:
-    ══════════════════════
-    Search for [EDIT] tags to find sections that need to be customized.
+    📌 CUSTOMIZATION GUIDE — Search for [EDIT] to find editable sections.
 
-    Commonly changed sections:
-    1. [EDIT] Page title             → <title> tag
-    2. [EDIT] Meta description       → <meta name="description">
-    3. [EDIT] Domain URL             → og:url
-    4. [EDIT] OG image (WA preview)  → og:image & twitter:image
-    5. [EDIT] Logo ID & EN           → src in <img id="logo-img">
-    6. [EDIT] Header title           → data-lang-id / data-lang-en
-    7. [EDIT] Contact email          → href mailto: & email text
-    8. [EDIT] Action button links    → href in action-btn
-    9. [EDIT] GitHub footer link     → href in footer
-    10.[EDIT] Theme colors           → :root CSS variables in <style>
+    Most commonly changed:
+    1.  [EDIT] Browser tab title        → <title> tag
+    2.  [EDIT] Google description       → <meta name="description">
+    3.  [EDIT] Domain URL               → og:url
+    4.  [EDIT] WhatsApp preview image   → og:image & twitter:image (ideal: 1200x630px)
+    5.  [EDIT] Logo (ID & EN)           → src in <img id="logo-img">
+    6.  [EDIT] Header title             → data-lang-id / data-lang-en attributes
+    7.  [EDIT] Contact email            → href="mailto:..." and email text
+    8.  [EDIT] Action button links      → href in each <a class="action-btn">
+    9.  [EDIT] Footer link (your domain/site) → href & text in <footer>
+    10. [EDIT] Theme colors             → CSS variables in :root
     -->
     <!-- [EDIT] Browser tab title -->
     <title>Demo Halaman Internet Positif</title>
 
-    <!-- ─── SEO META TAGS ─── -->
+    <!-- ─── SEO: page metadata for search engines ─── -->
     <!-- [EDIT] Short page description for Google -->
     <meta name="description" content="Demo tidak resmi halaman Trust Positif Komdigi — Simulasi tampilan halaman blokir situs oleh Kementerian Komunikasi dan Digital Republik Indonesia.">
     <!-- [EDIT] Google search keywords -->
     <meta name="keywords" content="Trust Positif, Komdigi, Internet Positif, Situs Diblokir, Demo, Unofficial, Blokir Internet, Konten Negatif, UU ITE">
-    <!-- [EDIT] Creator name / your ISP name -->
+    <!-- [EDIT] Your name or ISP name -->
     <meta name="author" content="Unofficial Demo">
     <meta name="robots" content="index, follow">
-    <!-- [EDIT] Mobile address bar color (match your brand color) -->
+    <!-- [EDIT] Mobile address bar color (match your brand) -->
     <meta name="theme-color" content="#b91c1c">
 
-    <!-- ─── OPEN GRAPH — Preview when link is shared to WA/FB/social media ─── -->
+    <!-- ─── OPEN GRAPH: controls the preview when this link is shared on WhatsApp or social media ─── -->
     <meta property="og:type" content="website">
     <!-- [EDIT] Your domain URL -->
     <meta property="og:url" content="https://trustpositif-internetpositif.vercel.app/">
-    <!-- [EDIT] Preview title when link is shared -->
+    <!-- [EDIT] Preview title when the link is shared -->
     <meta property="og:title" content="Demo Halaman Internet Positif — Unofficial">
-    <!-- [EDIT] Preview description when link is shared -->
+    <!-- [EDIT] Preview description when the link is shared -->
     <meta property="og:description" content="Demo tidak resmi simulasi tampilan halaman blokir Trust Positif Komdigi. Bukan halaman resmi Kementerian Komunikasi dan Digital Republik Indonesia.">
-    <!-- [EDIT] Preview image when shared to WA/social media (ideal size: 1200x630px) -->
+    <!-- [EDIT] Preview image when link is shared to WhatsApp/social media (ideal size: 1200x630px) -->
     <meta property="og:image" content="https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/ogimage.webp">
     <meta property="og:locale" content="id_ID">
     <meta property="og:site_name" content="Demo Trust Positif — Unofficial">
 
-    <!-- ─── TWITTER CARD — Preview specifically for Twitter/X ─── -->
+    <!-- ─── TWITTER CARD: controls the preview when this link is shared on Twitter/X ─── -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Demo Halaman Internet Positif — Unofficial">
     <meta name="twitter:description" content="Demo tidak resmi simulasi tampilan halaman blokir Trust Positif Komdigi. Bukan halaman resmi Kementerian Komunikasi dan Digital Republik Indonesia.">
-    <!-- [EDIT] Twitter preview image (usually same as og:image) -->
+    <!-- [EDIT] Twitter/X preview image (usually same as og:image) -->
     <meta name="twitter:image" content="https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/ogimage.webp">
 
-    <!-- ─── FONTS via CDN — IBM Plex Mono (header/badge) + Sora (body) ─── -->
+    <!-- Fonts: IBM Plex Mono for headers & badges, Sora for body text -->
+    <!-- Preconnect: speeds up font loading from Google servers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <!-- ─── ANIMATE.CSS via CDN — Animations on first page load ─── -->
+    <!-- Animate.css: entry animations that play when the page first loads -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- ─── AOS via CDN — Animations when scrolling down ─── -->
+    <!-- AOS: animates elements into view as the user scrolls down -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
     <style>
         /*
-        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        [EDIT] THEME COLORS — Change color values here
-        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        All colors are controlled via CSS variables below.
-        Simply change the hex/rgba values to change the theme.
+        [EDIT] THEME COLORS
+        Change these values to update the page's color scheme everywhere at once.
+        Example: change #e02020 to #1d4ed8 to switch from red to blue.
         */
         :root {
-            --red: #e02020;           /* Main red color (header, border, icon) */
-            --red-light: #ff3c3c;     /* Light red color (glow, icon) */
-            --red-glow: rgba(224,32,32,0.25); /* Red glow effect */
-            --navy: #0a0e1a;          /* Main background color (darkest) */
-            --navy-2: #0d1323;        /* Secondary background color */
-            --navy-3: #111827;        /* Tertiary background color */
-            --glass: rgba(255,255,255,0.045);   /* Glass effect (glassmorphism) */
-            --glass-border: rgba(255,255,255,0.08); /* Glass effect border */
-            --glass-strong: rgba(255,255,255,0.07); /* Stronger glass effect */
-            --blue: #2563eb;          /* Blue color (badge, link, contact) */
-            --blue-light: #60a5fa;    /* Light blue color */
-            --green: #10b981;         /* Green color (badge, button) */
-            --amber: #f59e0b;         /* Yellow color (info box) */
-            --text-primary: #f0f4ff;  /* Primary text color (bluish white) */
-            --text-secondary: rgba(240,244,255,0.6); /* Secondary text color */
-            --text-muted: rgba(240,244,255,0.35);    /* Muted text color */
+            --red: #e02020;           /* [EDIT] Primary red — used in header, icons, and borders */
+            --red-light: #ff3c3c;     /* Lighter red for glow effects */
+            --red-glow: rgba(224,32,32,0.25); /* Transparent red glow */
+            --navy: #0a0e1a;          /* Main page background color */
+            --navy-2: #0d1323;        /* Card and section background */
+            --navy-3: #111827;        /* Alternative background */
+            --glass: rgba(255,255,255,0.045);   /* Thin glass card effect */
+            --glass-border: rgba(255,255,255,0.08); /* Glass card border */
+            --glass-strong: rgba(255,255,255,0.07); /* Thicker glass effect */
+            --blue: #2563eb;          /* Blue for badges, links, and contact */
+            --blue-light: #60a5fa;    /* Lighter blue */
+            --green: #10b981;         /* Green for badges and buttons */
+            --amber: #f59e0b;         /* Yellow for the info box */
+            --text-primary: #f0f4ff;  /* Main text color */
+            --text-secondary: rgba(240,244,255,0.6); /* Dimmer secondary text */
+            --text-muted: rgba(240,244,255,0.55);    /* Faintest text */
         }
 
         * {
@@ -239,16 +238,15 @@
         }
 
         /*
-        [EDIT] LOGO FLOATING ANIMATION (logoFloat)
-        ════════════════════════════════════════════
-        The logo moves up and down continuously.
-        - 4s     = duration of one up-down cycle (smaller = faster)
-        - -5px   = how far the logo floats up (larger = higher float)
-        - To disable: remove "animation: logoFloat..." from .logo-container
+        [EDIT] LOGO FLOATING ANIMATION
+        The logo gently bobs up and down on a loop.
+        - Change 4s to a smaller value to speed it up, or larger to slow it down.
+        - Change -5px to a larger value to make the logo float higher.
+        - To disable: remove the "animation: logoFloat..." line from .logo-container
         */
         @keyframes logoFloat {
             0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-5px); } /* [EDIT] Logo float distance */
+            50% { transform: translateY(-5px); } /* [EDIT] How many pixels the logo floats up */
         }
 
         .logo-container img {
@@ -300,6 +298,11 @@
             -webkit-backdrop-filter: blur(12px);
         }
 
+        /* Automatically removes the blur effect for users who prefer reduced motion or on slow devices */
+        @media (prefers-reduced-motion: reduce) {
+            .glass-card { backdrop-filter: none; -webkit-backdrop-filter: none; }
+        }
+
         /* ─── WARNING SECTION ─── */
         .warning-section {
             text-align: center;
@@ -331,17 +334,15 @@
         }
 
         /*
-        [EDIT] WARNING ICON PULSE ANIMATION (warningPulse)
-        ════════════════════════════════════════════════════
-        The warning triangle icon pulses with a red glow.
-        - 2.5s   = pulse speed (smaller = faster blinking)
-        - 12px   = maximum size of the spreading glow/light
-        - rgba(224,32,32,0.3) = glow color & opacity (last number = transparency)
-        - To disable: remove "animation: warningPulse..." from .warning-icon-wrap
+        [EDIT] WARNING ICON PULSE ANIMATION
+        The warning icon pulses with a red glow to draw attention.
+        - Change 2.5s to a smaller value to make it pulse faster.
+        - Change 12px to a larger value to spread the glow wider.
+        - To disable: remove the "animation: warningPulse..." line from .warning-icon-wrap
         */
         @keyframes warningPulse {
             0%, 100% { box-shadow: 0 0 0 0 rgba(224,32,32,0.3); }
-            50% { box-shadow: 0 0 0 12px rgba(224,32,32,0); } /* [EDIT] Glow size */
+            50% { box-shadow: 0 0 0 12px rgba(224,32,32,0); } /* [EDIT] Maximum glow spread in pixels */
         }
 
         .warning-icon-wrap svg {
@@ -510,11 +511,11 @@
             border-radius: 10px;
             font-weight: 700;
             font-size: 0.875rem;
-            text-align: center;
+            text-align: left;
             text-decoration: none;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 0.6rem;
             transition: all 0.25s ease;
             backdrop-filter: blur(8px);
@@ -522,14 +523,14 @@
         }
 
         .report-btn.primary {
-            background: rgba(255,255,255,0.92);
-            color: #b91c1c;
-            border-color: white;
+            background: rgba(224,32,32,0.2);
+            border-color: rgba(224,32,32,0.4);
+            color: #fca5a5;
         }
 
         .report-btn.primary:hover {
-            background: white;
-            box-shadow: 0 4px 20px rgba(255,255,255,0.2);
+            background: rgba(224,32,32,0.35);
+            box-shadow: 0 4px 20px rgba(224,32,32,0.3);
             transform: translateY(-2px);
         }
 
@@ -538,12 +539,45 @@
             transform: translateY(-2px);
         }
 
+
+        .report-btn.blue {
+            background: rgba(37,99,235,0.2);
+            border-color: rgba(37,99,235,0.4);
+            color: #93c5fd;
+        }
+        .report-btn.blue:hover {
+            background: rgba(37,99,235,0.35);
+            box-shadow: 0 4px 20px rgba(37,99,235,0.3);
+            transform: translateY(-2px);
+        }
+
+        .report-btn.green {
+            background: rgba(16,185,129,0.2);
+            border-color: rgba(16,185,129,0.4);
+            color: #6ee7b7;
+        }
+        .report-btn.green:hover {
+            background: rgba(16,185,129,0.35);
+            box-shadow: 0 4px 20px rgba(16,185,129,0.3);
+            transform: translateY(-2px);
+        }
+
+        .report-btn.amber {
+            background: rgba(245,158,11,0.18);
+            border-color: rgba(245,158,11,0.4);
+            color: #fcd34d;
+        }
+        .report-btn.amber:hover {
+            background: rgba(245,158,11,0.32);
+            box-shadow: 0 4px 20px rgba(245,158,11,0.25);
+            transform: translateY(-2px);
+        }
         .report-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
 
         .report-btn-text {
-            white-space: normal;
-            overflow: visible;
-            word-break: break-all;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             font-size: 0.8rem;
         }
 
@@ -874,6 +908,7 @@
         .action-btn-icon.red { background: rgba(224,32,32,0.15); color: var(--red-light); }
         .action-btn-icon.green { background: rgba(16,185,129,0.15); color: #34d399; }
         .action-btn-icon.blue { background: rgba(37,99,235,0.15); color: var(--blue-light); }
+        .action-btn-icon.orange { background: rgba(249,115,22,0.15); color: #fb923c; }
 
         .action-btn-icon svg { width: 20px; height: 20px; }
 
@@ -999,163 +1034,159 @@
 
         /*
         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        [EDIT] ANIMATION SPEED & ORDER — Animate.css (on page load)
-        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-        The .delay-X classes are used on HTML elements to control
-        the order of appearance when the page first loads.
-
-        Usage: add class "delay-1" through "delay-7" to HTML elements
-        Example: <section class="animate__animated animate__fadeInUp delay-2">
-
-        Values in seconds (s):
-        - Smaller = appears faster / earlier
-        - Larger  = appears slower / later
-
-        Current animation order:
-        delay-1 → Warning section  (appears first, 0.1s)
-        delay-2 → Info box         (0.2s)
-        delay-3 → Report section   (0.3s)
-        delay-4 → Program images   (0.4s)
-        delay-5 → Legal section    (0.5s)
-        delay-6 → Action buttons   (0.6s)
-        delay-7 → Contact section  (appears last, 0.7s)
-
-        💡 Tips:
-        - For more dramatic animation, increase the gap between delays
-          example: 0.1s, 0.3s, 0.5s, 0.7s (0.2s gap)
-        - For faster & smoother animation, decrease the gap between delays
-          example: 0.05s, 0.1s, 0.15s, 0.2s (0.05s gap)
-        - To disable animation on a specific element, remove class delay-X
-          and class animate__animated from that element
+        [EDIT] PAGE LOAD ANIMATION DELAYS
+        Elements appear one by one in sequence. delay-1 appears first, delay-7 last.
+        Change the seconds to control how quickly each element appears.
         */
-        /* ─── ANIMATE.CSS CUSTOM DELAYS ─── */
-        .delay-1 { animation-delay: 0.1s; } /* First element appears */
-        .delay-2 { animation-delay: 0.2s; } /* Second element appears */
-        .delay-3 { animation-delay: 0.3s; } /* Third element appears */
-        .delay-4 { animation-delay: 0.4s; } /* Fourth element appears */
-        .delay-5 { animation-delay: 0.5s; } /* Fifth element appears */
-        .delay-6 { animation-delay: 0.6s; } /* Sixth element appears */
-        .delay-7 { animation-delay: 0.7s; } /* Seventh element appears */
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+        .delay-5 { animation-delay: 0.5s; }
+        .delay-6 { animation-delay: 0.6s; }
+        .delay-7 { animation-delay: 0.7s; }
 
-        /* ─── RESPONSIVE BREAKPOINTS ───────────────────────────────────
-        Display settings for various screen sizes.
-        Ordered from WIDEST to NARROWEST screen.
-
-        How to read: @media (min-width: X) = applies to screens X wide and above
-                     @media (max-width: X) = applies to screens X wide and below
-
-        ⚠️ Do not change the order of these media queries unless you understand CSS cascade!
+        /* ─── RESPONSIVE LAYOUT ─────────────────────────────────────────
+        Automatically adjusts layout for all screen sizes, from small phones to ultrawide monitors.
+        Uses clamp() so font sizes and spacing scale smoothly without abrupt jumps.
         ─────────────────────────────────────────────────────────────── */
 
-        /* Ultrawide 21:9 (>1400px) - 3 columns horizontal */
-        @media (min-width: 1400px) {
-            .action-buttons { grid-template-columns: repeat(3, 1fr); }
-            .action-btn-last { grid-column: auto; max-width: 100%; margin: 0; }
+        /* ── Base font sizes and spacing — applies to all devices ── */
+        .header-title {
+            font-size: clamp(0.95rem, 3.5vw, 1.75rem);
+        }
+        .header-subtitle {
+            font-size: clamp(0.6rem, 1.5vw, 0.75rem);
+            letter-spacing: clamp(2px, 1vw, 5px);
+        }
+        .warning-title {
+            font-size: clamp(0.95rem, 3vw, 1.4rem);
+        }
+        .warning-subtitle {
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
+        }
+        .section-title {
+            font-size: clamp(0.85rem, 2.2vw, 1rem);
+        }
+        .report-title {
+            font-size: clamp(0.95rem, 2.5vw, 1.2rem);
+        }
+        .action-btn-title {
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
+        }
+        .action-btn-desc {
+            font-size: clamp(0.65rem, 1.5vw, 0.75rem);
+        }
+        .pill-btn {
+            font-size: clamp(0.6rem, 1.5vw, 0.7rem);
+            padding: clamp(0.4rem, 1vw, 0.55rem) clamp(0.75rem, 2vw, 1.25rem);
+        }
+        .logo-container {
+            width: clamp(70px, 18vw, 130px);
+            height: clamp(70px, 18vw, 130px);
+        }
+        .main-content {
+            max-width: clamp(320px, 95vw, 680px);
+            padding: clamp(0.75rem, 3vw, 2rem) clamp(0.75rem, 3vw, 1.5rem) clamp(2rem, 6vw, 4rem);
         }
 
-        /* Large desktop (>900px) - 2 columns, 1 centered below */
-        @media (min-width: 900px) and (max-width: 1399px) {
-            .main-content { padding: 2rem 1.5rem 4rem; }
-            .header-title { font-size: 1.75rem; }
-            .logo-container { width: 130px; height: 130px; }
-            .warning-title { font-size: 1.5rem; }
-            .program-images-grid { grid-template-columns: repeat(2, 1fr); }
-            .action-buttons { grid-template-columns: repeat(2, 1fr); }
-            .action-btn-last { grid-column: 1 / -1; max-width: 50%; margin: 0 auto; }
-        }
-
-        @media (min-width: 900px) {
-            .main-content { padding: 2rem 1.5rem 4rem; }
-            .header-title { font-size: 1.75rem; }
-            .logo-container { width: 130px; height: 130px; }
-            .warning-title { font-size: 1.5rem; }
-            .program-images-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-
-        /* 4:3 Old monitor - 1024x768 */
-        @media (min-width: 769px) and (max-width: 1024px) and (max-height: 800px) {
-            .main-content { padding: 1.25rem 1.5rem 3rem; max-width: 700px; }
-            .header-title { font-size: 1.2rem; }
-            .logo-container { width: 90px; height: 90px; }
-            .warning-title { font-size: 1.1rem; }
-            .program-images-grid { grid-template-columns: repeat(2, 1fr); }
-            .action-buttons { grid-template-columns: repeat(2, 1fr); }
-            .action-btn-last { grid-column: 1 / -1; max-width: 50%; margin: 0 auto; }
-            .contact-grid { grid-template-columns: repeat(2, 1fr); }
-            .pill-btn { font-size: 0.65rem; padding: 0.45rem 1rem; }
-        }
-
-        /* 4:3 Small old monitor - 800x600 */
-        @media (min-width: 769px) and (max-width: 900px) and (max-height: 650px) {
-            .main-content { padding: 1rem 1.25rem 2.5rem; max-width: 580px; }
-            .header-section { padding: 1.5rem 1rem; }
-            .header-title { font-size: 1rem; letter-spacing: 1px; }
-            .logo-container { width: 75px; height: 75px; }
-            .warning-title { font-size: 1rem; }
-            .warning-subtitle { font-size: 0.75rem; }
-            .warning-section { padding: 1.25rem 1rem; }
-            .program-images-grid { grid-template-columns: repeat(2, 1fr); }
-            .action-buttons { grid-template-columns: 1fr; }
-            .action-btn-last { grid-column: auto; max-width: 100%; margin: 0; }
-            .contact-grid { grid-template-columns: 1fr; }
-            .section-title { font-size: 0.875rem; }
-            .pill-btn { font-size: 0.6rem; padding: 0.4rem 0.875rem; }
-            .report-section { padding: 1rem; }
-        }
-
-        /* Tablet (481px - 768px) */
-        @media (min-width: 481px) and (max-width: 768px) {
-            .main-content { padding: 1.25rem 1.25rem 3rem; }
-            .header-title { font-size: 1.3rem; }
-            .logo-container { width: 100px; height: 100px; }
-            .program-images-grid { grid-template-columns: repeat(2, 1fr); }
-            .action-buttons { grid-template-columns: repeat(2, 1fr); }
-            .action-btn-last { grid-column: 1 / -1; max-width: 50%; margin: 0 auto; }
-            .contact-grid { grid-template-columns: repeat(2, 1fr); }
-            .pill-buttons { flex-direction: row; flex-wrap: wrap; }
-        }
-
-        /* Normal mobile (360px - 480px) */
-        @media (max-width: 480px) {
-            .main-content { padding: 1rem 0.875rem 3rem; }
-            .header-section { padding: 2rem 1rem 1.75rem; }
-            .header-title { font-size: 1.1rem; letter-spacing: 1px; }
-            .header-subtitle { font-size: 0.65rem; letter-spacing: 3px; }
-            .logo-container { width: 100px; height: 100px; }
-            .warning-title { font-size: 1.05rem; }
-            .warning-subtitle { font-size: 0.78rem; }
-            .warning-section { padding: 1.5rem 1rem; }
-            .action-buttons { grid-template-columns: 1fr; }
-            .action-btn-last { grid-column: auto; max-width: 100%; margin: 0; width: 100%; }
-            .contact-grid { grid-template-columns: 1fr; }
-            .program-images-grid { grid-template-columns: 1fr; }
-            .program-images-grid .program-image-card:last-child { grid-column: auto; }
-            .section-title { font-size: 0.9rem; }
-            .report-section { padding: 1.25rem 1rem; }
-            .contact-section { padding: 1.25rem 1rem; }
-        }
-
-        /* Small / old mobile (<360px) */
-        @media (max-width: 360px) {
-            .main-content { padding: 0.75rem 0.75rem 2.5rem; }
-            .header-title { font-size: 0.95rem; letter-spacing: 0.5px; }
-            .header-subtitle { font-size: 0.6rem; letter-spacing: 2px; }
-            .logo-container { width: 80px; height: 80px; }
+        /* ── Small phones (<360px) — old Galaxy A, iPhone SE gen1 ── */
+        @media (max-width: 359px) {
+            .header-section { padding: 1.5rem 0.75rem 1.25rem; }
             .lang-btn { padding: 0.25rem 0.5rem; font-size: 0.65rem; }
             .warning-section { padding: 1.25rem 0.875rem; }
             .warning-icon-wrap { width: 55px; height: 55px; }
             .warning-icon-wrap svg { width: 26px; height: 26px; }
-            .warning-title { font-size: 0.95rem; }
-            .pill-btn { font-size: 0.65rem; padding: 0.45rem 0.875rem; }
-            .report-btn { font-size: 0.8rem; padding: 0.75rem 1rem; }
+            .report-btn { padding: 0.75rem 1rem; }
             .action-btn { padding: 0.75rem; gap: 0.5rem; }
             .action-btn-icon { width: 34px; height: 34px; }
-            .action-btn-title { font-size: 0.75rem; }
             .contact-card { padding: 0.75rem; }
             .regulation-card { padding: 0.875rem; }
-            .section-title { font-size: 0.85rem; }
             .category-title { font-size: 0.8rem; }
+            .report-buttons { max-width: 100%; }
+            .action-buttons { grid-template-columns: 1fr; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .program-images-grid { grid-template-columns: 1fr; }
+            .program-images-grid .program-image-card:last-child { grid-column: auto; }
+        }
+
+        /* ── Normal phones (360px–480px) — Galaxy S, iPhone 14 ── */
+        @media (min-width: 360px) and (max-width: 480px) {
+            .header-section { padding: 2rem 1rem 1.75rem; }
+            .warning-section { padding: 1.5rem 1rem; }
+            .report-section { padding: 1.25rem 1rem; }
+            .contact-section { padding: 1.25rem 1rem; }
+            .report-buttons { max-width: 100%; }
+            .action-buttons { grid-template-columns: 1fr; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .program-images-grid { grid-template-columns: 1fr; }
+            .program-images-grid .program-image-card:last-child { grid-column: auto; }
+        }
+
+        /* ── Large phones (481px–600px) — iPhone 14 Pro Max ── */
+        @media (min-width: 481px) and (max-width: 600px) {
+            .action-buttons { grid-template-columns: repeat(2, 1fr); }
+            .contact-grid { grid-template-columns: repeat(2, 1fr); }
+            .program-images-grid { grid-template-columns: repeat(2, 1fr); }
+            .report-buttons { max-width: 420px; }
+            .pill-buttons { flex-direction: row; flex-wrap: wrap; }
+        }
+
+        /* ── Tablet portrait (601px–768px) — iPad mini portrait ── */
+        @media (min-width: 601px) and (max-width: 768px) {
+            .main-content { max-width: 600px; padding: 1.25rem 1.5rem 3rem; }
+            .header-section { padding: 2.5rem 2rem 2rem; }
+            .action-buttons { grid-template-columns: repeat(2, 1fr); }
+            .contact-grid { grid-template-columns: repeat(2, 1fr); }
+            .program-images-grid { grid-template-columns: repeat(2, 1fr); }
+            .report-buttons { max-width: 460px; }
+            .pill-buttons { flex-direction: row; flex-wrap: wrap; }
+        }
+
+        /* ── Tablet landscape (769px–1024px) — iPad landscape ── */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .main-content { max-width: 700px; padding: 1.5rem 2rem 3.5rem; }
+            .header-section { padding: 2.5rem 2rem 2rem; }
+            .action-buttons { grid-template-columns: repeat(2, 1fr); }
+            .contact-grid { grid-template-columns: repeat(2, 1fr); }
+            .program-images-grid { grid-template-columns: repeat(2, 1fr); }
+            .report-buttons { max-width: 500px; }
+        }
+
+        /* Old 4:3 monitor (769px–1024px, height <800px) */
+        @media (min-width: 769px) and (max-width: 1024px) and (max-height: 800px) {
+            .main-content { max-width: 680px; padding: 1.25rem 1.5rem 3rem; }
+        }
+
+        /* ── Laptop / Desktop (1025px–1440px) ── */
+        @media (min-width: 1025px) and (max-width: 1440px) {
+            .main-content { max-width: 720px; padding: 2rem 1.5rem 4rem; }
+            .action-buttons { grid-template-columns: repeat(2, 1fr); }
+            .program-images-grid { grid-template-columns: repeat(2, 1fr); }
+            .contact-grid { grid-template-columns: repeat(2, 1fr); }
+            .report-buttons { max-width: 520px; }
+        }
+
+        /* ── Ultrawide (>1440px) — 4 columns horizontal ── */
+        @media (min-width: 1441px) {
+            .main-content { max-width: 800px; padding: 2.5rem 2rem 5rem; }
+            .action-buttons { grid-template-columns: repeat(4, 1fr); }
+            .program-images-grid { grid-template-columns: repeat(3, 1fr); }
+            .contact-grid { grid-template-columns: repeat(2, 1fr); }
+            .report-buttons { max-width: 600px; }
+            .header-section { padding: 3rem 2rem 2.5rem; }
+        }
+
+        /* ── Phone landscape (height <500px, width >600px) ── */
+        @media (max-height: 500px) and (min-width: 601px) and (orientation: landscape) {
+            .header-section { padding: 1.25rem 1rem 1rem; }
+            .logo-container { width: 60px; height: 60px; }
+            .main-content { padding: 1rem 1.5rem 2rem; }
+            .warning-section { padding: 1rem; }
+            .warning-icon-wrap { width: 50px; height: 50px; }
+            .action-buttons { grid-template-columns: repeat(2, 1fr); }
+            .contact-grid { grid-template-columns: repeat(2, 1fr); }
+            .program-images-grid { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
 </head>
@@ -1166,18 +1197,17 @@
 
     <!-- Header -->
     <header class="header-section">
-        <!-- Language switch button ID/EN — do not change the structure -->
-        <div class="language-switcher">            <button class="lang-btn active" onclick="setLanguage('id')" id="btn-id">🇮🇩 ID</button>
-            <button class="lang-btn" onclick="setLanguage('en')" id="btn-en">🇬🇧 EN</button>
+        <!-- Language toggle (🇮🇩 ID / 🇺🇸 EN) — do not change the structure -->
+        <div class="language-switcher">
+            <button class="lang-btn active" onclick="setLanguage('id')" id="btn-id" aria-label="Bahasa Indonesia">🇮🇩 ID</button>
+            <button class="lang-btn" onclick="setLanguage('en')" id="btn-en" aria-label="English">🇺🇸 EN</button>
         </div>
 
         <!--
         [EDIT] HEADER LOGO
-        ══════════════════
-        - id="logo-img" must NOT be removed (used by JS to swap logo when changing language)
-        - Replace src URL with your own logo
-        - logo-id  = displayed when Indonesian language is active
-        - logo-en  = displayed when English language is active (changed via JS below)
+        Replace the src URL with your own logo. The logo swaps automatically when the language changes.
+        - Do not remove id="logo-img" — it is required by the JavaScript below.
+        - The English logo URL is set in the script section (look for logo.src).
         -->
         <div class="logo-container animate__animated animate__fadeInDown">
             <img id="logo-img" src="https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/komdigi.webp" alt="Logo Komdigi">
@@ -1185,10 +1215,8 @@
 
         <!--
         [EDIT] HEADER TITLE
-        ═══════════════════
-        - data-lang-id = text when Indonesian language is active
-        - data-lang-en = text when English language is active
-        - Text between tags = default text (Indonesian)
+        - data-lang-id = text displayed in Indonesian
+        - data-lang-en = text displayed in English
         -->
         <h1 class="header-title animate__animated animate__fadeInUp delay-1" data-lang-id="TRUST+Positif dari KOMDIGI" data-lang-en="TRUST+Positif by KOMDIGI/MCDA">TRUST+Positif dari KOMDIGI</h1>
     </header>
@@ -1199,13 +1227,10 @@
         <!-- Warning Section -->
         <!--
         [EDIT] MAIN WARNING SECTION
-        ════════════════════════════
-        The first section users see when the page opens.
-        Contains warning icon, title, description, and pill badges.
-
-        To change text: find data-lang-id (ID) and data-lang-en (EN)
-        To change icon color: edit --red in CSS variables :root
-        To disable pulse animation: remove "animation: warningPulse" from CSS
+        The first block visible when the page loads. Contains the icon, title, and labels.
+        - Change text: edit the data-lang-id (Indonesian) or data-lang-en (English) attributes
+        - Change icon color: edit the --red value in the :root CSS section
+        - Disable pulse animation: remove "animation: warningPulse" from the CSS
         -->
         <section class="glass-card warning-section">            <div class="warning-icon-wrap">
                 <svg fill="currentColor" viewBox="0 0 20 20">
@@ -1213,21 +1238,15 @@
                 </svg>
             </div>
             <h2 class="warning-title" data-lang-id="⚠️ Situs Ini Diblokir" data-lang-en="⚠️ This Site Is Blocked">⚠️ Situs Ini Diblokir</h2>
-            <p class="warning-subtitle" data-lang-id="Website yang Anda coba akses terdeteksi mengandung konten negatif dan diblokir oleh Kementerian Komunikasi dan Digital Republik Indonesia." 
-               data-lang-en="The website you are trying to access has been detected as containing negative content and is blocked by the Ministry of Communications and Digital Affairs of the Republic of Indonesia.">
-               Website yang Anda coba akses terdeteksi mengandung konten negatif dan diblokir oleh Kementerian Komunikasi dan Digital Republik Indonesia.
+            <p class="warning-subtitle" data-lang-id="Situs web yang Anda coba akses terdeteksi memuat konten negatif dan telah diblokir oleh Kementerian Komunikasi dan Digital Republik Indonesia." 
+               data-lang-en="The website you are trying to access has been identified as containing harmful content and has been blocked by the Ministry of Communication and Digital Affairs of the Republic of Indonesia.">
+               Situs web yang Anda coba akses terdeteksi memuat konten negatif dan telah diblokir oleh Kementerian Komunikasi dan Digital Republik Indonesia.
             </p>
             <!--
-            [EDIT] PILL BADGES / LABEL BUTTONS
-            ════════════════════════════════════
-            Small pill-shaped badges below the warning description.
-            - pill-red   = red color (blocked content)
-            - pill-green = green color (positive internet)
-            - pill-blue  = blue color (digital security)
-
-            To add a new badge: copy a <span class="pill-btn pill-xxx"> block
-            To remove a badge: delete the entire unwanted <span> block
-            To change color: replace pill-red/green/blue or create a new class in CSS
+            [EDIT] PILL LABELS (small badges below the warning text)
+            - pill-red = red, pill-green = green, pill-blue = blue
+            - Add a badge: copy one <span class="pill-btn ..."> block and paste it below
+            - Remove a badge: delete the entire <span class="pill-btn ..."> block you don't need
             -->
             <div class="pill-buttons">
                 <span class="pill-btn pill-red">
@@ -1247,12 +1266,11 @@
 
         <!-- Info Box -->
         <!--
-        [EDIT] INFORMATION BOX (yellow/amber)
-        ══════════════════════════════════════
-        Information box about Internet Positif with a yellow left border.
-        - Change text in data-lang-id and data-lang-en
-        - To change color: edit --amber in CSS variables :root
-        - To hide: add style="display:none" to <div class="info-box">
+        [EDIT] INFO BOX (yellow)
+        A brief explanation box about Internet Positif.
+        - Change text: edit the data-lang-id and data-lang-en attributes
+        - Change color: edit the --amber value in the :root CSS section
+        - Hide it: add style="display:none" to the <div class="info-box"> tag
         -->
         <div class="info-box animate__animated animate__fadeInUp delay-2">
             <div class="info-box-title">
@@ -1260,33 +1278,27 @@
                 <span>Internet Positif</span>
             </div>
             <p class="info-box-text" 
-               data-lang-id="Internet Positif adalah program pemerintah untuk membersihkan ruang digital supaya konten positif yang mendominasi. Semua regulasi ini fokus pada pemblokiran konten negatif (judi, pornografi, penipuan, hoax, malware, dll) sesuai Pasal 40 UU ITE." 
-               data-lang-en="Internet Positif is a government program to clean up digital space so that positive content dominates. All regulations focus on blocking negative content (gambling, pornography, fraud, hoaxes, malware, etc.) according to Article 40 of the ITE Law.">
-               Internet Positif adalah program pemerintah untuk membersihkan ruang digital supaya konten positif yang mendominasi. Semua regulasi ini fokus pada pemblokiran konten negatif (judi, pornografi, penipuan, hoax, malware, dll) sesuai Pasal 40 UU ITE.
+               data-lang-id="Internet Positif adalah program pemerintah untuk menata ruang digital agar konten positif yang mendominasi. Semua peraturan ini berfokus pada pemblokiran konten negatif (perjudian, pornografi, penipuan, hoaks, perangkat lunak berbahaya, dll.) sesuai Pasal 40 ayat (2a) UU ITE No. 1 Tahun 2024." 
+               data-lang-en="Internet Positif is a government program to cultivate a cleaner digital environment where positive content prevails. All regulations focus on blocking harmful content (gambling, pornography, fraud, hoaxes, malware, etc.) in accordance with Article 40(2a) of the EIT Law (Law No. 1 of 2024).">
+               Internet Positif adalah program pemerintah untuk menata ruang digital agar konten positif yang mendominasi. Semua peraturan ini berfokus pada pemblokiran konten negatif (perjudian, pornografi, penipuan, hoaks, perangkat lunak berbahaya, dll.) sesuai Pasal 40 ayat (2a) UU ITE No. 1 Tahun 2024.
             </p>
         </div>
 
         <!-- Report Section -->
         <!--
         [EDIT] REPORT NEGATIVE CONTENT SECTION
-        ════════════════════════════════════════
-        Dark red section for reporting negative content.
-
-        What can be changed:
-        - Title & subtitle        → data-lang-id / data-lang-en in h3 and p
-        - Banner image            → src="..." in <img class="report-image">
-        - "Report" button (white) → href="..." replace with your report URL
-        - Email button (dark)     → href="mailto:..." replace with your email
-        - Email text              → text inside <span class="report-btn-text">
-
-        To hide this section: add style="display:none" to <section>
+        Dark red block containing buttons to report harmful content.
+        - Title & text: edit the data-lang-id / data-lang-en attributes
+        - Banner image: change src="..." on the <img class="report-image"> tag
+        - Button links: change href="..." on each <a class="report-btn">
+        - Hide it: add style="display:none" to the <section> tag
         -->
         <section class="report-section animate__animated animate__fadeInUp delay-3">
             <h3 class="report-title" data-lang-id="🚫 Laporkan Konten Negatif" data-lang-en="🚫 Report Negative Content">🚫 Laporkan Konten Negatif</h3>
             <p class="report-subtitle" 
-               data-lang-id="Temukan situs atau konten yang melanggar aturan? Laporkan sekarang!" 
-               data-lang-en="Found a site or content that violates regulations? Report now!">
-               Temukan situs atau konten yang melanggar aturan? Laporkan sekarang!
+               data-lang-id="Menemukan situs atau konten yang melanggar ketentuan? Laporkan sekarang!" 
+               data-lang-en="Found a site or content that violates regulations? Report it now!">
+               Menemukan situs atau konten yang melanggar ketentuan? Laporkan sekarang!
             </p>
             <img src="https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/laporaduankonten.webp" 
                  alt="Lapor Aduan Konten" class="report-image">
@@ -1295,12 +1307,18 @@
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/>
                     </svg>
-                    <span class="report-btn-text" data-lang-id="Lapor di AduanKonten.id" data-lang-en="Report at AduanKonten.id">Lapor di AduanKonten.id</span>
+                    <span class="report-btn-text" data-lang-id="AduanKonten.id — Lapor Konten Negatif" data-lang-en="AduanKonten.id — Report Negative Content">AduanKonten.id — Lapor Konten Negatif</span>
                 </a>
-                <a href="mailto:aduankonten@mail.komdigi.go.id" class="report-btn secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
-                    </svg>
+                <a href="https://aduannomor.id" target="_blank" class="report-btn blue">
+                    <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+                    <span class="report-btn-text" data-lang-id="AduanNomor.id — Periksa/Laporkan Nomor" data-lang-en="AduanNomor.id — Check/Report a Number">AduanNomor.id — Periksa/Laporkan Nomor</span>
+                </a>
+                <a href="https://cekrekening.id/" target="_blank" class="report-btn green">
+                    <svg fill="currentColor" viewBox="0 0 20 20"><path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"/><path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"/></svg>
+                    <span class="report-btn-text" data-lang-id="CekRekening.id — Periksa/Laporkan Rekening Bank" data-lang-en="CekRekening.id — Check/Report Bank Accounts">CekRekening.id — Periksa/Laporkan Rekening Bank</span>
+                </a>
+                <a href="mailto:aduankonten@mail.komdigi.go.id" class="report-btn amber">
+                    <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
                     <span class="report-btn-text">aduankonten@mail.komdigi.go.id</span>
                 </a>
             </div>
@@ -1309,16 +1327,11 @@
         <!-- Program Images Section -->
         <!--
         [EDIT] POSITIVE INTERNET PROGRAM IMAGES
-        ════════════════════════════════════════
-        All images are loaded via CDN from the "image" branch on GitHub.
-        URL format: https://raw.githubusercontent.com/USERNAME/REPO/refs/heads/image/FILENAME.webp
-
-        To add/remove program cards:
-        - Copy/delete the <div class="program-image-card"> block as needed
-        - Replace src="..." with your image URL
-        - Replace text in <div class="program-image-label"> with your program name
-
-        ⚠️ The last card automatically stretches full width thanks to CSS grid.
+        Image cards showcasing Komdigi's programs. Images are loaded from GitHub.
+        - Add a card: copy one <div class="program-image-card"> block and paste it below
+        - Remove a card: delete the entire <div class="program-image-card"> block
+        - Replace image: change src="..." with your new image URL
+        - ⚠️ The last card always stretches to full width automatically
         -->
         <section class="glass-card program-images-section animate__animated animate__fadeInUp delay-4">
             <h3 class="section-title">
@@ -1360,33 +1373,18 @@
         <!--
         [EDIT] LEGAL BASIS SECTION
         ═══════════════════════════
-        Contains the list of laws and regulations underlying Trust+Positif.
-        Consists of 3 categories: Main Laws, Ministerial Regulations, and Government Regulations.
+        Lists the laws and regulations that form the legal foundation of Trust+Positif.
+        Divided into 3 categories: Main Laws, Ministerial Regulations, and Government Regulations.
 
-        Structure of each regulation card:
-        ┌─────────────────────────────────────────┐
-        │ [Icon] Regulation Title                 │
-        │        Subtitle/description             │
-        │                                         │
-        │ Long regulation description...          │
-        │                                         │
-        │ [Badge 1] [Badge 2]                     │
-        └─────────────────────────────────────────┘
+        How to edit a card:
+        - Title       → data-lang-id attribute in .regulation-title
+        - Subtitle    → data-lang-id attribute in .regulation-subtitle
+        - Description → data-lang-id attribute in .regulation-description
+        - Badge text  → data-lang-id in <span class="badge">
+        - Badge color → change badge-red / badge-blue / badge-green
 
-        How to edit card content:
-        - Title       → data-lang-id in .regulation-title
-        - Subtitle    → data-lang-id in .regulation-subtitle
-        - Description → data-lang-id in .regulation-description
-        - Badge       → data-lang-id in <span class="badge">
-
-        Badge colors:
-        - badge-red   = red (important/primary)
-        - badge-blue  = blue (informational)
-        - badge-green = green (positive/foundational)
-
-        To add a new card: copy the entire <div class="category-group"> block
+        To add a card: copy one <div class="category-group"> block and paste it below
         To remove a card: delete the entire <div class="category-group"> block
-        To toggle highlight: add/remove class "highlight" from .regulation-card
         -->
         <section class="legal-section animate__animated animate__fadeInUp delay-5">
             <h3 class="section-title">
@@ -1397,9 +1395,9 @@
             <div class="section-header-box">
                 <div class="section-header-title" data-lang-id="📜 Daftar Lengkap Undang-Undang & Peraturan Resmi" data-lang-en="📜 Complete List of Laws & Official Regulations">📜 Daftar Lengkap Undang-Undang & Peraturan Resmi</div>
                 <div class="section-header-text" 
-                     data-lang-id="Dasar hukum Trust+Positif untuk menciptakan internet sehat/positif di Indonesia." 
-                     data-lang-en="Legal basis of Trust+Positif to create a healthy/positive internet in Indonesia.">
-                     Dasar hukum Trust+Positif untuk menciptakan internet sehat/positif di Indonesia.
+                     data-lang-id="Dasar hukum Trust+Positif untuk menciptakan internet yang sehat dan positif di Indonesia." 
+                     data-lang-en="The legal framework underpinning Trust+Positif to foster a healthy and positive internet environment in Indonesia.">
+                     Dasar hukum Trust+Positif untuk menciptakan internet yang sehat dan positif di Indonesia.
                 </div>
             </div>
 
@@ -1413,17 +1411,17 @@
                     <div class="regulation-header">
                         <svg class="regulation-icon" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                         <div>
-                            <div class="regulation-title" data-lang-id="UU No. 19 Tahun 2016 tentang Perubahan atas UU No. 11 Tahun 2008 tentang ITE" data-lang-en="Law Number 19 of 2016 concerning Amendment to Law Number 11 of 2008 concerning ITE">UU No. 19 Tahun 2016 tentang Perubahan atas UU No. 11 Tahun 2008 tentang ITE</div>
-                            <div class="regulation-subtitle" data-lang-id="Landasan hukum utama Trust+Positif" data-lang-en="Main legal basis of Trust+Positif">Landasan hukum utama Trust+Positif</div>
+                            <div class="regulation-title" data-lang-id="UU No. 1 Tahun 2024 tentang Perubahan Kedua atas UU No. 11 Tahun 2008 tentang ITE (mencabut UU No. 19 Tahun 2016)" data-lang-en="Law No. 1 of 2024 on the Second Amendment to Law No. 11 of 2008 on Electronic Information and Transactions (EIT Law, superseding Law No. 19 of 2016)">UU No. 1 Tahun 2024 tentang Perubahan Kedua atas UU No. 11 Tahun 2008 tentang ITE (mencabut UU No. 19 Tahun 2016)</div>
+                            <div class="regulation-subtitle" data-lang-id="Landasan hukum utama Trust+Positif" data-lang-en="Primary legal foundation of Trust+Positif">Landasan hukum utama Trust+Positif</div>
                         </div>
                     </div>
                     <p class="regulation-description" 
-                       data-lang-id="Pasal 40 — Memberikan kewenangan kepada pemerintah untuk mencegah penyebarluasan konten elektronik bermuatan melanggar hukum, termasuk pemblokiran situs." 
-                       data-lang-en="Article 40 — Grants authority to the government to prevent the dissemination of unlawful electronic content, including site blocking.">
-                       Pasal 40 — Memberikan kewenangan kepada pemerintah untuk mencegah penyebarluasan konten elektronik bermuatan melanggar hukum, termasuk pemblokiran situs.
+                       data-lang-id="Pasal 40 ayat (2a) & (2b) — Pemerintah wajib mencegah penyebarluasan Informasi Elektronik bermuatan melanggar hukum dan berwenang melakukan pemutusan akses (pemblokiran situs)." 
+                       data-lang-en="Article 40 (2a) & (2b) — The government is obligated to prevent the dissemination of prohibited Electronic Information and authorized to terminate access (block websites) to content that violates applicable laws.">
+                       Pasal 40 ayat (2a) & (2b) — Pemerintah wajib mencegah penyebarluasan Informasi Elektronik bermuatan melanggar hukum dan berwenang melakukan pemutusan akses (pemblokiran situs).
                     </p>
                     <div class="badge-container">
-                        <span class="badge badge-red" data-lang-id="UU ITE" data-lang-en="ITE LAW">UU ITE</span>
+                        <span class="badge badge-red" data-lang-id="UU ITE" data-lang-en="EIT LAW">UU ITE</span>
                         <span class="badge badge-blue" data-lang-id="PEMBLOKIRAN SITUS" data-lang-en="SITE BLOCKING">PEMBLOKIRAN SITUS</span>
                     </div>
                 </div>
@@ -1433,24 +1431,24 @@
             <div class="category-group">
                 <div class="category-label-row">
                     <div class="category-number">2</div>
-                    <div class="category-title" data-lang-id="Peraturan Menteri Terkait Trust Positif" data-lang-en="Ministerial Regulations Related to Trust Positif">Peraturan Menteri Terkait Trust Positif</div>
+                    <div class="category-title" data-lang-id="Peraturan Menteri Terkait Trust Positif" data-lang-en="Ministerial Regulations Related to Trust+Positif">Peraturan Menteri Terkait Trust Positif</div>
                 </div>
                 <div class="regulation-card highlight" data-aos="fade-right" data-aos-delay="100">
                     <div class="regulation-header">
                         <svg class="regulation-icon" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"/></svg>
                         <div>
                             <div class="regulation-title" data-lang-id="Peraturan Menteri Kominfo Nomor 19 Tahun 2014" data-lang-en="Ministerial Regulation of Kominfo Number 19 of 2014">Peraturan Menteri Kominfo Nomor 19 Tahun 2014</div>
-                            <div class="regulation-subtitle" data-lang-id="Tentang Penanganan Situs Internet Bermuatan Negatif" data-lang-en="Concerning Handling of Internet Sites with Negative Content">Tentang Penanganan Situs Internet Bermuatan Negatif</div>
+                            <div class="regulation-subtitle" data-lang-id="Tentang Penanganan Situs Internet Bermuatan Negatif" data-lang-en="On the Management of Internet Sites Containing Negative Content">Tentang Penanganan Situs Internet Bermuatan Negatif</div>
                         </div>
                     </div>
                     <p class="regulation-description" 
-                       data-lang-id="Landasan teknis operasional yang mewajibkan penyelenggara internet memblokir konten negatif. Mengatur mekanisme Trust+Positif sebagai database situs yang wajib diblokir oleh Penyelenggara Jasa Akses Internet (PJI), termasuk situs porno, judi, dan konten negatif lainnya." 
-                       data-lang-en="Operational technical basis requiring internet providers to block negative content. Regulates Trust+Positif mechanism as a database of sites that must be blocked by Internet Access Service Providers (PJI), including porn sites, gambling, and other negative content.">
-                       Landasan teknis operasional yang mewajibkan penyelenggara internet memblokir konten negatif. Mengatur mekanisme Trust+Positif sebagai database situs yang wajib diblokir oleh Penyelenggara Jasa Akses Internet (PJI), termasuk situs porno, judi, dan konten negatif lainnya.
+                       data-lang-id="Landasan teknis operasional yang mewajibkan Penyedia Layanan Internet memblokir konten negatif. Mengatur mekanisme Trust+Positif sebagai pangkalan data situs yang wajib diblokir oleh Penyedia Layanan Internet (PLI), termasuk situs pornografi, perjudian, dan konten negatif lainnya." 
+                       data-lang-en="Technical operational basis requiring Internet Service Providers (ISPs) to block negative content. Establishes Trust+Positif as the official database of sites to be blocked by ISPs, covering pornography, online gambling, and other harmful content.">
+                       Landasan teknis operasional yang mewajibkan Penyedia Layanan Internet memblokir konten negatif. Mengatur mekanisme Trust+Positif sebagai pangkalan data situs yang wajib diblokir oleh Penyedia Layanan Internet (PLI), termasuk situs pornografi, perjudian, dan konten negatif lainnya.
                     </p>
                     <div class="badge-container">
-                        <span class="badge badge-green" data-lang-id="DASAR TRUST+" data-lang-en="TRUST+ FOUNDATION">DASAR TRUST+</span>
-                        <span class="badge badge-blue" data-lang-id="PJI" data-lang-en="PJI">PJI</span>
+                        <span class="badge badge-green" data-lang-id="DASAR TRUST+" data-lang-en="TRUST+ LEGAL BASIS">DASAR TRUST+</span>
+                        <span class="badge badge-blue" data-lang-id="PLI" data-lang-en="ISP">PLI</span>
                     </div>
                 </div>
             </div>
@@ -1466,12 +1464,12 @@
                         <svg class="regulation-icon" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"/></svg>
                         <div>
                             <div class="regulation-title" data-lang-id="Peraturan Pemerintah Nomor 71 Tahun 2019 (PP 71/2019)" data-lang-en="Government Regulation Number 71 of 2019 (PP 71/2019)">Peraturan Pemerintah Nomor 71 Tahun 2019 (PP 71/2019)</div>
-                            <div class="regulation-subtitle" data-lang-id="Tentang Penyelenggaraan Sistem dan Transaksi Elektronik" data-lang-en="Concerning the Implementation of Electronic Systems and Transactions">Tentang Penyelenggaraan Sistem dan Transaksi Elektronik</div>
+                            <div class="regulation-subtitle" data-lang-id="Tentang Penyelenggaraan Sistem dan Transaksi Elektronik" data-lang-en="On the Implementation of Electronic Systems and Transactions">Tentang Penyelenggaraan Sistem dan Transaksi Elektronik</div>
                         </div>
                     </div>
                     <p class="regulation-description" 
                        data-lang-id="Terkait penyelenggaraan sistem dan transaksi elektronik yang menjadi bagian dari tata kelola keamanan digital." 
-                       data-lang-en="Related to the implementation of electronic systems and transactions that are part of digital security governance.">
+                       data-lang-en="Governs the implementation of electronic systems and transactions as part of Indonesia's digital security and governance framework.">
                        Terkait penyelenggaraan sistem dan transaksi elektronik yang menjadi bagian dari tata kelola keamanan digital.
                     </p>
                     <div class="badge-container">
@@ -1488,32 +1486,27 @@
 
         <!-- Action Buttons -->
         <!--
-        [EDIT] ACTION BUTTONS (3 BUTTONS)
+        [EDIT] ACTION BUTTONS (4 BUTTONS)
         ══════════════════════════════════
-        3 navigation buttons below the legal basis section.
-
-        Button 1 (red)  → Check Trust Positif     → replace href with your check URL
-        Button 2 (green)→ Submit Normalization     → replace href with your normalization URL
-        Button 3 (blue) → More Information         → replace href with your info URL
-
-        Layout automatically adjusts per device:
-        - Mobile         : 3 buttons vertical (1 column)
-        - Tablet/PC      : 2 on top + 1 centered below
-        - Ultrawide      : 3 buttons side by side horizontally
-
-        To change button icon color: replace class "red/green/blue" in .action-btn-icon
-        To change text: replace data-lang-id and data-lang-en
-        To change number of buttons: copy/delete <a class="action-btn"> blocks
-        ⚠️ Last button is automatically centered — if there are 3 buttons, use class "action-btn-last"
+        Navigation buttons for users to take action.
+        - Change link: edit href="..." on each <a class="action-btn">
+        - Change text: edit the data-lang-id and data-lang-en attributes
+        - Change icon color: replace "red/green/blue" class in .action-btn-icon
+        - Add/remove buttons: copy or delete an <a class="action-btn"> block
+        ⚠️ If you only have 3 buttons, add class "action-btn-last" to the last one so it centers automatically.
         -->
+        <div class="section-title animate__animated animate__fadeInUp delay-5" style="margin-top:0.25rem;">
+            <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/></svg>
+            <span data-lang-id="Tindakan yang Dapat Anda Lakukan" data-lang-en="Actions You Can Take">Tindakan yang Dapat Anda Lakukan</span>
+        </div>
         <div class="action-buttons animate__animated animate__fadeInUp delay-6">
             <a href="https://trustpositif.komdigi.go.id" target="_blank" class="action-btn" data-aos="fade-up" data-aos-delay="0">
                 <div class="action-btn-icon red">
                     <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/></svg>
                 </div>
                 <div class="action-btn-text">
-                    <div class="action-btn-title" data-lang-id="🔍 Cek Trust Positif" data-lang-en="🔍 Check Trust Positif">🔍 Cek Trust Positif</div>
-                    <div class="action-btn-desc" data-lang-id="Apakah website Anda masuk daftar?" data-lang-en="Is your website on the list?">Apakah website Anda masuk daftar?</div>
+                    <div class="action-btn-title" data-lang-id="🔍 Cek Trust Positif" data-lang-en="🔍 Check Trust+Positif">🔍 Cek Trust Positif</div>
+                    <div class="action-btn-desc" data-lang-id="Apakah situs web Anda masuk daftar?" data-lang-en="Is your website on the list?">Apakah situs web Anda masuk daftar?</div>
                 </div>
             </a>
             <a href="https://trustpositif.komdigi.go.id/normalisasi" target="_blank" class="action-btn" data-aos="fade-up" data-aos-delay="100">
@@ -1521,40 +1514,43 @@
                     <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                 </div>
                 <div class="action-btn-text">
-                    <div class="action-btn-title" data-lang-id="✅ Ajukan Normalisasi" data-lang-en="✅ Submit Normalization">✅ Ajukan Normalisasi</div>
-                    <div class="action-btn-desc" data-lang-id="Normalisasi website Anda" data-lang-en="Normalize your website">Normalisasi website Anda</div>
+                    <div class="action-btn-title" data-lang-id="✅ Ajukan Normalisasi" data-lang-en="✅ Request Site Unblocking">✅ Ajukan Normalisasi</div>
+                    <div class="action-btn-desc" data-lang-id="Normalisasi situs web Anda" data-lang-en="Request to unblock your site">Normalisasi situs web Anda</div>
                 </div>
             </a>
-            <a href="https://trustpositif.komdigi.go.id" target="_blank" class="action-btn action-btn-last" data-aos="fade-up" data-aos-delay="200">
+            <a href="https://trustpositif.komdigi.go.id" target="_blank" class="action-btn" data-aos="fade-up" data-aos-delay="200">
                 <div class="action-btn-icon blue">
                     <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg>
                 </div>
                 <div class="action-btn-text">
                     <div class="action-btn-title" data-lang-id="📚 Informasi Lebih Lanjut" data-lang-en="📚 More Information">📚 Informasi Lebih Lanjut</div>
-                    <div class="action-btn-desc" data-lang-id="Kunjungi Trust Positif" data-lang-en="Visit Trust Positif">Kunjungi Trust Positif</div>
+                    <div class="action-btn-desc" data-lang-id="Kunjungi Trust Positif" data-lang-en="Visit Trust+Positif">Kunjungi Trust Positif</div>
+                </div>
+            </a>
+            <a href="https://s.id/bersamastopjudol" target="_blank" class="action-btn" data-aos="fade-up" data-aos-delay="300">
+                <div class="action-btn-icon orange">
+                    <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <div class="action-btn-text">
+                    <div class="action-btn-title" data-lang-id="🚫 Stop Judi Online" data-lang-en="🚫 Stop Online Gambling">🚫 Stop Judi Online</div>
+                    <div class="action-btn-desc" data-lang-id="#BersamaStopJudiOnline #JauhiJudiBentengiDiri" data-lang-en="#BersamaStopJudiOnline #JauhiJudiBentengiDiri">#BersamaStopJudiOnline #JauhiJudiBentengiDiri</div>
                 </div>
             </a>
         </div>
 
         <!-- Contact Section -->
         <!--
-        [EDIT] CONTACT EMAIL CARDS
-        ══════════════════════════
-        Blue section to display contact emails.
-        By default contains 2 cards: Negative Content & PSE Registration.
-
-        For each card:
-        - Label  → change data-lang-id in .contact-label
-        - Email  → change href="mailto:..." and the email text
-        - Icon   → email icon can be replaced with another SVG if needed
-
-        To add a card: copy the <div class="contact-card"> block
-        To remove a card: delete the entire <div class="contact-card"> block
-        To hide section: add style="display:none" to div.contact-section
+        [EDIT] EMAIL CONTACT CARDS
+        Blue block displaying official Komdigi email addresses.
+        - Change label: edit the data-lang-id attribute in .contact-label
+        - Change email: edit href="mailto:..." and the email text
+        - Add a card: copy one <div class="contact-card"> block and paste it below
+        - Remove a card: delete the entire <div class="contact-card"> block you don't need
+        - Hide it: add style="display:none" to the <div class="contact-section"> tag
         -->
         <div class="contact-section animate__animated animate__fadeInUp delay-7">
-            <div class="contact-title" data-lang-id="📧 Untuk informasi lebih lanjut silahkan menghubungi:" data-lang-en="📧 For more information please contact:">
-                📧 Untuk informasi lebih lanjut silahkan menghubungi:
+            <div class="contact-title" data-lang-id="📧 Untuk informasi lebih lanjut, silakan menghubungi:" data-lang-en="📧 For further information, please contact:">
+                📧 Untuk informasi lebih lanjut, silakan menghubungi:
             </div>
             <div class="contact-grid">
                 <div class="contact-card" data-aos="flip-left" data-aos-delay="0">
@@ -1571,7 +1567,7 @@
                         <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
                     </div>
                     <div class="contact-info">
-                        <div class="contact-label" data-lang-id="📝 PENDAFTARAN PSE" data-lang-en="📝 PSE REGISTRATION">📝 PENDAFTARAN PSE</div>
+                        <div class="contact-label" data-lang-id="📝 PENDAFTARAN PSE" data-lang-en="📝 ESO REGISTRATION">📝 PENDAFTARAN PSE</div>
                         <a href="mailto:aduanpseprivat@komdigi.go.id" class="contact-email">aduanpseprivat@komdigi.go.id</a>
                     </div>
                 </div>
@@ -1582,28 +1578,26 @@
     <!-- Footer -->
     <!--
     [EDIT] FOOTER
-    ═════════════
-    Replace the GitHub href with your own website link.
-    Footer text can also be customized.
+    - Replace href="..." with your own domain or website (can be a website, social media, ISP portal, etc.).
+    - Also update the link text and ⭐ icon to match your branding.
+    - The disclaimer text above the link can also be customized.
     -->
     <footer class="footer">
-        <p data-lang-id="⚠️ Ini bukan halaman resmi Komdigi. Proyek open source tidak resmi, digunakan untuk tujuan edukasi. Dapat digunakan juga untuk ISP, RT/RW Net, Router Rumah/Sekolah, dll." 
-           data-lang-en="⚠️ This is not an official Komdigi page. Unofficial open source project, used for educational purposes. Can also be used for ISP, RT/RW Net, Home/School Router, etc.">
-           ⚠️ Ini bukan halaman resmi Komdigi. Proyek open source tidak resmi, digunakan untuk tujuan edukasi. Dapat digunakan juga untuk ISP, RT/RW Net, Router Rumah/Sekolah, dll.
+        <p data-lang-id="⚠️ Ini bukan halaman resmi Komdigi. Proyek sumber terbuka tidak resmi, digunakan untuk tujuan pendidikan. Dapat digunakan juga untuk ISP, RT/RW Net, Router Rumah/Sekolah, dan lain-lain." 
+           data-lang-en="⚠️ This is not an official Komdigi page. This is an unofficial open-source project intended for educational purposes. It may also be used by ISPs, RT/RW Net providers, and home or school routers.">
+           ⚠️ Ini bukan halaman resmi Komdigi. Proyek sumber terbuka tidak resmi, digunakan untuk tujuan pendidikan. Dapat digunakan juga untuk ISP, RT/RW Net, Router Rumah/Sekolah, dan lain-lain.
         </p>
         <a href="https://github.com/FarhanAbyss/trustpositif-block-page" target="_blank">⭐ GitHub — FarhanAbyss/trustpositif-block-page</a>
     </footer>
 
-    <!-- ─── AOS via CDN — Must be loaded BEFORE the main script ─── -->
+    <!-- AOS scroll animation library — must load before the main script below -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script>
         /*
         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        JAVASCRIPT — Do not modify unless you understand JS
-        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        setLanguage() function → controls the ID/EN language switch
-        [EDIT] Replace logo URL in logo.src if needed
+        JAVASCRIPT — Best left unchanged unless you know JavaScript.
+        setLanguage() swaps all visible text on the page to the selected language.
+        [EDIT] Replace the logo URLs in the logo.src lines if you want to use your own logos.
         */
         let currentLanguage = 'id';
 
@@ -1615,14 +1609,13 @@
             document.getElementById('btn-id').classList.toggle('active', lang === 'id');
             document.getElementById('btn-en').classList.toggle('active', lang === 'en');
 
-            // [EDIT] Swap logo when changing language
-            // Replace src URL with your own ID and EN logo
+              // [EDIT] Logo swaps when language changes — replace the URLs below with your own logo files
             const logo = document.getElementById('logo-img');
             if (lang === 'en') {
-                logo.src = 'https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/mcda.webp'; // [EDIT] English language logo
+                logo.src = 'https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/mcda.webp'; // [EDIT] Your English logo URL
                 logo.alt = 'MCDA Logo';
             } else {
-                logo.src = 'https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/komdigi.webp'; // [EDIT] Indonesian language logo
+                logo.src = 'https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/komdigi.webp'; // [EDIT] Your Indonesian logo URL
                 logo.alt = 'Logo Komdigi';
             }
         }
@@ -1666,17 +1659,23 @@
         - Slow & elegant  : duration: 1000, easing: 'ease-in-out'
         - Dramatic        : duration: 1200, easing: 'ease-out-cubic', offset: 100
 
-        Available AOS animation types (used in data-aos="..."):
-        - fade-up, fade-down, fade-left, fade-right
-        - zoom-in, zoom-out
-        - flip-left, flip-right, flip-up, flip-down
-        - slide-up, slide-down, slide-left, slide-right
+        Available AOS animation types (used in data-aos="...")
+        Jenis animasi AOS yang tersedia (dipakai di data-aos="..."):
+        - fade-up / fade-down / fade-left / fade-right
+        - flip-left / flip-right / flip-up / flip-down
+        - zoom-in / zoom-out
+        - slide-up / slide-down / slide-left / slide-right
         */
         AOS.init({
-            duration: 600,        /* [EDIT] Animation duration (ms) */
-            easing: 'ease-out-cubic', /* [EDIT] Animation movement style */
-            once: true,           /* [EDIT] true = 1x only, false = repeat */
-            offset: 60            /* [EDIT] Distance from bottom edge of screen (px) */
+            duration: 600,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 60
+        });
+
+        // Paksa bahasa Indonesia saat halaman pertama load
+        document.addEventListener('DOMContentLoaded', function() {
+            setLanguage('id');
         });
     </script>
 </body>
