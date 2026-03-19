@@ -12,43 +12,44 @@
     ║  ⚠️  NOT an official Komdigi page. For education & ISP use.  ║
     ╚══════════════════════════════════════════════════════════════╝
 
-    📌 CUSTOMIZATION GUIDE — Search for [EDIT] to find editable sections.
+    📌 CUSTOMIZATION GUIDE
+    Search for [EDIT] throughout this file to locate every customizable section.
 
-    Most commonly changed:
-    1.  [EDIT] Browser tab title        → <title> tag
-    2.  [EDIT] Google description       → <meta name="description">
-    3.  [EDIT] Domain URL               → og:url
-    4.  [EDIT] WhatsApp preview image   → og:image & twitter:image (ideal: 1200x630px)
-    5.  [EDIT] Logo (ID & EN)           → src in <img id="logo-img">
-    6.  [EDIT] Header title             → data-lang-id / data-lang-en attributes
-    7.  [EDIT] Contact email            → href="mailto:..." and email text
-    8.  [EDIT] Action button links      → href in each <a class="action-btn">
-    9.  [EDIT] Footer link (your domain/site) → href & text in <footer>
-    10. [EDIT] Theme colors             → CSS variables in :root
+    Most commonly changed sections:
+    1.  [EDIT] Browser tab title           → <title> tag
+    2.  [EDIT] Google meta description     → <meta name="description">
+    3.  [EDIT] Domain URL                  → og:url property
+    4.  [EDIT] WhatsApp/social preview img → og:image & twitter:image (ideal: 1200×630 pixels)
+    5.  [EDIT] Logo (ID & EN versions)     → src attribute in <img id="logo-img">
+    6.  [EDIT] Header title text           → data-lang-id and data-lang-en attributes
+    7.  [EDIT] Contact email address       → href="mailto:..." and the visible email text
+    8.  [EDIT] Action button links         → href in each <a class="action-btn">
+    9.  [EDIT] Footer link                 → href and text inside <footer>
+    10. [EDIT] Theme colors                → CSS variables in the :root block
     -->
-    <!-- [EDIT] Browser tab title -->
+    <!-- [EDIT] Browser tab title — the text shown in the browser tab and Google search results -->
     <title>Demo Halaman Internet Positif</title>
 
-    <!-- ─── SEO: page metadata for search engines ─── -->
-    <!-- [EDIT] Short page description for Google -->
+    <!-- ─── SEO: page metadata for search engines (Google, Bing, etc.) ─── -->
+    <!-- [EDIT] Meta description — a short sentence shown below the title in Google search results -->
     <meta name="description" content="Demo tidak resmi halaman Trust Positif Komdigi — Simulasi tampilan halaman blokir situs oleh Kementerian Komunikasi dan Digital Republik Indonesia.">
-    <!-- [EDIT] Google search keywords -->
+    <!-- [EDIT] Search keywords — comma-separated; helps search engines understand the page topic -->
     <meta name="keywords" content="Trust Positif, Komdigi, Internet Positif, Situs Diblokir, Demo, Unofficial, Blokir Internet, Konten Negatif, UU ITE">
-    <!-- [EDIT] Your name or ISP name -->
+    <!-- [EDIT] Author name — enter your name, ISP name, or the institution that owns this page -->
     <meta name="author" content="Unofficial Demo">
     <meta name="robots" content="index, follow">
-    <!-- [EDIT] Mobile address bar color (match your brand) -->
+    <!-- [EDIT] Mobile address bar color — change the hex code to match your brand color -->
     <meta name="theme-color" content="#b91c1c">
 
     <!-- ─── OPEN GRAPH: controls the preview when this link is shared on WhatsApp or social media ─── -->
     <meta property="og:type" content="website">
-    <!-- [EDIT] Your domain URL -->
+    <!-- [EDIT] Domain URL — replace with your own website address -->
     <meta property="og:url" content="https://trustpositif-internetpositif.vercel.app/">
-    <!-- [EDIT] Preview title when the link is shared -->
+    <!-- [EDIT] Preview title — the bold text shown when this link is shared on WhatsApp or social media -->
     <meta property="og:title" content="Demo Halaman Internet Positif — Unofficial">
-    <!-- [EDIT] Preview description when the link is shared -->
+    <!-- [EDIT] Preview description — a short line shown below the title in the link preview -->
     <meta property="og:description" content="Demo tidak resmi simulasi tampilan halaman blokir Trust Positif Komdigi. Bukan halaman resmi Kementerian Komunikasi dan Digital Republik Indonesia.">
-    <!-- [EDIT] Preview image when link is shared to WhatsApp/social media (ideal size: 1200x630px) -->
+    <!-- [EDIT] Preview image — displayed when this link is shared on WhatsApp or social media (ideal size: 1200×630 pixels) -->
     <meta property="og:image" content="https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/ogimage.webp">
     <meta property="og:locale" content="id_ID">
     <meta property="og:site_name" content="Demo Trust Positif — Unofficial">
@@ -57,41 +58,42 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Demo Halaman Internet Positif — Unofficial">
     <meta name="twitter:description" content="Demo tidak resmi simulasi tampilan halaman blokir Trust Positif Komdigi. Bukan halaman resmi Kementerian Komunikasi dan Digital Republik Indonesia.">
-    <!-- [EDIT] Twitter/X preview image (usually same as og:image) -->
+    <!-- [EDIT] Twitter/X preview image — typically the same as the og:image above -->
     <meta name="twitter:image" content="https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/ogimage.webp">
 
-    <!-- Fonts: IBM Plex Mono for headers & badges, Sora for body text -->
-    <!-- Preconnect: speeds up font loading from Google servers -->
+    <!-- Fonts: IBM Plex Mono is used for headers and badges; Sora is used for body text -->
+    <!-- Preconnect: instructs the browser to connect to Google Fonts servers early, reducing font load time -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <!-- Animate.css: entry animations that play when the page first loads -->
+    <!-- Animate.css: animation library for elements that animate when the page first opens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- AOS: animates elements into view as the user scrolls down -->
+    <!-- AOS (Animate On Scroll): animation library for elements that animate as the user scrolls down -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
     <style>
         /*
         [EDIT] THEME COLORS
-        Change these values to update the page's color scheme everywhere at once.
-        Example: change #e02020 to #1d4ed8 to switch from red to blue.
+        All page colors are controlled from this single block via CSS variables.
+        Change any value below to update that color across the entire page instantly.
+        Example: change #e02020 to #1d4ed8 to switch the theme from red to blue.
         */
         :root {
-            --red: #e02020;           /* [EDIT] Primary red — used in header, icons, and borders */
-            --red-light: #ff3c3c;     /* Lighter red for glow effects */
-            --red-glow: rgba(224,32,32,0.25); /* Transparent red glow */
-            --navy: #0a0e1a;          /* Main page background color */
-            --navy-2: #0d1323;        /* Card and section background */
-            --navy-3: #111827;        /* Alternative background */
-            --glass: rgba(255,255,255,0.045);   /* Thin glass card effect */
-            --glass-border: rgba(255,255,255,0.08); /* Glass card border */
-            --glass-strong: rgba(255,255,255,0.07); /* Thicker glass effect */
-            --blue: #2563eb;          /* Blue for badges, links, and contact */
-            --blue-light: #60a5fa;    /* Lighter blue */
-            --green: #10b981;         /* Green for badges and buttons */
-            --amber: #f59e0b;         /* Yellow for the info box */
-            --text-primary: #f0f4ff;  /* Main text color */
-            --text-secondary: rgba(240,244,255,0.6); /* Dimmer secondary text */
-            --text-muted: rgba(240,244,255,0.55);    /* Faintest text */
+            --red: #e02020;           /* [EDIT] Primary red — appears in the header, icons, and card borders */
+            --red-light: #ff3c3c;     /* Lighter red — used for glow effects and icon colors */
+            --red-glow: rgba(224,32,32,0.25); /* Transparent red glow — appears behind the warning icon */
+            --navy: #0a0e1a;          /* [EDIT] Main background color for the entire page */
+            --navy-2: #0d1323;        /* Background for cards and page sections */
+            --navy-3: #111827;        /* Alternative background — used on specific elements */
+            --glass: rgba(255,255,255,0.045);   /* Thin glass effect — translucent card background */
+            --glass-border: rgba(255,255,255,0.08); /* Glass card border color */
+            --glass-strong: rgba(255,255,255,0.07); /* Slightly more opaque glass effect */
+            --blue: #2563eb;          /* Blue — used on badges, links, and contact cards */
+            --blue-light: #60a5fa;    /* Lighter blue — used for link text and contact icons */
+            --green: #10b981;         /* Green — used on badges and specific buttons */
+            --amber: #f59e0b;         /* Yellow/amber — used for the Internet Positif info box */
+            --text-primary: #f0f4ff;  /* [EDIT] Primary text color — used for headings and key content */
+            --text-secondary: rgba(240,244,255,0.6); /* Secondary text — used for body paragraphs */
+            --text-muted: rgba(240,244,255,0.55);    /* Muted text — used for small labels and captions */
         }
 
         * {
@@ -112,12 +114,16 @@
             overflow-x: hidden;
         }
 
-        /* ─── SCROLLBAR ─── */
+        /* ─── SCROLLBAR ───
+           Styles the scrollbar on the right side of the page.
+           [EDIT] Replace var(--red) in ::-webkit-scrollbar-thumb to change the scrollbar color. */
         ::-webkit-scrollbar { width: 5px; }
         ::-webkit-scrollbar-track { background: var(--navy-2); }
         ::-webkit-scrollbar-thumb { background: var(--red); border-radius: 10px; }
 
-        /* ─── ANIMATED BACKGROUND ─── */
+        /* ─── ANIMATED BACKGROUND ───
+           Three decorative background elements: a grid pattern, a red radial glow at the top,
+           and a blue radial glow at the bottom. These elements are non-interactive. */
         .bg-grid {
             position: fixed;
             inset: 0;
@@ -158,12 +164,14 @@
             50% { opacity: 0.6; transform: translateX(-50%) scale(1.1); }
         }
 
-        /* ─── HEADER ─── */
+        /* ─── HEADER SECTION ───
+           The red block at the top of the page containing the language buttons, logo, and title.
+           [EDIT] Update background: linear-gradient(...) to change the header color. */
         .header-section {
             position: relative;
             z-index: 10;
             background: linear-gradient(160deg, #b91c1c 0%, #991b1b 40%, #7f1d1d 100%);
-            padding: 2.5rem 1.5rem 2rem;
+            padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1rem, 4vw, 2rem) clamp(1.25rem, 3vw, 2rem);
             text-align: center;
             border-bottom: 1px solid rgba(255,255,255,0.08);
             overflow: hidden;
@@ -187,18 +195,18 @@
         }
 
         .language-switcher {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
             display: flex;
-            gap: 0.375rem;
+            justify-content: center;
+            gap: clamp(0.3rem, 0.8vw, 0.5rem);
+            margin-bottom: clamp(0.75rem, 2vw, 1.25rem);
+            position: relative;
             z-index: 10;
         }
 
         .lang-btn {
-            padding: 0.3rem 0.75rem;
+            padding: clamp(0.25rem, 0.8vw, 0.35rem) clamp(0.6rem, 1.5vw, 0.875rem);
             border-radius: 6px;
-            font-size: 0.7rem;
+            font-size: clamp(0.65rem, 1.8vw, 0.75rem);
             font-weight: 700;
             font-family: 'IBM Plex Mono', monospace;
             border: 1px solid rgba(255,255,255,0.2);
@@ -229,7 +237,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 12px;
+            padding: clamp(8px, 1.5vw, 12px);
             overflow: hidden;
             box-shadow: 0 0 0 4px rgba(255,255,255,0.15), 0 8px 32px rgba(0,0,0,0.4);
             animation: logoFloat 4s ease-in-out infinite;
@@ -239,9 +247,9 @@
 
         /*
         [EDIT] LOGO FLOATING ANIMATION
-        The logo gently bobs up and down on a loop.
-        - Change 4s to a smaller value to speed it up, or larger to slow it down.
-        - Change -5px to a larger value to make the logo float higher.
+        The logo continuously bobs up and down in a smooth loop.
+        - Change 4s to a smaller value (e.g., 2s) to speed it up, or larger (e.g., 6s) to slow it down.
+        - Change -5px to a larger value (e.g., -10px) to make the logo float higher.
         - To disable: remove the "animation: logoFloat..." line from .logo-container
         */
         @keyframes logoFloat {
@@ -259,7 +267,7 @@
         .header-title {
             font-family: 'IBM Plex Mono', monospace;
             color: white;
-            font-size: 1.4rem;
+            font-size: clamp(0.95rem, 3.5vw, 1.4rem);
             font-weight: 800;
             margin-bottom: 0.35rem;
             letter-spacing: 2px;
@@ -272,7 +280,7 @@
         .header-subtitle {
             font-family: 'IBM Plex Mono', monospace;
             color: rgba(255,255,255,0.7);
-            font-size: 0.7rem;
+            font-size: clamp(0.6rem, 1.5vw, 0.7rem);
             font-weight: 400;
             letter-spacing: 5px;
             text-transform: uppercase;
@@ -280,7 +288,9 @@
             z-index: 2;
         }
 
-        /* ─── MAIN ─── */
+        /* ─── MAIN CONTENT AREA ───
+           Wraps all content below the header. Maximum width of 680px keeps text comfortable to read.
+           Width and spacing scale automatically based on screen size. */
         .main-content {
             position: relative;
             z-index: 5;
@@ -289,7 +299,9 @@
             padding: 1.5rem 1rem 3rem;
         }
 
-        /* ─── GLASS CARD BASE ─── */
+        /* ─── GLASS CARD BASE STYLE ───
+           Base style for all translucent frosted-glass cards on the page.
+           Applied to the warning section, regulation cards, contact cards, and program image cards. */
         .glass-card {
             background: var(--glass-strong);
             border: 1px solid var(--glass-border);
@@ -298,15 +310,17 @@
             -webkit-backdrop-filter: blur(12px);
         }
 
-        /* Automatically removes the blur effect for users who prefer reduced motion or on slow devices */
+        /* Accessibility: automatically disables the blur effect for users who enable "Reduce Motion" in their OS settings, or on low-performance devices */
         @media (prefers-reduced-motion: reduce) {
             .glass-card { backdrop-filter: none; -webkit-backdrop-filter: none; }
         }
 
-        /* ─── WARNING SECTION ─── */
+        /* ─── WARNING SECTION ───
+           The first card visible when the page loads. Contains the warning icon,
+           blocked-site title, description text, and pill labels. */
         .warning-section {
             text-align: center;
-            padding: 2rem 1.5rem;
+            padding: clamp(1.25rem, 4vw, 2rem) clamp(1rem, 3vw, 1.5rem);
             margin-bottom: 1.25rem;
             position: relative;
             overflow: hidden;
@@ -321,8 +335,8 @@
         }
 
         .warning-icon-wrap {
-            width: 70px;
-            height: 70px;
+            width: clamp(50px, 12vw, 70px);
+            height: clamp(50px, 12vw, 70px);
             background: radial-gradient(circle, rgba(224,32,32,0.2) 0%, rgba(224,32,32,0.05) 100%);
             border: 1px solid rgba(224,32,32,0.3);
             border-radius: 50%;
@@ -335,9 +349,9 @@
 
         /*
         [EDIT] WARNING ICON PULSE ANIMATION
-        The warning icon pulses with a red glow to draw attention.
-        - Change 2.5s to a smaller value to make it pulse faster.
-        - Change 12px to a larger value to spread the glow wider.
+        The warning triangle pulses with a red glow on a continuous loop.
+        - Change 2.5s to a smaller value (e.g., 1.5s) to pulse faster.
+        - Change 12px to a larger value (e.g., 20px) to spread the glow wider.
         - To disable: remove the "animation: warningPulse..." line from .warning-icon-wrap
         */
         @keyframes warningPulse {
@@ -346,20 +360,20 @@
         }
 
         .warning-icon-wrap svg {
-            width: 32px;
-            height: 32px;
+            width: clamp(22px, 5vw, 32px);
+            height: clamp(22px, 5vw, 32px);
             color: var(--red-light);
         }
 
         .warning-title {
-            font-size: 1.2rem;
+            font-size: clamp(0.95rem, 3vw, 1.2rem);
             font-weight: 800;
             color: var(--text-primary);
             margin-bottom: 0.4rem;
         }
 
         .warning-subtitle {
-            font-size: 0.8rem;
+            font-size: clamp(0.72rem, 2vw, 0.8rem);
             color: var(--text-secondary);
             margin-bottom: 1.5rem;
             line-height: 1.6;
@@ -373,9 +387,9 @@
         }
 
         .pill-btn {
-            padding: 0.55rem 1.25rem;
+            padding: clamp(0.4rem, 1vw, 0.55rem) clamp(0.75rem, 2vw, 1.25rem);
             border-radius: 9999px;
-            font-size: 0.7rem;
+            font-size: clamp(0.6rem, 1.5vw, 0.7rem);
             font-weight: 700;
             font-family: 'IBM Plex Mono', monospace;
             color: white;
@@ -388,23 +402,26 @@
             transition: all 0.25s ease;
         }
 
-        .pill-btn svg { width: 14px; height: 14px; flex-shrink: 0; }
+        .pill-btn svg { width: clamp(11px, 2vw, 14px); height: clamp(11px, 2vw, 14px); flex-shrink: 0; }
 
-        .pill-red { background: linear-gradient(135deg, #ef4444, #b91c1c); }
+        /* ─── PILL LABEL COLORS ─── [EDIT] Update the gradient values to change each label's color */
+        .pill-red   { background: linear-gradient(135deg, #ef4444, #b91c1c); } /* Red   — "Blocked Content" */
         .pill-red:hover { box-shadow: 0 0 20px rgba(239,68,68,0.4); }
 
-        .pill-green { background: linear-gradient(135deg, #10b981, #047857); }
+        .pill-green { background: linear-gradient(135deg, #10b981, #047857); } /* Green — "Positive Internet" */
         .pill-green:hover { box-shadow: 0 0 20px rgba(16,185,129,0.4); }
 
-        .pill-blue { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+        .pill-blue  { background: linear-gradient(135deg, #3b82f6, #1d4ed8); } /* Blue  — "Digital Security" */
         .pill-blue:hover { box-shadow: 0 0 20px rgba(59,130,246,0.4); }
 
-        /* ─── INFO BOX ─── */
+        /* ─── INFO BOX ───
+           Yellow box containing a brief explanation of the Internet Positif program.
+           [EDIT] Update --amber in :root to change the yellow color. */
         .info-box {
             background: linear-gradient(135deg, rgba(245,158,11,0.12), rgba(245,158,11,0.06));
             border: 1px solid rgba(245,158,11,0.25);
             border-left: 3px solid var(--amber);
-            padding: 1rem 1.25rem;
+            padding: clamp(0.75rem, 2.5vw, 1rem) clamp(0.875rem, 3vw, 1.25rem);
             border-radius: 12px;
             margin-bottom: 1.25rem;
             animation: slideUp 0.6s ease 0.1s both;
@@ -417,20 +434,22 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            font-size: 0.875rem;
+            font-size: clamp(0.78rem, 2vw, 0.875rem);
         }
 
-        .info-box-title svg { width: 16px; height: 16px; flex-shrink: 0; color: #fbbf24; }
+        .info-box-title svg { width: clamp(12px, 2.5vw, 16px); height: clamp(12px, 2.5vw, 16px); flex-shrink: 0; color: #fbbf24; }
 
         .info-box-text {
-            font-size: 0.8rem;
+            font-size: clamp(0.72rem, 1.8vw, 0.8rem);
             color: rgba(251,191,36,0.75);
             line-height: 1.7;
         }
 
-        /* ─── SECTION TITLES ─── */
+        /* ─── SECTION TITLES ───
+           Small bold titles that appear above each content section (e.g., Legal Basis, Programs).
+           A red icon is automatically displayed to the left of each title. */
         .section-title {
-            font-size: 1rem;
+            font-size: clamp(0.85rem, 2.2vw, 1rem);
             font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 1rem;
@@ -441,19 +460,21 @@
 
         .section-title svg { width: 18px; height: 18px; color: var(--red-light); flex-shrink: 0; }
 
-        /* ─── DIVIDER ─── */
+        /* ─── DIVIDER — a thin, transparent horizontal line used to separate page sections */
         .divider {
             height: 1px;
             background: linear-gradient(90deg, transparent, var(--glass-border), transparent);
             margin: 1.5rem 0;
         }
 
-        /* ─── REPORT SECTION ─── */
+        /* ─── REPORT NEGATIVE CONTENT SECTION ───
+           Dark red card containing the banner image and four report buttons.
+           [EDIT] Update rgba(185,28,28,...) in background to change the card color. */
         .report-section {
             background: linear-gradient(135deg, rgba(185,28,28,0.25) 0%, rgba(127,29,29,0.15) 100%);
             border: 1px solid rgba(224,32,32,0.2);
             border-radius: 16px;
-            padding: 1.5rem;
+            padding: clamp(1rem, 3vw, 1.5rem);
             margin-bottom: 1.25rem;
             overflow: hidden;
             position: relative;
@@ -470,7 +491,7 @@
 
         .report-title {
             text-align: center;
-            font-size: 1.1rem;
+            font-size: clamp(0.95rem, 2.5vw, 1.1rem);
             font-weight: 800;
             margin-bottom: 0.4rem;
             color: white;
@@ -478,14 +499,14 @@
 
         .report-subtitle {
             text-align: center;
-            font-size: 0.8rem;
+            font-size: clamp(0.72rem, 1.8vw, 0.8rem);
             color: rgba(255,255,255,0.65);
             margin-bottom: 1.25rem;
         }
 
         .report-image {
             width: 100%;
-            max-width: 340px;
+            max-width: clamp(240px, 70vw, 340px);
             height: auto;
             object-fit: cover;
             border-radius: 10px;
@@ -499,7 +520,7 @@
             display: flex;
             flex-direction: column;
             gap: 0.6rem;
-            max-width: 380px;
+            max-width: clamp(280px, 90vw, 380px);
             margin: 0 auto;
         }
 
@@ -507,10 +528,10 @@
             background: rgba(255,255,255,0.1);
             border: 1px solid rgba(255,255,255,0.15);
             color: white;
-            padding: 0.875rem 1.25rem;
+            padding: clamp(0.7rem, 2vw, 0.875rem) clamp(0.875rem, 2.5vw, 1.25rem);
             border-radius: 10px;
             font-weight: 700;
-            font-size: 0.875rem;
+            font-size: clamp(0.78rem, 2vw, 0.875rem);
             text-align: left;
             text-decoration: none;
             display: flex;
@@ -540,7 +561,7 @@
         }
 
 
-        .report-btn.blue {
+        .report-btn.blue {    /* Blue   — AduanNomor.id */
             background: rgba(37,99,235,0.2);
             border-color: rgba(37,99,235,0.4);
             color: #93c5fd;
@@ -551,7 +572,7 @@
             transform: translateY(-2px);
         }
 
-        .report-btn.green {
+        .report-btn.green {   /* Green  — CekRekening.id */
             background: rgba(16,185,129,0.2);
             border-color: rgba(16,185,129,0.4);
             color: #6ee7b7;
@@ -562,7 +583,7 @@
             transform: translateY(-2px);
         }
 
-        .report-btn.amber {
+        .report-btn.amber {   /* Yellow — Contact email */
             background: rgba(245,158,11,0.18);
             border-color: rgba(245,158,11,0.4);
             color: #fcd34d;
@@ -572,18 +593,20 @@
             box-shadow: 0 4px 20px rgba(245,158,11,0.25);
             transform: translateY(-2px);
         }
-        .report-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+        .report-btn svg { width: clamp(14px, 2.5vw, 18px); height: clamp(14px, 2.5vw, 18px); flex-shrink: 0; }
 
         .report-btn-text {
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            font-size: 0.8rem;
+            font-size: clamp(0.7rem, 1.8vw, 0.8rem);
         }
 
-        /* ─── PROGRAM IMAGES ─── */
+        /* ─── POSITIVE INTERNET PROGRAM IMAGES ───
+           A grid of image cards showcasing Komdigi's programs. The last card always spans full width.
+           [EDIT] Update each src attribute in HTML to change a program logo. */
         .program-images-section {
-            padding: 1.5rem;
+            padding: clamp(1rem, 3vw, 1.5rem);
             margin-bottom: 1.25rem;
             animation: slideUp 0.6s ease 0.3s both;
         }
@@ -615,7 +638,7 @@
 
         .program-image-card img {
             width: 100%;
-            height: 110px;
+            height: clamp(70px, 15vw, 110px);
             object-fit: contain;
             background: #ffffff;
             padding: 0;
@@ -626,14 +649,16 @@
             background: rgba(255,255,255,0.04);
             border-top: 1px solid var(--glass-border);
             color: var(--text-secondary);
-            padding: 0.6rem;
+            padding: clamp(0.4rem, 1.2vw, 0.6rem);
             text-align: center;
-            font-size: 0.75rem;
+            font-size: clamp(0.65rem, 1.5vw, 0.75rem);
             font-weight: 600;
             font-family: 'IBM Plex Mono', monospace;
         }
 
-        /* ─── LEGAL BASIS ─── */
+        /* ─── LEGAL BASIS SECTION ───
+           Lists the laws and regulations that underpin Trust+Positif.
+           Organized into regulation cards grouped under three categories. */
         .legal-section {
             animation: slideUp 0.6s ease 0.4s both;
         }
@@ -651,11 +676,11 @@
             font-weight: 700;
             color: #93c5fd;
             margin-bottom: 0.25rem;
-            font-size: 0.875rem;
+            font-size: clamp(0.78rem, 2vw, 0.875rem);
         }
 
         .section-header-text {
-            font-size: 0.75rem;
+            font-size: clamp(0.65rem, 1.7vw, 0.75rem);
             color: rgba(147,197,253,0.65);
             line-height: 1.6;
         }
@@ -681,13 +706,13 @@
             align-items: center;
             justify-content: center;
             font-weight: 700;
-            font-size: 0.8rem;
+            font-size: clamp(0.7rem, 1.8vw, 0.8rem);
             font-family: 'IBM Plex Mono', monospace;
             flex-shrink: 0;
         }
 
         .category-title {
-            font-size: 0.875rem;
+            font-size: clamp(0.78rem, 2vw, 0.875rem);
             font-weight: 700;
             color: var(--text-primary);
         }
@@ -696,7 +721,7 @@
             background: var(--glass);
             border: 1px solid var(--glass-border);
             border-radius: 12px;
-            padding: 1rem 1.125rem;
+            padding: clamp(0.75rem, 2vw, 1rem) clamp(0.875rem, 2.5vw, 1.125rem);
             margin-bottom: 0.625rem;
             transition: all 0.25s ease;
         }
@@ -732,19 +757,19 @@
 
         .regulation-title {
             font-weight: 700;
-            font-size: 0.8rem;
+            font-size: clamp(0.72rem, 1.8vw, 0.8rem);
             color: var(--text-primary);
             line-height: 1.4;
         }
 
         .regulation-subtitle {
-            font-size: 0.7rem;
+            font-size: clamp(0.62rem, 1.5vw, 0.7rem);
             color: var(--text-muted);
             margin-top: 0.125rem;
         }
 
         .regulation-description {
-            font-size: 0.75rem;
+            font-size: clamp(0.67rem, 1.7vw, 0.75rem);
             color: var(--text-secondary);
             line-height: 1.7;
             margin: 0.5rem 0 0.75rem;
@@ -757,22 +782,25 @@
         }
 
         .badge {
-            padding: 0.2rem 0.625rem;
+            padding: clamp(0.15rem, 0.5vw, 0.2rem) clamp(0.4rem, 1vw, 0.625rem);
             border-radius: 9999px;
-            font-size: 0.6rem;
+            font-size: clamp(0.55rem, 1.4vw, 0.6rem);
             font-weight: 700;
             font-family: 'IBM Plex Mono', monospace;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
 
-        .badge-red { background: rgba(224,32,32,0.15); color: #fca5a5; border: 1px solid rgba(224,32,32,0.25); }
-        .badge-blue { background: rgba(37,99,235,0.15); color: #93c5fd; border: 1px solid rgba(37,99,235,0.25); }
-        .badge-green { background: rgba(16,185,129,0.15); color: #6ee7b7; border: 1px solid rgba(16,185,129,0.25); }
+        /* [EDIT] Badge colors — set the class in HTML to badge-red, badge-blue, or badge-green */
+        .badge-red   { background: rgba(224,32,32,0.15);  color: #fca5a5; border: 1px solid rgba(224,32,32,0.25); }  /* Red   */
+        .badge-blue  { background: rgba(37,99,235,0.15);  color: #93c5fd; border: 1px solid rgba(37,99,235,0.25); }  /* Blue  */
+        .badge-green { background: rgba(16,185,129,0.15); color: #6ee7b7; border: 1px solid rgba(16,185,129,0.25); } /* Green */
 
-        /* ─── PC/LAPTOP SUPPORT ─── */
+        /* ─── PC/LAPTOP SUPPORT ───
+           Additional styles for wider screen experiences: pointer cursors on all interactive elements,
+           hover effects, and keyboard navigation (Tab key) support. */
 
-        /* Cursor pointer semua elemen interaktif */
+        /* Pointer cursor on all clickable elements */
         .lang-btn,
         .pill-btn,
         .report-btn,
@@ -785,7 +813,7 @@
             cursor: pointer;
         }
 
-        /* Focus states for keyboard navigation (Tab) */
+        /* Focus outline for keyboard navigation (Tab key) — required for accessibility compliance */
         .lang-btn:focus,
         .report-btn:focus,
         .action-btn:focus,
@@ -795,12 +823,12 @@
             outline-offset: 3px;
         }
 
-        /* Pill buttons - scale on hover */
+        /* Pill labels scale up slightly when hovered */
         .pill-btn:hover {
             transform: scale(1.05);
         }
 
-        /* Report btn primary active state */
+        /* Active state when the primary report button is pressed */
         .report-btn.primary:active {
             transform: translateY(0);
             box-shadow: none;
@@ -810,12 +838,12 @@
             transform: translateY(0);
         }
 
-        /* Action buttons active */
+        /* Active state when an action button is pressed */
         .action-btn:active {
             transform: translateY(-1px);
         }
 
-        /* Contact card cursor */
+        /* Contact cards use default cursor since they are not direct links */
         .contact-card:hover {
             cursor: default;
         }
@@ -824,7 +852,7 @@
             text-decoration: underline;
         }
 
-        /* Program image card - subtle scale on hover */
+        /* Program images scale up subtly on hover */
         .program-image-card:hover img {
             transform: scale(1.03);
             transition: transform 0.3s ease;
@@ -834,21 +862,23 @@
             transition: transform 0.3s ease;
         }
 
-        /* Selection color */
+        /* Text selection highlight color when the user selects text on the page */
         ::selection {
             background: rgba(224,32,32,0.3);
             color: white;
         }
 
-        /* ─── THANK YOU ─── */
+        /* ─── THANK YOU TEXT — displayed between the legal basis section and the action buttons */
         .thankyou {
             text-align: center;
-            padding: 1.5rem 0 0.5rem;
+            padding: clamp(1rem, 3vw, 1.5rem) 0 0.5rem;
             color: var(--text-muted);
-            font-size: 0.8rem;
+            font-size: clamp(0.7rem, 1.8vw, 0.8rem);
         }
 
-        /* ─── ACTION BUTTONS ─── */
+        /* ─── ACTION BUTTONS ───
+           Four navigation buttons: Check Trust Positif, Submit Normalization, More Information, and Stop Online Gambling.
+           Layout automatically adjusts: 1 column on mobile, 2 columns on tablet, 4 columns on ultrawide. */
         .action-buttons {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -868,10 +898,10 @@
             background: var(--glass);
             border: 1px solid var(--glass-border);
             border-radius: 14px;
-            padding: 1rem;
+            padding: clamp(0.75rem, 2vw, 1rem);
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: clamp(0.5rem, 1.5vw, 0.75rem);
             text-decoration: none;
             transition: all 0.3s ease;
             position: relative;
@@ -896,27 +926,28 @@
         .action-btn:hover::before { opacity: 1; }
 
         .action-btn-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
+            width: clamp(30px, 6vw, 40px);
+            height: clamp(30px, 6vw, 40px);
+            border-radius: clamp(7px, 1.5vw, 10px);
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
         }
 
-        .action-btn-icon.red { background: rgba(224,32,32,0.15); color: var(--red-light); }
-        .action-btn-icon.green { background: rgba(16,185,129,0.15); color: #34d399; }
-        .action-btn-icon.blue { background: rgba(37,99,235,0.15); color: var(--blue-light); }
-        .action-btn-icon.orange { background: rgba(249,115,22,0.15); color: #fb923c; }
+        /* [EDIT] Action button icon colors — set the class in HTML: red, green, blue, or orange */
+        .action-btn-icon.red    { background: rgba(224,32,32,0.15);   color: var(--red-light); }   /* Red    */
+        .action-btn-icon.green  { background: rgba(16,185,129,0.15);  color: #34d399; }            /* Green  */
+        .action-btn-icon.blue   { background: rgba(37,99,235,0.15);   color: var(--blue-light); }  /* Blue   */
+        .action-btn-icon.orange { background: rgba(249,115,22,0.15);  color: #fb923c; }            /* Orange */
 
-        .action-btn-icon svg { width: 20px; height: 20px; }
+        .action-btn-icon svg { width: clamp(15px, 3vw, 20px); height: clamp(15px, 3vw, 20px); }
 
         .action-btn-text { flex: 1; min-width: 0; }
 
         .action-btn-title {
             font-weight: 700;
-            font-size: 0.8rem;
+            font-size: clamp(0.72rem, 1.8vw, 0.8rem);
             color: var(--text-primary);
             margin-bottom: 0.125rem;
             white-space: normal;
@@ -925,16 +956,18 @@
         }
 
         .action-btn-desc {
-            font-size: 0.65rem;
+            font-size: clamp(0.6rem, 1.5vw, 0.65rem);
             color: var(--text-muted);
         }
 
-        /* ─── CONTACT SECTION ─── */
+        /* ─── CONTACT EMAIL SECTION ───
+           Blue card containing official Komdigi email contact cards.
+           [EDIT] Update href="mailto:..." and the visible email text in each <a class="contact-email">. */
         .contact-section {
             background: linear-gradient(135deg, rgba(37,99,235,0.12), rgba(37,99,235,0.06));
             border: 1px solid rgba(37,99,235,0.18);
             border-radius: 16px;
-            padding: 1.5rem;
+            padding: clamp(1rem, 3vw, 1.5rem);
             margin: 1.25rem 0;
             animation: slideUp 0.6s ease 0.6s both;
         }
@@ -944,7 +977,7 @@
             font-weight: 700;
             color: #93c5fd;
             margin-bottom: 1rem;
-            font-size: 0.8rem;
+            font-size: clamp(0.7rem, 1.8vw, 0.8rem);
         }
 
         .contact-grid {
@@ -957,7 +990,7 @@
             background: var(--glass);
             border: 1px solid var(--glass-border);
             border-radius: 12px;
-            padding: 0.875rem 1rem;
+            padding: clamp(0.65rem, 2vw, 0.875rem) clamp(0.75rem, 2.5vw, 1rem);
             display: flex;
             align-items: center;
             gap: 0.625rem;
@@ -981,11 +1014,11 @@
             color: var(--blue-light);
         }
 
-        .contact-icon svg { width: 16px; height: 16px; }
+        .contact-icon svg { width: clamp(12px, 2.5vw, 16px); height: clamp(12px, 2.5vw, 16px); }
         .contact-info { flex: 1; min-width: 0; }
 
         .contact-label {
-            font-size: 0.6rem;
+            font-size: clamp(0.55rem, 1.4vw, 0.6rem);
             color: var(--text-muted);
             text-transform: uppercase;
             font-weight: 700;
@@ -995,7 +1028,7 @@
         }
 
         .contact-email {
-            font-size: 0.7rem;
+            font-size: clamp(0.62rem, 1.5vw, 0.7rem);
             color: var(--blue-light);
             text-decoration: none;
             font-weight: 600;
@@ -1008,15 +1041,17 @@
 
         .contact-email:hover { color: white; }
 
-        /* ─── FOOTER ─── */
+        /* ─── FOOTER ───
+           Bottom section containing the disclaimer text and a link.
+           [EDIT] Replace href and link text in the <a> tag inside <footer>. */
         .footer {
             position: relative;
             z-index: 5;
             background: rgba(5,8,15,0.8);
             border-top: 1px solid var(--glass-border);
             text-align: center;
-            padding: 1.5rem 1rem;
-            font-size: 0.7rem;
+            padding: clamp(1rem, 3vw, 1.5rem) clamp(0.75rem, 3vw, 1rem);
+            font-size: clamp(0.62rem, 1.5vw, 0.7rem);
             color: var(--text-muted);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
@@ -1035,8 +1070,24 @@
         /*
         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
         [EDIT] PAGE LOAD ANIMATION DELAYS
-        Elements appear one by one in sequence. delay-1 appears first, delay-7 last.
-        Change the seconds to control how quickly each element appears.
+        Each page section animates in one by one using the .delay-1 through .delay-7 classes.
+        The element with delay-1 appears first; delay-7 appears last.
+
+        Usage in HTML: add a delay class to any animated element.
+        Example: <section class="animate__animated animate__fadeInUp delay-2">
+
+        [EDIT] Adjust the values below to control animation timing.
+        Smaller gaps between values → faster sequential appearance.
+        Example (fast): 0.05s, 0.1s, 0.15s | Example (slow): 0.2s, 0.4s, 0.6s
+
+        Current animation order:
+        delay-1 → Warning section   (0.1 seconds)
+        delay-2 → Info box          (0.2 seconds)
+        delay-3 → Report section    (0.3 seconds)
+        delay-4 → Program images    (0.4 seconds)
+        delay-5 → Legal basis       (0.5 seconds)
+        delay-6 → Action buttons    (0.6 seconds)
+        delay-7 → Contact section   (0.7 seconds — last to appear)
         */
         .delay-1 { animation-delay: 0.1s; }
         .delay-2 { animation-delay: 0.2s; }
@@ -1046,12 +1097,13 @@
         .delay-6 { animation-delay: 0.6s; }
         .delay-7 { animation-delay: 0.7s; }
 
-        /* ─── RESPONSIVE LAYOUT ─────────────────────────────────────────
-        Automatically adjusts layout for all screen sizes, from small phones to ultrawide monitors.
-        Uses clamp() so font sizes and spacing scale smoothly without abrupt jumps.
-        ─────────────────────────────────────────────────────────────── */
+        /* ─── RESPONSIVE LAYOUT ─────────────────────────────────────────────
+        Automatically adapts the page layout for all screen sizes —
+        from small phones (<360px) to ultrawide monitors (>1440px).
+        Uses clamp() to scale font sizes and spacing smoothly without abrupt breakpoint jumps.
+        ─────────────────────────────────────────────────────────────────── */
 
-        /* ── Base font sizes and spacing — applies to all devices ── */
+        /* ── Base font sizes and spacing — applied to all devices, scales with screen width ── */
         .header-title {
             font-size: clamp(0.95rem, 3.5vw, 1.75rem);
         }
@@ -1093,7 +1145,6 @@
         /* ── Small phones (<360px) — old Galaxy A, iPhone SE gen1 ── */
         @media (max-width: 359px) {
             .header-section { padding: 1.5rem 0.75rem 1.25rem; }
-            .lang-btn { padding: 0.25rem 0.5rem; font-size: 0.65rem; }
             .warning-section { padding: 1.25rem 0.875rem; }
             .warning-icon-wrap { width: 55px; height: 55px; }
             .warning-icon-wrap svg { width: 26px; height: 26px; }
@@ -1102,7 +1153,7 @@
             .action-btn-icon { width: 34px; height: 34px; }
             .contact-card { padding: 0.75rem; }
             .regulation-card { padding: 0.875rem; }
-            .category-title { font-size: 0.8rem; }
+
             .report-buttons { max-width: 100%; }
             .action-buttons { grid-template-columns: 1fr; }
             .contact-grid { grid-template-columns: 1fr; }
@@ -1197,7 +1248,7 @@
 
     <!-- Header -->
     <header class="header-section">
-        <!-- Language toggle (🇮🇩 ID / 🇺🇸 EN) — do not change the structure -->
+        <!-- Language toggle buttons (🇮🇩 ID / 🇺🇸 EN) — do not modify the HTML structure here; changes go in the JavaScript block below -->
         <div class="language-switcher">
             <button class="lang-btn active" onclick="setLanguage('id')" id="btn-id" aria-label="Bahasa Indonesia">🇮🇩 ID</button>
             <button class="lang-btn" onclick="setLanguage('en')" id="btn-en" aria-label="English">🇺🇸 EN</button>
@@ -1205,9 +1256,10 @@
 
         <!--
         [EDIT] HEADER LOGO
-        Replace the src URL with your own logo. The logo swaps automatically when the language changes.
-        - Do not remove id="logo-img" — it is required by the JavaScript below.
-        - The English logo URL is set in the script section (look for logo.src).
+        The logo appears inside a circular white container at the top of the page.
+        - Replace the src URL with your own logo (ideal size: 200×200 pixels).
+        - Do not remove id="logo-img" — it is required by the JavaScript to swap logos when the language changes.
+        - The English-language logo URL is set in the JavaScript block below (search for logo.src).
         -->
         <div class="logo-container animate__animated animate__fadeInDown">
             <img id="logo-img" src="https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/komdigi.webp" alt="Logo Komdigi">
@@ -1215,8 +1267,9 @@
 
         <!--
         [EDIT] HEADER TITLE
-        - data-lang-id = text displayed in Indonesian
-        - data-lang-en = text displayed in English
+        The large text displayed below the logo in the header.
+        - Update data-lang-id to change the Indonesian version of the title.
+        - Update data-lang-en to change the English version of the title.
         -->
         <h1 class="header-title animate__animated animate__fadeInUp delay-1" data-lang-id="TRUST+Positif dari KOMDIGI" data-lang-en="TRUST+Positif by KOMDIGI/MCDA">TRUST+Positif dari KOMDIGI</h1>
     </header>
@@ -1227,10 +1280,11 @@
         <!-- Warning Section -->
         <!--
         [EDIT] MAIN WARNING SECTION
-        The first block visible when the page loads. Contains the icon, title, and labels.
-        - Change text: edit the data-lang-id (Indonesian) or data-lang-en (English) attributes
-        - Change icon color: edit the --red value in the :root CSS section
-        - Disable pulse animation: remove "animation: warningPulse" from the CSS
+        The first card visible when the page loads. Contains the warning icon, blocked-site title, description, and pill labels.
+        - Update the title: edit data-lang-id and data-lang-en on the <h2> tag.
+        - Update the description: edit data-lang-id and data-lang-en on <p class="warning-subtitle">.
+        - Change the icon color: update --red in the :root CSS block.
+        - Disable the pulse animation: remove "animation: warningPulse..." from .warning-icon-wrap in CSS.
         -->
         <section class="glass-card warning-section">            <div class="warning-icon-wrap">
                 <svg fill="currentColor" viewBox="0 0 20 20">
@@ -1243,10 +1297,11 @@
                Situs web yang Anda coba akses terdeteksi memuat konten negatif dan telah diblokir oleh Kementerian Komunikasi dan Digital Republik Indonesia.
             </p>
             <!--
-            [EDIT] PILL LABELS (small badges below the warning text)
-            - pill-red = red, pill-green = green, pill-blue = blue
-            - Add a badge: copy one <span class="pill-btn ..."> block and paste it below
-            - Remove a badge: delete the entire <span class="pill-btn ..."> block you don't need
+            [EDIT] PILL LABELS (small badges below the warning description)
+            Each badge uses a color class: pill-red (red), pill-green (green), pill-blue (blue).
+            - Update badge text: edit data-lang-id and data-lang-en inside the <span>.
+            - Add a badge: copy one <span class="pill-btn ..."> block and paste it below the last one.
+            - Remove a badge: delete the entire <span class="pill-btn ..."> block you want to remove.
             -->
             <div class="pill-buttons">
                 <span class="pill-btn pill-red">
@@ -1267,10 +1322,10 @@
         <!-- Info Box -->
         <!--
         [EDIT] INFO BOX (yellow)
-        A brief explanation box about Internet Positif.
-        - Change text: edit the data-lang-id and data-lang-en attributes
-        - Change color: edit the --amber value in the :root CSS section
-        - Hide it: add style="display:none" to the <div class="info-box"> tag
+        A brief explanation box about the Internet Positif program and its legal basis.
+        - Update the text: edit data-lang-id (Indonesian) and data-lang-en (English) on the <p> tag.
+        - Change the color: update --amber in the :root CSS block.
+        - Hide this box: add style="display:none" to the <div class="info-box"> tag.
         -->
         <div class="info-box animate__animated animate__fadeInUp delay-2">
             <div class="info-box-title">
@@ -1287,11 +1342,12 @@
         <!-- Report Section -->
         <!--
         [EDIT] REPORT NEGATIVE CONTENT SECTION
-        Dark red block containing buttons to report harmful content.
-        - Title & text: edit the data-lang-id / data-lang-en attributes
-        - Banner image: change src="..." on the <img class="report-image"> tag
-        - Button links: change href="..." on each <a class="report-btn">
-        - Hide it: add style="display:none" to the <section> tag
+        Dark red card containing the banner image and four color-coded report buttons.
+        - Update the title and description: edit data-lang-id and data-lang-en on <h3> and <p>.
+        - Change the banner image: update src="..." on <img class="report-image">.
+        - Change a button link: update href="..." on the corresponding <a class="report-btn">.
+        - Change button text: edit data-lang-id and data-lang-en inside <span class="report-btn-text">.
+        - Hide this entire section: add style="display:none" to the <section> tag.
         -->
         <section class="report-section animate__animated animate__fadeInUp delay-3">
             <h3 class="report-title" data-lang-id="🚫 Laporkan Konten Negatif" data-lang-en="🚫 Report Negative Content">🚫 Laporkan Konten Negatif</h3>
@@ -1326,12 +1382,13 @@
 
         <!-- Program Images Section -->
         <!--
-        [EDIT] POSITIVE INTERNET PROGRAM IMAGES
-        Image cards showcasing Komdigi's programs. Images are loaded from GitHub.
-        - Add a card: copy one <div class="program-image-card"> block and paste it below
-        - Remove a card: delete the entire <div class="program-image-card"> block
-        - Replace image: change src="..." with your new image URL
-        - ⚠️ The last card always stretches to full width automatically
+        [EDIT] POSITIVE INTERNET PROGRAM IMAGE CARDS
+        A grid of cards displaying Komdigi program logos. Images are loaded from GitHub.
+        - Add a card: copy one <div class="program-image-card"> block and paste it below the last one.
+        - Remove a card: delete the entire <div class="program-image-card"> block you want to remove.
+        - Replace an image: update src="..." with the new image URL.
+        - Update a label: change the text inside <div class="program-image-label">.
+        - ⚠️ The last card in the grid automatically spans full width (2 columns).
         -->
         <section class="glass-card program-images-section animate__animated animate__fadeInUp delay-4">
             <h3 class="section-title">
@@ -1373,11 +1430,11 @@
         <!--
         [EDIT] LEGAL BASIS SECTION
         ═══════════════════════════
-        Lists the laws and regulations that form the legal foundation of Trust+Positif.
-        Divided into 3 categories: Main Laws, Ministerial Regulations, and Government Regulations.
+        Lists the laws and regulations underpinning Trust+Positif, organized into three categories:
+        Main Laws, Ministerial Regulations, and Government Regulations.
 
-        How to edit a card:
-        - Title       → data-lang-id attribute in .regulation-title
+        To edit a regulation card:
+        - Regulation title  → data-lang-id attribute in <div class="regulation-title">
         - Subtitle    → data-lang-id attribute in .regulation-subtitle
         - Description → data-lang-id attribute in .regulation-description
         - Badge text  → data-lang-id in <span class="badge">
@@ -1493,7 +1550,8 @@
         - Change text: edit the data-lang-id and data-lang-en attributes
         - Change icon color: replace "red/green/blue" class in .action-btn-icon
         - Add/remove buttons: copy or delete an <a class="action-btn"> block
-        ⚠️ If you only have 3 buttons, add class "action-btn-last" to the last one so it centers automatically.
+        ⚠️ If the total number of buttons is odd (e.g., 3 buttons), add class "action-btn-last" to the last button
+           so it automatically centers itself on the bottom row.
         -->
         <div class="section-title animate__animated animate__fadeInUp delay-5" style="margin-top:0.25rem;">
             <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/></svg>
@@ -1541,12 +1599,12 @@
         <!-- Contact Section -->
         <!--
         [EDIT] EMAIL CONTACT CARDS
-        Blue block displaying official Komdigi email addresses.
-        - Change label: edit the data-lang-id attribute in .contact-label
-        - Change email: edit href="mailto:..." and the email text
-        - Add a card: copy one <div class="contact-card"> block and paste it below
-        - Remove a card: delete the entire <div class="contact-card"> block you don't need
-        - Hide it: add style="display:none" to the <div class="contact-section"> tag
+        Blue card displaying official Komdigi email contact cards.
+        - Update a card label: edit data-lang-id on <div class="contact-label">.
+        - Update an email address: change href="mailto:..." and the visible email text.
+        - Add a card: copy one <div class="contact-card"> block and paste it below the last one.
+        - Remove a card: delete the entire <div class="contact-card"> block you want to remove.
+        - Hide this section: add style="display:none" to <div class="contact-section">.
         -->
         <div class="contact-section animate__animated animate__fadeInUp delay-7">
             <div class="contact-title" data-lang-id="📧 Untuk informasi lebih lanjut, silakan menghubungi:" data-lang-en="📧 For further information, please contact:">
@@ -1578,9 +1636,9 @@
     <!-- Footer -->
     <!--
     [EDIT] FOOTER
-    - Replace href="..." with your own domain or website (can be a website, social media, ISP portal, etc.).
-    - Also update the link text and ⭐ icon to match your branding.
-    - The disclaimer text above the link can also be customized.
+    - Replace href="..." with your own website, social media, or ISP portal link.
+    - Update the link text and ⭐ icon as needed.
+    - Update the disclaimer text via data-lang-id and data-lang-en on the <p> tag.
     -->
     <footer class="footer">
         <p data-lang-id="⚠️ Ini bukan halaman resmi Komdigi. Proyek sumber terbuka tidak resmi, digunakan untuk tujuan pendidikan. Dapat digunakan juga untuk ISP, RT/RW Net, Router Rumah/Sekolah, dan lain-lain." 
@@ -1590,14 +1648,17 @@
         <a href="https://github.com/FarhanAbyss/trustpositif-block-page" target="_blank">⭐ GitHub — FarhanAbyss/trustpositif-block-page</a>
     </footer>
 
-    <!-- AOS scroll animation library — must load before the main script below -->
+    <!-- The AOS library must be loaded here, BEFORE the main <script> block below, for scroll animations to work -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         /*
         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        JAVASCRIPT — Best left unchanged unless you know JavaScript.
-        setLanguage() swaps all visible text on the page to the selected language.
-        [EDIT] Replace the logo URLs in the logo.src lines if you want to use your own logos.
+JAVASCRIPT — Leave this unchanged unless you are comfortable with JavaScript.
+
+        setLanguage(lang) — Switches all visible page text to the selected language ('id' for Indonesian, 'en' for English).
+        Also toggles the active state on the language buttons and swaps the header logo.
+
+        [EDIT] Replace the logo.src URLs below with your own logo file URLs.
         */
         let currentLanguage = 'id';
 
@@ -1609,13 +1670,13 @@
             document.getElementById('btn-id').classList.toggle('active', lang === 'id');
             document.getElementById('btn-en').classList.toggle('active', lang === 'en');
 
-              // [EDIT] Logo swaps when language changes — replace the URLs below with your own logo files
+              // [EDIT] The logo automatically swaps when the language changes — replace both URLs below with your own logo files
             const logo = document.getElementById('logo-img');
             if (lang === 'en') {
-                logo.src = 'https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/mcda.webp'; // [EDIT] Your English logo URL
+                logo.src = 'https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/mcda.webp'; // [EDIT] Replace with your English-language logo URL
                 logo.alt = 'MCDA Logo';
             } else {
-                logo.src = 'https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/komdigi.webp'; // [EDIT] Your Indonesian logo URL
+                logo.src = 'https://raw.githubusercontent.com/FarhanAbyss/trustpositif-block-page/refs/heads/image/komdigi.webp'; // [EDIT] Replace with your Indonesian-language logo URL
                 logo.alt = 'Logo Komdigi';
             }
         }
@@ -1675,7 +1736,7 @@
 
         // Paksa bahasa Indonesia saat halaman pertama load
         document.addEventListener('DOMContentLoaded', function() {
-            setLanguage('id');
+            setLanguage('id'); // Ensure the page displays in Indonesian when first opened
         });
     </script>
 </body>
